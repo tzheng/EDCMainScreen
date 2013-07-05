@@ -1,0 +1,34 @@
+/**
+ * 	CSS Stylesheet file for all the html pages
+ *  This CSS file will specify general style rules for our projects
+ * 
+ *  Author: Team Samsung SCTS
+ */
+html, body {
+	margin:		0 auto;
+	padding:	0px;
+	vertical-align: baseline;
+}
+
+div {
+	margin: 0 auto;
+}
+
+header {
+	margin: 0 auto;
+}
+
+/*
+ * .nav-space class is used by header of each page
+ */
+.nav-space {
+	width:		100%;
+	min-width:	960px;
+	height:		48px;
+	left:		0;
+	top:		0;
+	position:	absolute;
+	display: 	block;
+	
+	background: url('../img/nav_bar/guide.png') top center repeat;
+}
