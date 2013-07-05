@@ -5,11 +5,16 @@
  * 	Samsung Blue Hex Color: #0D3697 (rgb 13,54,151)
  *  Author: Team Samsung SCTS
  */
+
 html, body {
 	margin:		0 auto;
 	padding:	0px;
 	vertical-align: baseline;
 	font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+}
+
+body {
+	min-width:	960px;
 }
 
 div {
@@ -29,7 +34,7 @@ header {
 		height:		60px;
 		left:		0;
 		top:		0;
-		position:	absolute;
+		position:	fixed;
 		display: 	block;
 		
 		/*border-bottom:	1px solid #A5A5A5;
@@ -66,22 +71,65 @@ header {
 	
 	.nav-title {
 		top:		5px;
-		left:		100px;
+		left:		105px;
 		width:		230px; 
 		position:	absolute;
 		
 		font-size:		21px;
-		font-weight:	200;
+		font-weight:	400;
+		
+		text-shadow:  2px 4px 5px #DFDFDF;
 	}
 	
 	.nav-user {
-		height: 42px;
-		left: 600px;
-		position:	absolute;
+		margin-right:	120px;
 	}
-	.nav-user:hover {
-    	color: #555555;
- 	 	text-decoration: none;
-  		background-color: #e5e5e5;
-	}
+		.nav-user .nav-username {
+			height: 		42px;
+			line-height:	42px;
+			padding-left:	5px;
+			padding-right:	5px;
+			font-size: 		18px;
+			color:			#000000;
+			
+			border-right:	1px solid #DFDFDF;
+		}
 		
+		/*.nav-user .nav-username:hover {
+			color: #0D3697;
+		}*/
+		
+		.nav-user ul {
+			float: 		left;
+			position:	relative;
+		}
+		
+		.nav-user #nav-usr {
+			border-left:	1px solid #DFDFDF;
+			width: 			120px;
+		}
+		.nav-user #nav-conf {
+			width: 30px;			
+		}
+		
+		.nav-user img {
+			height: 22px;
+		}
+		
+		.dropdown-menu a:hover {
+			background-color:	#0D3697;
+		}
+		
+		
+		
+		/* Import a font for icon display*/	
+		@font-face {
+    		font-family: 'Web Symbols';
+        	src: url('WebSymbols-Regular.otf') format('opentype');
+    		font-weight: normal;
+    		font-style: normal;
+     	}
+		.ca-icon{
+		    font-family: 'Web Symbols'; 
+		    font-size: 18px;
+		}
