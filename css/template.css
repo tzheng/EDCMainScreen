@@ -1,13 +1,15 @@
 /**
  * 	CSS Stylesheet file for all the html pages
  *  This CSS file will specify general style rules for our projects
- * 
+ *   
+ * 	Samsung Blue Hex Color: #0D3697 (rgb 13,54,151)
  *  Author: Team Samsung SCTS
  */
 html, body {
 	margin:		0 auto;
 	padding:	0px;
 	vertical-align: baseline;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
 }
 
 div {
@@ -21,14 +23,65 @@ header {
 /*
  * .nav-space class is used by header of each page
  */
-.nav-space {
-	width:		100%;
-	min-width:	960px;
-	height:		48px;
-	left:		0;
-	top:		0;
-	position:	absolute;
-	display: 	block;
+	.nav-space {
+		width:		100%;
+		min-width:	960px;
+		height:		60px;
+		left:		0;
+		top:		0;
+		position:	absolute;
+		display: 	block;
+		
+		/*border-bottom:	1px solid #A5A5A5;
+		box-shadow:		0px 5px 5px #DFDFDF; */
+	}
 	
-	background: url('../img/nav_bar/guide.png') top center repeat;
-}
+	.nav-wrapper {
+		width:		100%;
+		height:		48px;
+		left:		0;
+		top:		0;
+		position:	absolute;
+		opacity:		0.85;
+		background: url('../img/nav_bar/guide.png') top center repeat;
+		background-color: #FFFFFF;
+	}
+	
+	.nav-inner {
+		width:		100%;
+		height:		48px;
+		left:		0;
+		top:		0;
+		position:	absolute;
+	}
+	
+	.nav-logo {
+		top:		5px;
+		left:		100px; 
+		position:	absolute;
+	}
+		.nav-logo img {
+			height: 32px;
+		}
+	
+	.nav-title {
+		top:		5px;
+		left:		100px;
+		width:		230px; 
+		position:	absolute;
+		
+		font-size:		21px;
+		font-weight:	200;
+	}
+	
+	.nav-user {
+		height: 42px;
+		left: 600px;
+		position:	absolute;
+	}
+	.nav-user:hover {
+    	color: #555555;
+ 	 	text-decoration: none;
+  		background-color: #e5e5e5;
+	}
+		
