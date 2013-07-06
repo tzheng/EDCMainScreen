@@ -28,19 +28,6 @@ header {
 /*
  * .nav-space class is used by header of each page
  */
-	.nav-space {
-		width:		100%;
-		min-width:	960px;
-		height:		60px;
-		left:		0;
-		top:		0;
-		position:	fixed;
-		display: 	block;
-		
-		/*border-bottom:	1px solid #A5A5A5;
-		box-shadow:		0px 5px 5px #DFDFDF; */
-	}
-	
 	.nav-wrapper {
 		width:		100%;
 		height:		48px;
@@ -52,14 +39,16 @@ header {
 		background-color: #FFFFFF;
 	}
 	
+	/*
 	.nav-inner {
 		width:		100%;
 		height:		48px;
 		left:		0;
 		top:		0;
 		position:	absolute;
-	}
+	} */
 	
+/*style for Samsung LOGO*/
 	.nav-logo {
 		top:		5px;
 		left:		100px; 
@@ -69,60 +58,33 @@ header {
 			height: 32px;
 		}
 	
+/*style for the title e.g: electronic data capture*/
 	.nav-title {
 		top:		5px;
 		left:		105px;
 		width:		230px; 
 		position:	absolute;
 		
-		font-size:		21px;
+		font-size:		18px;
 		font-weight:	400;
 		
 		text-shadow:  2px 4px 5px #DFDFDF;
 	}
 	
-	.nav-user {
-		margin-right:	120px;
+/*style for the right part of the nav bar, including username, configure, logout*/
+	.nav-right {
+		margin-right: 60px;	
 	}
-		.nav-user .nav-username {
-			height: 		42px;
-			line-height:	42px;
-			padding-left:	5px;
-			padding-right:	5px;
-			font-size: 		18px;
-			color:			#000000;
-			
-			border-right:	1px solid #DFDFDF;
+	
+		.logout-icon {
+			opacity:	0.6;
+			height:		18px;
 		}
+		.logout-icon:hover {
+			opacity: 1;
+		}		
 		
-		/*.nav-user .nav-username:hover {
-			color: #0D3697;
-		}*/
-		
-		.nav-user ul {
-			float: 		left;
-			position:	relative;
-		}
-		
-		.nav-user #nav-usr {
-			border-left:	1px solid #DFDFDF;
-			width: 			120px;
-		}
-		.nav-user #nav-conf {
-			width: 30px;			
-		}
-		
-		.nav-user img {
-			height: 22px;
-		}
-		
-		.dropdown-menu a:hover {
-			background-color:	#0D3697;
-		}
-		
-		
-		
-		/* Import a font for icon display*/	
+		/* Import a font for icon display, display user icon, configure icon*/	
 		@font-face {
     		font-family: 'Web Symbols';
         	src: url('WebSymbols-Regular.otf') format('opentype');
@@ -131,5 +93,9 @@ header {
      	}
 		.ca-icon{
 		    font-family: 'Web Symbols'; 
-		    font-size: 18px;
+		    font-size: 15px;
 		}
+		
+	.nav:hover {
+		background-color: #DFDFDF;
+	}
