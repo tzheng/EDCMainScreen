@@ -896,8 +896,9 @@ dd {
 hr {
   margin: 20px 0;
   border: 0;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #C0C0C0;
   border-bottom: 1px solid #ffffff;
+  
 }
 
 abbr[title],
