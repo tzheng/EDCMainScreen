@@ -11,6 +11,7 @@ html, body {
 	padding:	0px;
 	vertical-align: baseline;
 	font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+	background-color: rgb(242,242,242);
 }
 
 body {
@@ -23,6 +24,7 @@ div {
 
 header {
 	margin: 0 auto;
+	min-width:	960px;
 }
 
 /*
@@ -34,37 +36,22 @@ header {
 		left:		0;
 		top:		0;
 		position:	absolute;
-		opacity:		0.85;
-		background: url('../img/nav_bar/guide.png') top center repeat;
+		opacity:		0.9;
+		/*background: url('../img/nav_bar/guide.png') top center repeat;*/
 		background-color: #FFFFFF;
+		z-index: -1;
 	}
-	
-	/*
-	.nav-inner {
-		width:		100%;
-		height:		48px;
-		left:		0;
-		top:		0;
-		position:	absolute;
-	} */
 
 /*style for Samsung LOGO*/
-	.nav-logo {
-		top:		5px;
-		left:		100px; 
-		position:	absolute;
-	}
-		.nav-logo img {
-			height: 32px;
+		.logo-icon {
+			margin-top: 8px;
+			height: 	32px;
 		}
 	
 /*style for the title e.g: electronic data capture*/
 	.nav-title {
-		top:		5px;
-		left:		105px;
-		width:		230px; 
-		position:	absolute;
-		
+		margin-left:	10px;
+		line-height:	48px;		
 		font-size:		18px;
 		font-weight:	400;
 		
@@ -72,10 +59,6 @@ header {
 	}
 	
 /*style for the right part of the nav bar, including username, configure, message, logout*/
-	.nav-right {
-		margin-right: 60px;	
-	}
-	
 		.logout-icon {
 			margin-top: -3px;
 			opacity:	0.6;
@@ -96,7 +79,7 @@ header {
 		    font-family: 'Web Symbols'; 
 		    font-size: 15px;
 		}
-		#nav-msg sup {
+		sup {
 			margin-left:	2px;
 			font-weight: 	bold;
 			font-size:		14px;
@@ -104,6 +87,93 @@ header {
 		}
 		
 
-	.nav:hover {
-		background-color: #DFDFDF;
+/*This is css style for nav bar*/
+	.nav-space {
+		width: 		100%;
+		min-width:	960px;
+		height:		48px;
+		top: 		0px;
+		left:		0px;
+		/*background-color:	rgb(254,254,254);*/
+		border-bottom: 		rgb(128,128,128);
+		box-shadow: 	0px 3px 5px rgb(206,206,206);
 	}
+	
+	.fixed {
+		position: fixed;
+	}
+	
+	.topbar {
+		background: none;
+	}
+	.columns {
+		width:		960px;
+		min-width:  960px;
+		height:		48px;
+		margin-left:	auto;
+		margin-right:	auto;
+		display:	block;
+	}
+	
+	.left {
+		float: left;
+	}
+	.right {
+		float: right;
+	}
+	
+	.topbar .nav {
+		height:	48px;
+		float:	left;
+	}
+	
+	.topbar-nav {
+		list-style: none;
+	}
+	
+	.nav > li {
+		height: 48px;
+  		float: left;
+	}
+
+	.nav > li > a {
+		height: 40px;
+		line-height: 40px;
+	    float: none;
+	    padding: 4px 15px 4px;  
+	    color: #777777;
+	    text-decoration: none;
+	    text-shadow: 0 1px 0 #ffffff;
+	}
+	
+	.nav .dropdown-toggle .caret {
+	  margin-top: 18px;
+	  border-top-color: #777777;
+	  border-bottom-color: #777777;
+	}
+	.nav .dropdown-toggle .caret:hover {
+	  margin-top: 18px;
+	  border-top-color: #000000;
+	  border-bottom-color: #000000;
+	}
+
+	.nav > li > a:focus,
+	.nav > li > a:hover {
+	  color: #333333;
+	  text-decoration: none;
+	  background-color: transparent;
+	}
+
+	.nav > .active > a,
+	.nav > .active > a:hover,
+	.nav > .active > a:focus {
+	  color: #555555;
+	  text-decoration: none;
+	  background-color: #e5e5e5;
+	  -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+	     -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+	          box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+	}
+	
+	
+/*end of test*/

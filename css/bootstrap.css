@@ -227,7 +227,7 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #333333;
-  background-color: #ffffff;
+  /*background-color: #ffffff;*/
 }
 
 a {
@@ -4172,9 +4172,10 @@ input[type="submit"].btn.btn-mini {
 }
 
 .nav .dropdown-toggle .caret {
-  margin-top: 6px;
+  /*margin-top: 6px;
   border-top-color: #0088cc;
   border-bottom-color: #0088cc;
+  */
 }
 
 .nav .dropdown-toggle:hover .caret,
@@ -4369,7 +4370,7 @@ input[type="submit"].btn.btn-mini {
   margin-bottom: 20px;
   overflow: visible;
 }
-
+/*
 .navbar-inner {
   min-height: 40px;
   padding-right: 20px;
@@ -4391,7 +4392,7 @@ input[type="submit"].btn.btn-mini {
      -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
           box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
 }
-
+*/
 .navbar-inner:before,
 .navbar-inner:after {
   display: table;
@@ -4618,6 +4619,7 @@ input[type="submit"].btn.btn-mini {
   text-decoration: none;
   text-shadow: 0 1px 0 #ffffff;
 }
+
 
 .navbar .nav .dropdown-toggle .caret {
   margin-top: 8px;
