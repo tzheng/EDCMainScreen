@@ -44,8 +44,8 @@
 				                      <span class="ca-icon">U</span> Barack Obama <b class="caret"></b>
 								  </a>
 			                      <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
-			                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-			                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+			                        <li role="presentation"><a role="menuitem" class="nav-item" tabindex="-1" href="#">Action</a></li>
+			                        <li role="presentation"><a role="menuitem" class="nav-item" tabindex="-1" href="#">Another action</a></li>
 			                      </ul>
 			                    </li>
 		                  	</ul>
@@ -57,19 +57,21 @@
 			                      	<span class="ca-icon">S</span>
 			                      </a>
 			                      <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
-			                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-			                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+			                        <li role="presentation"><a role="menuitem" class="nav-item" tabindex="-1" href="#">Action</a></li>
+			                        <li role="presentation"><a role="menuitem" class="nav-item" tabindex="-1" href="#">Another action</a></li>
 			                      </ul>
 			                    </li>
 		                  	</ul>
 		                  	<!-- dislpay message icon -->
 		                  	<ul class="nav" id="nav-msg">
 			                    <li class="dropdown">
-			                      <a href="#" role="button" class="dropdown-toggle nav-tooltip" data-toggle="dropdown" 
+			                      <a href="#" role="button" class="dropdown-toggle nav-tooltip nav-popover" data-toggle="dropdown" 
 			                      	data-toggle="tooltip" data-placement="bottom" title="Messages">
+			                      	<!-- data-toggle="popover" data-placement="bottom" title="Your Messages" -->
 			                      	<span class="ca-icon">@</span><sup>2</sup>
 			                      </a>
 			                    </li>
+			                    
 		                  	</ul>
 		                  	<!-- display logout icon -->
 		                  	<ul class="nav">
@@ -90,16 +92,9 @@
 		
 		<!-- Start to Edit here, replace the div with other content -->
 		<div>
-			Test  <i class="icon-envelope"></i><sup>1</sup>
+			
 		</div>
-    	<hr />
-    	<div>
-    		<a href="#" data-toggle="tooltip" class="nav-tooltip" data-placement="bottom" title="tttt">
-				aaa
-			</a>
-			
-			
-    	</div>
+		
     	<!-- footer of the page -->
     	<footer>
     		
@@ -110,6 +105,7 @@
     	<script src="js/bootstrap.js"></script>
     	<script src="js/bootstrap-dropdown.js"></script>
     	<script src="js/bootstrap-tooltip.js"></script>
+    	<script src="js/bootstrap-popover.js"></script>
     	<script src="js/template.js"></script>
 	</body>
 </html>
