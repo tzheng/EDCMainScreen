@@ -203,12 +203,13 @@ header {
 		height: 		35px;
 		
 		border-bottom: 	1px solid #DFDFDF;
-		background-color: rgb(250,250,251);
+		background-color: #4e525d;
 	}
 		.box-title-text {
 			margin-top:		5px;
 			font-size: 		18px;
- 			font-weight: 	300;
+ 			font-weight: 	500;
+ 			color:			#FFFFFF; /* OR USE rgb(149,228,234)*/
 		}
 		.box-title-btn {
 			margin-right:	20px;
