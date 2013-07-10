@@ -1,16 +1,5 @@
 $(document).ready(function()
 {
-   //fold and unfold div boxes
-   $(".btn-minimize").click(function(){
-   		var $target = $(this).parent().parent().parent().next('.box-content');
-   		
-   		if($target.is(':visible')) $('i',$(this)).removeClass('icon-chevron-up').addClass('icon-chevron-down');
-		else 					   $('i',$(this)).removeClass('icon-chevron-down').addClass('icon-chevron-up');
-		
-		$target.slideToggle();
-   });
-   
-   
    	$('#add-regular').click(function(){
 
 		$.gritter.add({
@@ -23,9 +12,14 @@ $(document).ready(function()
 			// (bool | optional) if you want it to fade out on its own or just sit there
 			sticky: false,
 			// (int | optional) the time you want it to be alive for before fading out
-			time: '5000'
+			time: '3500'
 		});
 
 		return false;
 	});
+	
+	/*make <div> sortablt, so that user can move div to any place they want*/
+	$(".sortable").sortable();
+	
 });
+
