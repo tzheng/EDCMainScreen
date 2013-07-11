@@ -25,15 +25,15 @@
 		<header class="nav-space fixed">
 		    <div class="nav-wrapper"></div> <!--Wrapper wrap the navbar, specify the background and opacity -->
 			
-			<div class="columns">
-					<div class="topbar left">
+			<div class="columns row-fluid">
+					<div class="topbar left" id="topbar-left">
 						<img class="logo-icon" src="img/nav_bar/blue-samsung-logo.png" />
 					</div>
 					<div class="topbar left">
 						<span class="nav-title">Electronic Data Capture</span>
 					</div>
 					
-					<div class="topbar right">
+					<div class="topbar right" id="topbar-right">
 				  			<!--display username-->
 		              		<ul class="nav">
 			                    <li id="fat-menu" class="dropdown">
@@ -54,26 +54,24 @@
 			                      	<span class="ca-icon">S</span>
 			                      </a>
 			                      <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
-			                        <li role="presentation"><a role="menuitem" class="nav-item" tabindex="-1" href="#">Action</a></li>
-			                        <li role="presentation"><a role="menuitem" class="nav-item" tabindex="-1" href="#">Another action</a></li>
+			                        <li role="presentation"><a role="menuitem" class="nav-item" tabindex="-1" href="#">Profile</a></li>
 			                      </ul>
 			                    </li>
 		                  	</ul>
 		                  	<!-- dislpay message icon -->
 		                  	<ul class="nav" id="nav-msg">
 			                    <li class="dropdown">
-			                      <a href="#" role="button" class="dropdown-toggle nav-tooltip nav-popover" data-toggle="dropdown" 
-			                      	data-toggle="tooltip" data-placement="bottom" title="Messages">
-			                      	<!-- data-toggle="popover" data-placement="bottom" title="Your Messages" -->
-			                      	<span class="ca-icon">@</span><sup><span class="label label-im hidden-phone">9</span></sup> 
-			                      </a>
+			                      <a href="#" id="add-regular" role="button" class="dropdown-toggle nav-tooltip" data-toggle="dropdown"
+			                     		data-toggle="tooltip" data-placement="bottom" title="Mssages">
+										<span class="ca-icon">@</span><sup><span class="label label-important hidden-phone">9</span></sup>
+								   </a>
 			                    </li>
 			                    
 		                  	</ul>
 		                  	<!-- display logout icon -->
 		                  	<ul class="nav">
 		                  		 <li class="dropdown">
-			                     	<a href="#" id="drop3" role="button" class="dropdown-toggle nav-tooltip logout-icon" data-toggle="dropdown"
+			                     	<a href="#" role="button" class="dropdown-toggle nav-tooltip logout-icon" data-toggle="dropdown"
 			                     		data-toggle="tooltip" data-placement="bottom" title="Logout">
 										<img src="img/logout.png" />
 								    </a>

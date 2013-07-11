@@ -28,15 +28,15 @@
 		<header class="nav-space fixed">
 		    <div class="nav-wrapper"></div> <!--Wrapper wrap the navbar, specify the background and opacity -->
 			
-			<div class="columns">
-					<div class="topbar left">
+			<div class="columns row-fluid">
+					<div class="topbar left" id="topbar-left">
 						<img class="logo-icon" src="img/nav_bar/blue-samsung-logo.png" />
 					</div>
 					<div class="topbar left">
 						<span class="nav-title">Electronic Data Capture</span>
 					</div>
 					
-					<div class="topbar right">
+					<div class="topbar right" id="topbar-right">
 				  			<!--display username-->
 		              		<ul class="nav">
 			                    <li id="fat-menu" class="dropdown">
@@ -96,23 +96,15 @@
 							</div>
 							
 							<div class="right" >
-								<!--
-								<div class="left box-title-btn">
-									<a class="btn nav-tooltip" data-toggle="tooltip" title="Enroll New Subject" data-placement="bottom">
-										<i class="icon-plus"></i>
-									</a>
-								</div>
-								-->
-								
 								<div class="left box-title-btn" id="hide-btn">
 									<a id="hide-study-detail" class="nav-tooltip btn-minimize" data-toggle="tooltip" title="Show/Hide Details" data-placement="bottom">
 										<i class="icon-chevron-up control-btn"></i>
 									</a>
 								</div>
 							</div>
-						</div>
+						</div> <!-- .box-title -->
 						
-						<div class="box-content" id="study-detail">
+						<div class="box-content" id="study-detail"> 
 							<div class="row-fluid sortable">
 								<!-- Display General Information of Clinical Trail -->								
 								<div class="span4 boxes">
@@ -158,34 +150,46 @@
 								</div>
 								
 							</div>
-						</div>
-					</div>
-				</div>
+						</div> <!-- .box-content -->
+					</div>  <!-- .boxes -->
+				</div> <!-- .row-fluid -->
+				
 				<div class="row-fluid">
-					<!--
-					<div class="span2 boxes">
-						<div class="box-title">
-							<div class="left">
-								<p class="box-title-text">Instruction</p>
-							</div>
-						</div>
-						
-						<div class="box-content">
-							fasd
-						</div>
-					</div>
-					-->
 					<div class="span12 boxes">
-
-						<div class="box span12">
 							<div class="box-title">
 								<div class="left">
-										<p class="box-title-text">Subjects</p>
+									<p class="box-title-text">Subjects</p>
+								</div>
+								
+								<div class="right" >
+									<div class="left box-title-btn" id="hide-btn">
+										<a id="hide-study-detail" class="nav-tooltip btn-minimize" data-toggle="tooltip" title="Show/Hide Details" data-placement="bottom">
+											<i class="icon-chevron-up control-btn"></i>
+										</a>
 									</div>
-							</div>
+								</div>
+							</div> <!-- .box-title -->
+
 							<div class="box-content">
 								<div class="search-menu">
-									Search Menu
+									<div class="row-fluid">
+										<div class="span9">
+											Showing 1 to 10 of 35 Subjects
+										</div>
+										<div class="span3">
+											<div>
+												Display 
+												<select class="span4 display-opt">
+												  <option>10</option>
+												  <option>20</option>
+												  <option>30</option>
+												  <option>50</option>
+												  <option>100</option>
+												</select> 
+												 per page
+											</div>
+										</div>
+									</div>
 								</div> <!-- .search-menu -->
 								
 								<div class="subject-table">
