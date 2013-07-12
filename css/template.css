@@ -52,7 +52,7 @@ header {
 			margin-left: 20px;
 		}
 		#topbar-right {
-			margin-right: 0px;
+			margin-right: 5px;
 		}
 		
 	.columns {
@@ -188,6 +188,7 @@ header {
 /*style for main body*/
 	.mainbody {
 		margin-top: 60px;
+		width:		100%;
 		min-width: 	1080px;
 	}
 
@@ -209,7 +210,7 @@ header {
 	.box-title {
 		padding-left:	10px;
 		padding-top:	5px;
-		padding-right: 	10px;
+		padding-right: 	0px;
 		height: 		32px;
 		
 		/*border-bottom: 	1px solid #DFDFDF; */
@@ -230,6 +231,7 @@ header {
 		}
 		.box-title-btn {
 			margin-right:	0px;
+			margin-left:	10px;
 		}
 		
 		.box-title .control-btn {

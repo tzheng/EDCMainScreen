@@ -18,8 +18,7 @@ $(document).ready(function()
 		return false;
 	});
 	
-	/*make <div> sortablt, so that user can move div to any place they want*/
 	$(".sortable").sortable();
-	
 });
+
 

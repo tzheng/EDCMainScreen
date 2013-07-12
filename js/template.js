@@ -10,6 +10,7 @@ $('.nav-tooltip').tooltip()
 
 
 $('.nav-popover').popover({html : true});
+
 $(document).ready(function(){
   $('.nav-popover').popover({ 
     html : true,
@@ -20,12 +21,15 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $('.danger').popover({ 
-    html : true,
-    content: function() {
-      return $('#popover_content_wrapper').html();
-    }
-  });
+	  $('.danger').popover({ 
+	    html : true,
+	    content: function() {
+	      return $('#popover_content_wrapper').html();
+	    }
+	  });
+  	
+	/*make <div> sortablt, so that user can move div to any place they want*/
+	$(".sortable").sortable();
 });
 
    //fold and unfold div boxes
@@ -34,6 +38,12 @@ $(document).ready(function(){
    		
    		if($target.is(':visible')) $('i',$(this)).removeClass('icon-chevron-up').addClass('icon-chevron-down');
 		else 					   $('i',$(this)).removeClass('icon-chevron-down').addClass('icon-chevron-up');
-		
+		console.log("Hello");
 		$target.slideToggle();
    });
+   
+   //show/hide filter div for EDC Main screen
+	$("#filter-trigger").click(function(){
+		$("#filter-box").toggle('slow');
+	});
+	
