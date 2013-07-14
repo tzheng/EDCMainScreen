@@ -15,6 +15,20 @@
 }
 
 
+/*Style for General Information box*/
+.study-desc {
+	margin-top:		-10px;
+	margin-bottom:	10px;
+}
+
+.study-progress {
+	
+}
+
+.bar-default {
+	 float:		 right; 
+	 text-align: center;
+}
 /*style for subject matrix*/
 
 /*
@@ -41,6 +55,7 @@
 	#filter-box {
 		margin-left:	0px;
 		margin-bottom:	10px;
+		background: 	#efefef;
 	}
 		#filter-box hr {
 			margin-top: 	5px;
@@ -52,5 +67,68 @@
 			margin-top:		-10px;
 		}
 
+	#subject-table-container {
+		width:	100%;
+		height: 100%;
+		margin-top: 	10px;
+		margin-bottom:	30px;
+	}
+	
+		#subject-table-container tr {
+			height: 40px;
+		}
+		#subject-table-container .table {
+			border-bottom: 1px solid #DDDDDD;
+		}
+		
+		#subject-table-container ul {
+			margin-left:	0px;
+		}
+		
+		#subject-table-container ul li {
+			list-style: 	none;
+			line-height:	30px;
+			height: 		35px;
+		}
+	
+		/**   Sytle for the left part of subject matrix **/
+		#subject-table-left {
+			float:		left;
+			width: 		200px;
+			border-right: 1px solid #DDDDDD;
+		}
+		
+		/**   Sytle for the middle part of subject matrix **/
+		#subject-table-middle {
+			float: 		left;
+			position: 	absolute;
+			right: 		182px;
+			left:		232px;
+			width: 		auto;
+			min-width:	616px;
+			
+			overflow-x: scroll;
+		}
+					.visit-row:nth-child(even) {
+						background-color: #EFEFEF;
+					}
+					
+			  		.visit-column li {
+			  			float: 			left;
+			  			text-align: 	center;
+			  			padding-left:	5px;
+			  			padding-right:	5px;
+			  			width:			70px;
+			  			border-right: 	1px solid #DDDDDD;
+			  		}
 
+	/**   Sytle for the right part of subject matrix **/
+		#subject-table-right {
+			float: 		right;
+			width: 		150px;
+		}
+
+		
+		
+	
 

@@ -1,0 +1,17 @@
+
+/* fixed editor at bottom of page*/
+#bottomNav { 
+	z-index:	9999; 
+	position:	fixed; 
+	bottom:		0; 
+	left:		0; 
+	width:		100%;
+	margin-bottom:	0px;
+	_position:	absolute; /* for IE6 */
+ 	_top: expression(documentElement.scrollTop + documentElement.clientHeight-this.offsetHeight); /* for IE6 */ 
+ 	overflow:	visible; 
+}
+
+#bottomNav .box-content {
+	height: 320px;
+}
