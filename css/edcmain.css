@@ -29,6 +29,53 @@
 	 float:		 right; 
 	 text-align: center;
 }
+
+#general-info {
+	height: 200px;
+}
+
+/* Style for Reminder box*/
+#reminders {
+	height: 200px;
+}
+	#reminder-bottom {
+		
+		line-height: 25px;
+	}
+	
+	#reminder-list input {
+		margin-top:	0px;
+	}
+	
+	#reminder-list a  {
+		margin-left:		10px;
+	}
+	#reminder-list .nav-tooltip {
+		opacity:	0.7;		
+	}
+	#reminder-list .nav-tooltip:hover {
+		opacity:	1;		
+	}
+	
+	#reminders ul {
+		margin-left:	0px;
+	}
+	#reminders ul li {
+		list-style:		none;
+		line-height: 	30px;
+		border-top:		1px solid #DDDDDD;
+	}
+	#reminders ul li a {
+		text-decoration:	none;
+	}
+	#reminders ul li:first-child {
+		border-top:		none;
+	}
+	#reminders ul li:last-child {
+		border-bottom:	1px solid #DDDDDD;
+	}
+	
+
 /*style for subject matrix*/
 
 /*
@@ -94,19 +141,38 @@
 		/**   Sytle for the left part of subject matrix **/
 		#subject-table-left {
 			float:		left;
-			width: 		200px;
+			width: 		270px;
 			border-right: 1px solid #DDDDDD;
 		}
+			.subject-info-row li {
+				float: 			left;
+				padding-right:	5px;
+				padding-left:	5px;
+			}
+			
+			.subject-id {
+				width: 90px;
+			}
+			.subject-gender {
+				width: 55px;
+			}
+			.subject-age {
+				width: 30px;
+			}
+			.subject-status {
+				width: 30px;
+			}
+			
 		
 		/**   Sytle for the middle part of subject matrix **/
 		#subject-table-middle {
 			float: 		left;
 			position: 	absolute;
-			right: 		182px;
-			left:		232px;
+			right: 		172px;
+			left:		302px;
 			width: 		auto;
-			min-width:	616px;
-			
+			min-width:	610px;
+			border-right: 1px solid #DDDDDD;
 			overflow-x: scroll;
 		}
 					.visit-row:nth-child(even) {
@@ -118,14 +184,15 @@
 			  			text-align: 	center;
 			  			padding-left:	5px;
 			  			padding-right:	5px;
-			  			width:			70px;
+			  			width:			90px;
 			  			border-right: 	1px solid #DDDDDD;
 			  		}
 
 	/**   Sytle for the right part of subject matrix **/
 		#subject-table-right {
 			float: 		right;
-			width: 		150px;
+			width: 		140px;
+			text-align:	center;
 		}
 
 		
