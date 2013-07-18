@@ -16,6 +16,68 @@
 	height: 320px;
 }
 
+
+/* style for list of CRFs */ 
+#crf_list {
+	min-height:	550px;
+}
+
+	#crf_list ul li {
+		list-style:	none;
+	}
+
+/* style for variable for list*/
 #variable_list {
-	height: 340px;
+	height: 260px;
+}
+	#variable_list ul {
+		margin-top:	10px;
+	}
+	#variable_list ul li {
+		list-style: none;
+	}
+
+	#variable_list_left {
+		background-color: 	#EFEFEF;
+		overflow-y: 		scroll;
+		border-radius:		2px;
+		height: 			250px;
+	}
+
+
+/* style for common use script*/
+#common_use {
+	height:	230px;
+}
+
+
+
+/* style for sample data test*/
+#sample_test {
+	height: 230px;
+}
+
+
+/*style for Script editor space */
+#editor_space {
+	border-right:	1px solid #DDDDDD;
+}
+
+	.editor-btn {
+		
+	}
+	
+	#code-area {
+		margin-top: 0px;
+	}
+	#code {
+		border-right: 1px solid #DDDDDD;
+		overflow-y:	scroll;
+	}
+
+
+
+/*style for footer*/
+#validation-footer {
+	margin-bottom: 40px;
 }

@@ -18,8 +18,11 @@
 		<!-- CSS Framework - Bootstrap, stroll.css -->
 		<link rel="stylesheet" href="css/bootstrap.css" />
 		<link rel="stylesheet" href="css/jquery.gritter.css"/>
+		<link rel="stylesheet" href="css/codemirror.css" />
 		<!-- <link rel="stylesheet" href="css/datatable.css" /> -->
 		
+		<script src="js/codemirror.js"></script>
+		<script src="js/scripteditor/javascript.js"></script>
 	</head>
 
 	<body>
@@ -33,7 +36,7 @@
 						<img class="logo-icon" src="img/nav_bar/blue-samsung-logo.png" />
 					</div>
 					<div class="topbar left">
-						<span class="nav-title">Electronic Data Capture</span>
+						<span class="nav-title">Validation Editor</span>
 					</div>
 					
 					<div class="topbar right" id="topbar-right">
@@ -94,7 +97,7 @@
 							</div>
 						</div>
 						<!-- box-content -->
-						<div class="box-content" style="height: 600px;">
+						<div class="box-content" id="crf_list">
 							<ul>
 								<li>Form1</li>
 								<li>Form2</li>
@@ -129,7 +132,7 @@
 									
 									<div class="container-fluid">
 										<div class="row-fluid">
-											<div class="span3">
+											<div class="span3" id="variable_list_left">
 												<ul>
 													<li>Variable 1</li>
 													<li>Variable 2</li>
@@ -157,6 +160,8 @@
 														  <option value="">lbs</option>
 												</select> <br />
 												Question: <input type="text"/> <br />
+												
+												<a href="#" class="btn btn-primary">Save Rule</a>
 											</div>
 										</div>
 									</div>
@@ -165,9 +170,12 @@
 							</div>
 						</div>
 						
-						<!-- Common Use Script  -->
+						
+						
 						<div class="row-fluid">
-							<div class="span12 boxes">
+							
+							<!-- Common Use script -->
+							<div class="span6 boxes">
 								<div class="box-title">
 									<h2 class="box-title-text">
 										<i class="icon-tags"></i>
@@ -180,15 +188,14 @@
 									</div>
 								</div>
 								<!-- box-content -->
-								<div class="box-content" style="height: 160px;">
+								<div class="box-content" id="common_use">
 									
 								</div> 
 							</div>
-						</div>
-						
-						<!-- Sample Data Test-->
-						<div class="row-fluid">
-							<div class="span12 boxes">
+							
+							
+							<!-- Sample Data Test-->
+							<div class="span6 boxes">
 								<div class="box-title">
 									<h2 class="box-title-text">
 										<i class="icon-pencil"></i>
@@ -201,7 +208,7 @@
 									</div>
 								</div>
 								<!-- box-content -->
-								<div class="box-content" style="height: 160px;">
+								<div class="box-content" id="sample_test">
 								<table>
 											<tr>
 											<th>Variable Name</th>
@@ -209,19 +216,23 @@
 											</tr>
 											<tr>
 											<td>Var 1</td>
-											<td><input type="text"/> </td>
+											<td><input type="text"/>  <i class="icon-remove"></i> </td>
 											</tr>
 											<tr>
 											<td>Var 2</td>
-											<td> <input type="text"/> </td>
-											</tr>
+											<td> <input type="text"/>  <i class="icon-remove"></i> </td>
 											</tr>
 											<tr>
-											<td>Result</td>
-											<td> <input type="text"/> </td>
+												<td></td>
+												<td><button class="btn"> Add Variables</button>  <button class="btn"> Test</button></td>
+											</tr>
+											<tr>
+											<td><br /> <strong>Test Result</strong> </td>
+											<td><br /> <strong>Y/N </strong></td>
 											</tr>
 											</table>
-											<button> Test</button>
+											
+											
 								</div> 
 							</div>
 						</div>
@@ -238,14 +249,67 @@
 					</h2>
 
 					<div class="box-title-btn">
-						<a href="#" class="btn-minimize nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Show / Hide"><i class="icon-chevron-up"></i></a>
+						<a href="#" class="script-edit nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Show / Hide"><i class="icon-chevron-down"></i></a>
 					</div>
 				</div>
 									
 				<div class="box-content">
 					<div class="row-fluid">
-						<div class="span12">
+						<div class="span8" id="editor_space">
+							<div class="row-fluid" >
+								<div class="span4 editor-btn">
+									<div class="btn-toolbar">
+										<div class="btn-group">
+									    	<button class="btn">Add</button>
+									    	<button class="btn">If..Else</button>
+									    	<button class="btn">""</button>
+									    	<button class="btn">{}</button>
+										</div>
+									</div>
+							    </div>
+								
+								<div class="span4 editor-btn">
+									<div class="btn-toolbar">
+										<div class="btn-group">
+									    	<button class="btn"> = </button>
+									    	<button class="btn"> &gt; </button>
+									    	<button class="btn"> &lt; </button>
+									    	<button class="btn"> || </button>
+									    	<button class="btn"> && </button>
+										</div>
+									</div>
+								</div>
+								
+								<div class="span4 editor-btn">
+									<div class="btn-toolbar">
+										<div class="btn-group">
+									    	<button class="btn"> + </button>
+									    	<button class="btn"> - </button>
+									    	<button class="btn"> x </button>
+									    	<button class="btn"> \ </button>
+										</div>
+									</div>
+								</div>
+							</div>
 							
+							<div class="row-fluid" id="code-area">
+								<div class="span12">
+								 <!--	<textarea rows="10" id="editor_input"></textarea>
+									<div style="width: 400px; height: 200px;" contenteditable></div>  -->
+									<textarea id="code"></textarea>
+								</div>
+							</div>
+							
+							<button class="btn pull-right btn-primary">Grammer Check</button>
+						</div>
+						
+						<div class="span4">
+							Show Result
+							<div style="background: #DFDFDF; height: 290px;">
+								Display Grammer Check Result, <br>
+								Sample Test Result <br />
+								We are currently thinking about details of this section. 
+							</div>
 						</div>
 					</div>
 				</div> <!-- end of .box-content -->
@@ -254,7 +318,7 @@
 	 	
 	 	
     	<!-- footer of the page -->
-    	<footer>
+    	<footer id="validation-footer">
     		
     	</footer>
     	
@@ -267,6 +331,7 @@
     	<script src="js/bootstrap-popover.js"></script>
     	<script src="js/jquery.gritter.min.js"></script>
     	<script src="js/template.js"></script>
+    	<script src="js/validation.js"></script>
     	<script src="js/jquery-ui.js"></script>
     	
 	</body>
