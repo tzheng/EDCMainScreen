@@ -80,13 +80,13 @@
 				<div class="row-fluid sortable">
 					
 					<!-- left part of validator -->
-					<div class="span6 boxes">
+					<div class="span2 boxes">
 						<!-- box title -->
 						<div class="box-title">
 							<h2 class="box-title-text">
 								<i class="icon-file"></i>
 								<span class="break"></span>
-								Case Report Forms
+								CRFs
 							</h2>
 		
 							<div class="box-title-btn">
@@ -94,14 +94,20 @@
 							</div>
 						</div>
 						<!-- box-content -->
-						<div class="box-content"style="height: 600px;">
-							
+						<div class="box-content" style="height: 600px;">
+							<ul>
+								<li>Form1</li>
+								<li>Form2</li>
+								<li>Form3</li>
+								<li>Form4</li>
+								<li>Form5</li>
+							</ul>
 						</div> 
 						
 					</div> <!-- end, left part of validator -->
 					
 					<!-- right part of validator -->
-					<div class="span6 sortable">
+					<div class="span10 sortable">
 						
 						<!-- Variable list-->
 						<div class="row-fluid">
@@ -118,7 +124,42 @@
 									</div>
 								</div>
 								<!-- box-content -->
-								<div class="box-content">
+
+								<div class="box-content" id="variable_list" >
+									
+									<div class="container-fluid">
+										<div class="row-fluid">
+											<div class="span3">
+												<ul>
+													<li>Variable 1</li>
+													<li>Variable 2</li>
+													<li>Variable 3</li>
+													<li>Variable 4</li>
+												</ul>
+											</div>
+											<div class="span9">
+												Variable Name: <input type="text"/> <br />
+												Data Type: 
+												<select>
+														  <option value="">Integer</option>
+														  <option value="">String</option>
+														  <option value="">Boolean</option>
+														  <option value="">Character</option>
+												</select> <br />
+												Required:
+												<input type="checkbox" name="" value=""> <br>
+												Range: <input type="text" size="4"/> - <input type="text" size="4"/><br /> 
+												Unit: 
+												<select>
+														  <option value="">cm</option>
+														  <option value="">M</option>
+														  <option value="">Kgs</option>
+														  <option value="">lbs</option>
+												</select> <br />
+												Question: <input type="text"/> <br />
+											</div>
+										</div>
+									</div>
 									
 								</div> 
 							</div>
