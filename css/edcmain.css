@@ -24,6 +24,9 @@
 .study-progress {
 	
 }
+	#screen_status {
+		margin-top: 30px;
+	}
 
 .bar-default {
 	 float:		 right; 
@@ -42,7 +45,9 @@
 		
 		line-height: 25px;
 	}
-	
+	#reminder-list {
+		height: 	160px;
+	}
 	#reminder-list input {
 		margin-top:	0px;
 	}
@@ -199,3 +204,9 @@
 		
 	
 
+
+
+/** sytle for subject detail information page.   edcdetail.html**/
+	#subject-detail-info {
+		width:	400px;
+	}

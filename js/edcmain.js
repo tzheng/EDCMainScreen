@@ -19,6 +19,11 @@ $(document).ready(function()
 	});
 	
 	$(".sortable").sortable();
+	
+	$('#myTab a').click(function (e) {
+	  e.preventDefault();
+	  $(this).tab('show');
+	})
 });
 
 
