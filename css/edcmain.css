@@ -148,6 +148,7 @@
 			float:		left;
 			width: 		270px;
 			border-right: 1px solid #DDDDDD;
+			margin-top:	20px;
 		}
 			.subject-info-row li {
 				float: 			left;
@@ -175,13 +176,29 @@
 			position: 	absolute;
 			right: 		172px;
 			left:		302px;
+			
+			margin-top: -15px;
+			
 			width: 		auto;
 			min-width:	610px;
-			border-right: 1px solid #DDDDDD;
 			overflow-x: scroll;
 		}
-					.visit-row:nth-child(even) {
+					#subject-table-left .visit-row:nth-child(even), 
+					#subject-table-right .visit-row:nth-child(even) {
 						background-color: #EFEFEF;
+					}
+					
+					#subject-table-middle .visit-row:nth-child(odd) {
+						background-color: #EFEFEF;
+					}
+					
+					.visit-column-title li {
+						float: 			left;
+			  			text-align: 	center;
+			  			padding-left:	5px;
+			  			padding-right:	5px;
+			  			width:			90px;
+			  			border-right: 	1px solid #DDDDDD;
 					}
 					
 			  		.visit-column li {
@@ -193,11 +210,16 @@
 			  			border-right: 	1px solid #DDDDDD;
 			  		}
 
+					.tab-content-main {
+						margin-top: 35px;
+					}
 	/**   Sytle for the right part of subject matrix **/
 		#subject-table-right {
 			float: 		right;
 			width: 		140px;
 			text-align:	center;
+			margin-top:	20px;
+			border-left:	1px solid #DDDDDD;
 		}
 
 		
@@ -208,5 +230,58 @@
 
 /** sytle for subject detail information page.   edcdetail.html**/
 	#subject-detail-info {
-		width:	400px;
+		width:			500px;
+		margin-bottom:	10px;
 	}
+		#subject-detail-info .progress {
+			margin-bottom:	10px;
+		}
+		
+		#subject-detail-info tr:last-child {
+			border-bottom: 1px solid #DDDDDD;
+		}
+		
+		
+/* style for CRF Lists*/
+	.crf-forms {
+		margin-left:	0px;
+		margin-top:		0px;
+	}
+	.crf-li {
+		list-style: none;
+		float: 		left;
+		margin-right:	10px;
+		margin-bottom:	10px;
+		padding-bottom:	5px;
+		min-width:		120px;
+		height:	60px;
+		border: 1px solid #DDDDDD;
+		border-radius:	2px;
+	}
+		.crf-li .lead {
+			font-size:		16px;
+			font-weight:	500;
+			line-height:	16px;
+			margin:			5px;
+		}
+		.crf-li .label {
+			margin-left:	5px;
+		}
+		.crf-li .time {
+			font-size:		12px;
+			margin-left:	5px;
+		}
+/**style for form attribute **/
+	#form-attr {
+		margin-top:		30px;
+		border-radius:	2px;
+	}
+	
+		#attr-title {
+			border-bottom:	1px solid #DDDDDD;
+		}
+		
+		#attr-title h4 {
+			margin-left:	10px;
+		}
+

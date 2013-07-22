@@ -101,16 +101,6 @@
 									<div class="box-content" id="general-info">
 										<div class="row-fluid">
 											<div class="span12">
-												<!--
-												<div class="row-fluid">
-													<div class="span12">
-														<ul class="breadcrumb">
-														  <li><b>Site:</b> UPMC Pittsburgh Hospital <span class="divider">|</span></li>
-														  <li><b>Location:</b> Pittsburgh, PA, United Stated of America <span class="divider">|</span></li>
-														  <li><b>ID:</b>	2013-000-000-001</li>
-														</ul> 
-													</div>
-												</div> -->
 												<div class="alert alert-info">
 												 	<strong>Site:</strong> UPMC Pittsburgh Hospital &nbsp;&nbsp;
 												 	<strong>Location:</strong> Pittsburgh, PA, United Stated of America &nbsp;&nbsp;
@@ -311,10 +301,11 @@
 										
 										<!-- Middle part of subject matrix table, display visits -->
 										<div id="subject-table-middle">
+											<!--
 											<div style="width: 1000px;">
 												<ul class="visits">
 													<li>
-														<ul class="visit-column">
+														<ul class="visit-column-title">
 															<li><strong>Screen</strong></li>
 															<li><strong>Visit 1</strong></li>
 															<li><strong>Visit 2</strong></li>
@@ -323,7 +314,14 @@
 													</li>
 													<li class="visit-row">
 														<ul class="visit-column">
-															<li><i class="icon-list-alt"></i>Form1</li>
+															<li>
+																<tr>
+																	<td><i class="icon-list-alt"></i>AE</td>
+																	<td><i class="icon-list-alt"></i>AE</td>
+																	<td><i class="icon-list-alt"></i>AE</td>
+																	<td><i class="icon-list-alt"></i>AE</td>
+																</tr>
+															</li>
 															<li><i class="icon-list-alt"></i>Form1</li>
 															<li><i class="icon-list-alt"></i>Form1</li>
 															<li><i class="icon-list-alt"></i>Form1</li>
@@ -346,7 +344,134 @@
 														</ul>
 													</li>
 												</ul>
-											</div>
+											</div> -->
+											<div style="width: 1000px;">
+												<div class="bs-docs-example">
+										            <ul id="myTab" class="nav nav-tabs nav-tab-main">
+										              <li class="active"><a href="#screen" data-toggle="tab">Screen</a></li>
+										              <li><a href="#v1" data-toggle="tab">Visit 1</a></li>
+										              <li><a href="#v2" data-toggle="tab">Visit 2</a></li>
+										              <li><a href="#v3" data-toggle="tab">Visit 3</a></li>
+										            </ul>
+										            <div id="myTabContent" class="tab-content tab-content-main">
+										            	<div class="tab-pane fade in active" id="screen">
+															<ul class="visits">
+																<li class="visit-row">
+																	<ul class="visit-column">
+																		<li><i class="icon-list-alt"></i>Form1</li>
+																		<li><i class="icon-list-alt"></i>Form2</li>
+																		<li><i class="icon-list-alt"></i>Form3</li>
+																		<li><i class="icon-list-alt"></i>Form4</li>
+																	</ul>
+																</li>
+																<li class="visit-row">
+																	<ul class="visit-column">
+																		<li><i class="icon-list-alt"></i>Form1</li>
+																		<li><i class="icon-list-alt"></i>Form2</li>
+																		<li><i class="icon-list-alt"></i>Form3</li>
+																		<li><i class="icon-list-alt"></i>Form4</li>
+																	</ul>
+																</li>
+																<li class="visit-row">
+																	<ul class="visit-column">
+																		<li><i class="icon-list-alt"></i>Form1</li>
+																		<li><i class="icon-list-alt"></i>Form2</li>
+																		<li><i class="icon-list-alt"></i>Form3</li>
+																		<li><i class="icon-list-alt"></i>Form4</li>
+																	</ul>
+																</li>
+															</ul>
+										              	</div>
+										              	
+										              	<!-- content for V1 Tab-->
+										              	<div class="tab-pane fade" id="v1">
+										              		<ul class="visits">
+																<li class="visit-row">
+																	<ul class="visit-column">
+																		<li><i class="icon-list-alt"></i>Form1</li>
+																		<li><i class="icon-list-alt"></i>Form2</li>
+																		<li><i class="icon-list-alt"></i>Form3</li>
+																		<li><i class="icon-list-alt"></i>Form4</li>
+																	</ul>
+																</li>
+																<li class="visit-row">
+																	<ul class="visit-column">
+																		<li><i class="icon-list-alt"></i>Form1</li>
+																		<li><i class="icon-list-alt"></i>Form2</li>
+																		<li><i class="icon-list-alt"></i>Form3</li>
+																		<li><i class="icon-list-alt"></i>Form4</li>
+																	</ul>
+																</li>
+																<li class="visit-row">
+																	<ul class="visit-column">
+																		<li><i class="icon-list-alt"></i>Form1</li>
+																		<li><i class="icon-list-alt"></i>Form2</li>
+																		<li><i class="icon-list-alt"></i>Form3</li>
+																		<li><i class="icon-list-alt"></i>Form4</li>
+																	</ul>
+																</li>
+															</ul>
+										              	</div> <!-- end of v1  -->
+										              	
+										              	<div class="tab-pane fade" id="v2">
+										              		<ul class="visits">
+																<li class="visit-row">
+																	<ul class="visit-column">
+																		<li><i class="icon-list-alt"></i>Form1</li>
+																		<li><i class="icon-list-alt"></i>Form2</li>
+																		<li><i class="icon-list-alt"></i>Form3</li>
+																		<li><i class="icon-list-alt"></i>Form4</li>
+																	</ul>
+																</li>
+																<li class="visit-row">
+																	<ul class="visit-column">
+																		<li><i class="icon-list-alt"></i>Form1</li>
+																		<li><i class="icon-list-alt"></i>Form2</li>
+																		<li><i class="icon-list-alt"></i>Form3</li>
+																		<li><i class="icon-list-alt"></i>Form4</li>
+																	</ul>
+																</li>
+																<li class="visit-row">
+																	<ul class="visit-column">
+																		<li><i class="icon-list-alt"></i>Form1</li>
+																		<li><i class="icon-list-alt"></i>Form2</li>
+																		<li><i class="icon-list-alt"></i>Form3</li>
+																		<li><i class="icon-list-alt"></i>Form4</li>
+																	</ul>
+																</li>
+															</ul>
+										              	</div>
+										              	<div class="tab-pane fade" id="v3">
+										              		<ul class="visits">
+																<li class="visit-row">
+																	<ul class="visit-column">
+																		<li><i class="icon-list-alt"></i>Form1</li>
+																		<li><i class="icon-list-alt"></i>Form2</li>
+																		<li><i class="icon-list-alt"></i>Form3</li>
+																		<li><i class="icon-list-alt"></i>Form4</li>
+																	</ul>
+																</li>
+																<li class="visit-row">
+																	<ul class="visit-column">
+																		<li><i class="icon-list-alt"></i>Form1</li>
+																		<li><i class="icon-list-alt"></i>Form2</li>
+																		<li><i class="icon-list-alt"></i>Form3</li>
+																		<li><i class="icon-list-alt"></i>Form4</li>
+																	</ul>
+																</li>
+																<li class="visit-row">
+																	<ul class="visit-column">
+																		<li><i class="icon-list-alt"></i>Form1</li>
+																		<li><i class="icon-list-alt"></i>Form2</li>
+																		<li><i class="icon-list-alt"></i>Form3</li>
+																		<li><i class="icon-list-alt"></i>Form4</li>
+																	</ul>
+																</li>
+															</ul>
+										              	</div>
+										            </div>
+										        </div>
+										</div>
 										</div>
 										
 										<!-- Right part of subject matrix table, display Actions-->	

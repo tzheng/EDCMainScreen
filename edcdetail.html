@@ -99,26 +99,31 @@
 									<div class="box-content" id="general-info">
 										<div class="row-fluid">
 											<div class="span12">
-												<table id="subject-detail-info">
+												<table id="subject-detail-info" class="table">
 													<tbody>
 														<tr>
-															<td class="span3"><strong>Subject ID</strong></td>
-															<td class="span9" colspan="3">0000001</td>
+															<td class="span2"><strong>Subject ID</strong></td>
+															<td class="span4">0000001</td>
+															<td class="span1"><strong>Gender</strong></td>
+															<td class="span1">Male</td>
+															<td class="span1"><strong>Age</strong></td>
+															<td class="span1">24</td>
 														</tr>
 														<tr>
-															<td class="span2"><strong>Gender</strong></td>
-															<td class="span4">Male</td>
-															<td class="span2"><strong>Age</strong></td>
-															<td class="span4">24</td>
+															<td class="span2"><strong>Study</strong></td>
+															<td class="span10" colspan="5">CMU Clinical Trail</td>
+														</tr>
+														<tr>
+															<td class="span12" colspan="6">
+																<strong>Current Progress：  6 / 10</strong>
+																<div class="progress study-progress" style="margin-top: 10px;">
+																	<div class="bar" style="width: 60%">Visited: 6 cycles</div> 
+																	<div class="bar-default" style=" width: 40%;">Remaining: 4 cycles</div> 
+																</div>
+															</td>
 														</tr>
 													</tbody>
 												</table>
-												<hr />
-												<strong>Current Progress：  6 / 10</strong>
-												<div class="progress study-progress" style="margin-top: 10px;">
-													<div class="bar" style="width: 60%">Visited: 6 cycles</div> 
-													<div class="bar-default" style=" width: 40%;">Remaining: 4 cycles</div> 
-												</div>
 												
 												<div class="pull-right">
 													<button class="btn "><i class="icon-edit"></i> Edit Information</button>
@@ -194,24 +199,187 @@
 							</div> <!-- .box-title -->
 
 							<div class="box-content">
-								<div class="bs-docs-example">
-						            <ul id="myTab" class="nav nav-tabs">
-						              <li class="active"><a href="#screen" data-toggle="tab">Screen</a></li>
-						              <li><a href="#v1" data-toggle="tab">Visit 1</a></li>
-						              <li><a href="#v2" data-toggle="tab">Visit 2</a></li>
-						              <li><a href="#v3" data-toggle="tab">Visit 3</a></li>
-						            </ul>
-						            <div id="myTabContent" class="tab-content">
-						            	<div class="tab-pane fade in active" id="screen">
-						              	</div>
-						              	<div class="tab-pane fade" id="v1">
-						              	</div>
-						              	<div class="tab-pane fade" id="v2">
-						              	</div>
-						              	<div class="tab-pane fade" id="v3">
-						              	</div>
-						            </div>
-						        </div>
+								<div class="row-fluid">
+									<div class="span9">
+										<div class="bs-docs-example">
+								            <ul id="myTab" class="nav nav-tabs">
+								              <li class="active"><a href="#screen" data-toggle="tab">Screen</a></li>
+								              <li><a href="#v1" data-toggle="tab">Visit 1</a></li>
+								              <li><a href="#v2" data-toggle="tab">Visit 2</a></li>
+								              <li><a href="#v3" data-toggle="tab">Visit 3</a></li>
+								            </ul>
+								            <div id="myTabContent" class="tab-content">
+								            	<div class="tab-pane fade in active" id="screen">
+													<div class="alert alert-info">
+														<span class="lead">Screen</span> 
+														<span style="margin-left: 20px;">Date: 2013-07-10 </span>
+														<span class="pull-right" style="margin-top: 7px;">
+															<i class="icon-list"></i>List View
+															<i class="icon-th"></i>Gird View
+														</span> 
+													</div>
+															
+													<ul class="crf-forms sortable">
+														<li class="crf-li not-start">
+															<p class="lead">AE</p> 
+															<span class="label">Not Start</span> 
+														</li>
+														<li class="crf-li">
+															<p class="lead">MH</p> 
+															<span class="label label-info">Ready</span> 
+														</li>
+														<li class="crf-li">
+															<p class="lead">EG</p> 
+															<span class="label label-info">Data Entry Started</span> 
+												  			<p class="time">2013-07-20</p>
+														</li>
+																
+														<li class="crf-li">
+															<p class="lead">DM</p> 
+															<span class="label label-important">Stoped</span> 
+															<p class="time">2013-07-20</p>
+														</li>
+																
+														<li class="crf-li">
+															<p class="lead">Form Name - Long Name</p> 
+															<span class="label label-warning">Skipped</span>
+															<p class="time">2013-07-20</p> 
+														</li>
+														<li class="crf-li">
+															<p class="lead">Form2</p> 
+															<span class="label label-success">Completed</span>
+															<p class="time">2013-07-19</p> 
+														</li>
+														<li class="crf-li">
+															<p class="lead">Form Three</p> 
+															<span class="label label-success">Signed</span>
+															<p class="time">2013-07-20</p> 
+														</li>
+														<li class="crf-li">
+															<p class="lead">Form 4</p> 
+															<span class="label label-inverse">Locked</span> 
+															<p class="time">2013-07-21</p>
+														</li>
+														<li class="crf-li">
+															<p class="lead">Form 5</p> 
+															<span class="label">Freezed</span> 
+															<p class="time">2013-07-22</p>
+														</li>
+													</ul>
+								              	</div>
+								              	
+								              	<!-- content for V1 Tab-->
+								              	<div class="tab-pane fade" id="v1">
+								              															<div class="alert alert-info">
+														<span class="lead">Visit One</span> 
+														<span style="margin-left: 20px;">Date: 2013-07-10 </span>
+														<span class="pull-right" style="margin-top: 7px;">
+															<i class="icon-list"></i>List View
+															<i class="icon-th"></i>Gird View
+														</span> 
+													</div>
+															
+													<ul class="crf-forms sortable">
+														<li class="crf-li not-start">
+															<p class="lead">AE</p> 
+															<span class="label">Not Start</span> 
+														</li>
+														<li class="crf-li">
+															<p class="lead">MH</p> 
+															<span class="label label-info">Ready</span> 
+														</li>
+														<li class="crf-li">
+															<p class="lead">EG</p> 
+															<span class="label label-info">Data Entry Started</span> 
+												  			<p class="time">2013-07-20</p>
+														</li>
+																
+														<li class="crf-li">
+															<p class="lead">DM</p> 
+															<span class="label label-important">Stoped</span> 
+															<p class="time">2013-07-20</p>
+														</li>
+																
+														<li class="crf-li">
+															<p class="lead">Form Name - Long Name</p> 
+															<span class="label label-warning">Skipped</span>
+															<p class="time">2013-07-20</p> 
+														</li>
+														<li class="crf-li">
+															<p class="lead">Form2</p> 
+															<span class="label label-success">Completed</span>
+															<p class="time">2013-07-19</p> 
+														</li>
+														<li class="crf-li">
+															<p class="lead">Form Three</p> 
+															<span class="label label-success">Signed</span>
+															<p class="time">2013-07-20</p> 
+														</li>
+														<li class="crf-li">
+															<p class="lead">Form 4</p> 
+															<span class="label label-inverse">Locked</span> 
+															<p class="time">2013-07-21</p>
+														</li>
+														<li class="crf-li">
+															<p class="lead">Form 5</p> 
+															<span class="label">Freezed</span> 
+															<p class="time">2013-07-22</p>
+														</li>
+													</ul>
+													
+								              	</div> <!-- end of v1  -->
+								              	
+								              	<div class="tab-pane fade" id="v2">
+								              	</div>
+								              	<div class="tab-pane fade" id="v3">
+								              	</div>
+								            </div>
+								        </div>
+						        	</div>
+						        	
+						        	<div class="span3" id="form-attr">
+										<div id="attr-content">
+											<table class="table table-condensed table-striped table-bordered">
+												<tbody>
+													<tr>
+														<td colspan="2"><span class="lead">Form Attribute</span></td>
+													</tr>
+													<tr>
+														<td><strong>Name</strong></td>
+														<td>CRF Form Name</td>
+													</tr>
+																
+													<tr>
+														<td><strong>Status</strong></td>
+														<td><span class="label label-success">Signed</span></td>
+													</tr>
+																
+													<tr>
+														<td><strong>Created</strong> </td>
+														<td>2013-07-20 2:00 PM</td>
+													</tr>
+																
+													<tr>
+														<td><strong>Last Modified</strong> </td>
+														<td>2013-07-21 4:00 PM</td>
+													</tr>
+																
+													<tr>
+														<td><strong>Author</strong> </td>
+														<td>Barack Obama</td>
+													</tr>
+																
+													<tr>
+														<td><strong>Version</strong> </td>
+														<td>v1.1</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+							    
+							 	</div>
+							
 							</div>
 					</div><!--/span boxes-->
 				</div>
