@@ -34,18 +34,19 @@
 }
 
 #general-info {
-	height: 200px;
+	height: 220px;
 }
 
 /* Style for Reminder box*/
 #reminders {
-	height: 200px;
+	height: 220px;
 }
 	#reminder-bottom {
-		
-		line-height: 25px;
+		margin-top:		10px;
+		line-height:	25px;
 	}
 	#reminder-list {
+		margin-top:	5px;
 		height: 	160px;
 	}
 	#reminder-list input {
@@ -141,6 +142,7 @@
 			list-style: 	none;
 			line-height:	30px;
 			height: 		35px;
+			text-align:		left;
 		}
 	
 		/**   Sytle for the left part of subject matrix **/
@@ -192,12 +194,13 @@
 						background-color: #EFEFEF;
 					}
 					
+					
 					.visit-column-title li {
 						float: 			left;
 			  			text-align: 	center;
 			  			padding-left:	5px;
 			  			padding-right:	5px;
-			  			width:			90px;
+			  			min-width:		150px;
 			  			border-right: 	1px solid #DDDDDD;
 					}
 					
@@ -206,8 +209,8 @@
 			  			text-align: 	center;
 			  			padding-left:	5px;
 			  			padding-right:	5px;
-			  			width:			90px;
-			  			border-right: 	1px solid #DDDDDD;
+			  			min-width:		150px;
+			  			/*border-right: 	1px solid #DDDDDD;*/
 			  		}
 
 					.tab-content-main {
@@ -222,7 +225,9 @@
 			border-left:	1px solid #DDDDDD;
 		}
 
-		
+			.actions li {
+				padding-left:	6px;
+			}
 		
 	
 
@@ -271,7 +276,16 @@
 			font-size:		12px;
 			margin-left:	5px;
 		}
+		
+
+	.detail-forms {
+		margin-top:		0px;
+		margin-bottom:	10px;
+		border-bottom:	1px solid #DDDDDD;
+	}	
+	
 /**style for form attribute **/
+
 	#form-attr {
 		margin-top:		30px;
 		border-radius:	2px;

@@ -1,0 +1,30 @@
+
+#random-area {
+	height:		100%;
+	min-height: 400px;
+}
+
+	.strong {
+		font-weight: bold;
+	}
+	
+	#strata_para {
+		margin-left:	100px;
+		clear: both;	
+	}
+	
+	.one_parameter {
+		margin-left: 		40px;	
+		clear: 				both;
+		margin-bottom:		5px;
+		
+	}
+	
+	.one_parameter_right {
+		float:	left;
+		margin-left:	10px;
+	}
+	
+	.para_ul li {
+		list-style: none;
+	}

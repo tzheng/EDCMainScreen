@@ -38,7 +38,6 @@ $(document).ready(function(){
    		
    		if($target.is(':visible')) $('i',$(this)).removeClass('icon-chevron-up').addClass('icon-chevron-down');
 		else 					   $('i',$(this)).removeClass('icon-chevron-down').addClass('icon-chevron-up');
-		console.log("Hello");
 		$target.slideToggle();
    });
    
