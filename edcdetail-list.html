@@ -217,7 +217,7 @@
 								            </ul>
 								            <div id="myTabContent" class="tab-content">
 								            	<div class="tab-pane fade in active crf-contents" id="screen">
-													<div class="detail-forms">
+													<div class="detail-forms list-view">
 														<span class="lead">Screen</span> 
 														<span style="margin-left: 20px;">Visit Date: 2013-07-10 </span>
 														<span style="margin-left: 20px;">CRF Book Version: v1.0 </span>
@@ -227,99 +227,62 @@
 														</span> 
 													</div>
 															
-													<ul class="crf-forms sortable">
-														<li class="crf-li not-start">
-															<p class="lead">
-																<span class="pull-left">AE</span>  
-																<span class="pull-right">
-																	<a href="" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Form Attribute"><i class="icon-info-sign"></i></a>
-																</span>
-															</p> 
-															<span class="label">Not Start</span> 
-															<p class="time"> - </p>
-															
-														</li>
-														<li class="crf-li">
-															<p class="lead"><span class="pull-left">MH</span> 
-																<span class="pull-right">
-																	<a href="" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Form Attribute"><i class="icon-info-sign"></i></a>
-																</span>
-															</p> 
-															<span class="label label-info">Ready</span> 
-															<p class="time"> - </p>
-														</li>
-														<li class="crf-li">
-															<p class="lead"><span class="pull-left">EG</span> 
-																<span class="pull-right">
-																	<a href="" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Form Attribute"><i class="icon-info-sign"></i></a>
-																</span>
-															</p> 
-															<span class="label label-info">Data Entry Started</span> 
-												  			<p class="time">2013-07-20</p>
-														</li>
-																
-														<li class="crf-li">
-															<p class="lead"><span class="pull-left">DM</span> 
-																<span class="pull-right">
-																	<a href="" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Form Attribute"><i class="icon-info-sign"></i></a>
-																</span>
-															</p> 
-															<span class="label label-important">Stoped</span> 
-															<p class="time">2013-07-20</p>
-														</li>
-																
-														<li class="crf-li">
-															<p class="lead">
-																<span class="pull-left">Form Name - Long Name</span> 
-																<span class="pull-right">
-																	<a href="" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Form Attribute"><i class="icon-info-sign"></i></a>
-																</span>
-															</p> 
-															<span class="label label-warning">Skipped</span>
-															<p class="time">2013-07-20</p> 
-														</li>
-														<li class="crf-li">
-															<p class="lead"><span class="pull-left">Form2</span> 
-																<span class="pull-right">
-																	<a href="" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Form Attribute"><i class="icon-info-sign"></i></a>
-																</span>
-															</p> 
-															<span class="label label-success">Completed</span>
-															<p class="time">2013-07-19</p> 
-														</li>
-														<li class="crf-li">
-															<p class="lead"><span class="pull-left">Form Three</span> 
-																<span class="pull-right">
-																	<a href="" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Form Attribute"><i class="icon-info-sign"></i></a>
-																</span>
-															</p> 
-															<span class="label label-success">Signed</span>
-															<p class="time">2013-07-20</p> 
-														</li>
-														<li class="crf-li">
-															<p class="lead"><span class="pull-left">Form 4</span> 
-																<span class="pull-right">
-																	<a href="" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Form Attribute"><i class="icon-info-sign"></i></a>
-																</span>
-															</p> 
-															<span class="label label-inverse">Locked</span> 
-															<p class="time">2013-07-21</p>
-														</li>
-														<li class="crf-li">
-															<p class="lead"><span class="pull-left">Form 5</span> 
-																<span class="pull-right">
-																	<a href="" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Form Attribute"><i class="icon-info-sign"></i></a>
-																</span>
-															</p> 
-															<span class="label">Freezed</span> 
-															<p class="time">2013-07-22</p>
-														</li>
-													</ul>
+													<div>
+														<table class="table table-condensed form-listview">
+															<tbody>
+																<tr>
+																	<td class="span3">AE</td>
+																	<td class="span3"><span class="label">Not Start</span></td>
+																	<td class="span2"> - </td>
+																	<td class="span4" style="text-align: right">
+																		<a class="btn btn-small"> <i class="icon-info-sign"></i> Form Attribute</a>
+																		<a class="btn btn-small"> <i class="icon-pencil"></i> Enter Data</a>
+																	</td>
+																</tr>
+																<tr>
+																	<td>MH</td>
+																	<td><span class="label label-info">Ready</span> </td>
+																	<td> - </td>
+																	<td class="span4" style="text-align: right">
+																		<a class="btn btn-small"> <i class="icon-info-sign"></i> Form Attribute</a>
+																		<a class="btn btn-small"> <i class="icon-pencil"></i> Enter Data</a>
+																	</td>
+																</tr>
+																<tr>
+																	<td>EG</td> 
+																	<td><span class="label label-info">Data Entry Started</span></td> 
+														  			<td>2013-07-20</td>
+														  			<td class="span4" style="text-align: right">
+																		<a class="btn btn-small"> <i class="icon-info-sign"></i> Form Attribute</a>
+																		<a class="btn btn-small"> <i class="icon-pencil"></i> Enter Data</a>
+																	</td>
+																</tr>
+																<tr>
+																	<td>DM</td>
+																	<td><span class="label label-important">Stoped</span></td>
+																	<td>2013-07-20</td>
+																	<td class="span4" style="text-align: right">
+																		<a class="btn btn-small"> <i class="icon-info-sign"></i> Form Attribute</a>
+																		<a class="btn btn-small"> <i class="icon-pencil"></i> Enter Data</a>
+																	</td>
+																</tr>
+																<tr>
+																	<td>Form Name - Long Name</td>
+																	<td><span class="label label-warning">Skipped</span></td>
+																	<td>2013-07-20</td>
+																	<td class="span4" style="text-align: right">
+																		<a class="btn btn-small"> <i class="icon-info-sign"></i> Form Attribute</a>
+																		<a class="btn btn-small"> <i class="icon-pencil"></i> Enter Data</a>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
 								              	</div>
 								              	
 								              	<!-- content for V1 Tab-->
 								              	<div class="tab-pane fade" id="v1">
-								              		<div class="detail-forms">
+								              		<div class="detail-forms list-view">
 														<span class="lead">Visit 1</span> 
 														<span style="margin-left: 20px;">Visit Date: 2013-07-20 </span>
 														<span class="pull-right" style="margin-top: 7px;">
@@ -328,93 +291,57 @@
 														</span> 
 													</div>
 															
-																										<ul class="crf-forms sortable">
-														<li class="crf-li not-start">
-															<p class="lead"><span class="pull-left">AE</span>  
-																<span class="pull-right">
-																	<a href="" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Form Attribute"><i class="icon-info-sign"></i></a>
-																</span>
-															</p> 
-															<span class="label">Not Start</span> 
-															<p class="time"> - </p>
-															
-														</li>
-														<li class="crf-li">
-															<p class="lead"><span class="pull-left">MH</span> 
-																<span class="pull-right">
-																	<a href="" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Form Attribute"><i class="icon-info-sign"></i></a>
-																</span>
-															</p> 
-															<span class="label label-info">Ready</span> 
-															<p class="time"> - </p>
-														</li>
-														<li class="crf-li">
-															<p class="lead"><span class="pull-left">EG</span> 
-																<span class="pull-right">
-																	<a href="" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Form Attribute"><i class="icon-info-sign"></i></a>
-																</span>
-															</p> 
-															<span class="label label-info">Data Entry Started</span> 
-												  			<p class="time">2013-07-20</p>
-														</li>
-																
-														<li class="crf-li">
-															<p class="lead"><span class="pull-left">DM</span> 
-																<span class="pull-right">
-																	<a href="" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Form Attribute"><i class="icon-info-sign"></i></a>
-																</span>
-															</p> 
-															<span class="label label-important">Stoped</span> 
-															<p class="time">2013-07-20</p>
-														</li>
-																
-														<li class="crf-li">
-															<p class="lead">
-																<span class="pull-left">Form Name - Long Name</span> 
-																<span class="pull-right">
-																	<a href="" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Form Attribute"><i class="icon-info-sign"></i></a>
-																</span>
-															</p> 
-															<span class="label label-warning">Skipped</span>
-															<p class="time">2013-07-20</p> 
-														</li>
-														<li class="crf-li">
-															<p class="lead"><span class="pull-left">Form2</span> 
-																<span class="pull-right">
-																	<a href="" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Form Attribute"><i class="icon-info-sign"></i></a>
-																</span>
-															</p> 
-															<span class="label label-success">Completed</span>
-															<p class="time">2013-07-19</p> 
-														</li>
-														<li class="crf-li">
-															<p class="lead"><span class="pull-left">Form Three</span> 
-																<span class="pull-right">
-																	<a href="" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Form Attribute"><i class="icon-info-sign"></i></a>
-																</span>
-															</p> 
-															<span class="label label-success">Signed</span>
-															<p class="time">2013-07-20</p> 
-														</li>
-														<li class="crf-li">
-															<p class="lead"><span class="pull-left">Form 4</span> 
-																<span class="pull-right">
-																	<a href="" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Form Attribute"><i class="icon-info-sign"></i></a>
-																</span>
-															</p> 
-															<span class="label label-inverse">Locked</span> 
-															<p class="time">2013-07-21</p>
-														</li>
-														<li class="crf-li">
-															<p class="lead"><span class="pull-left">Form 5</span> 
-																<span class="pull-right">
-																	<a href="" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Form Attribute"><i class="icon-info-sign"></i></a>
-																</span>
-															</p> 
-															<span class="label">Freezed</span> 
-															<p class="time">2013-07-22</p>
-														</li>
-													</ul>
+													<div>
+														<table class="table table-condensed form-listview">
+															<tbody>
+																<tr>
+																	<td class="span3">AE</td>
+																	<td class="span3"><span class="label">Not Start</span></td>
+																	<td class="span2"> - </td>
+																	<td class="span4" style="text-align: right">
+																		<a class="btn btn-small"> <i class="icon-info-sign"></i> Form Attribute</a>
+																		<a class="btn btn-small"> <i class="icon-pencil"></i> Enter Data</a>
+																	</td>
+																</tr>
+																<tr>
+																	<td>MH</td>
+																	<td><span class="label label-info">Ready</span> </td>
+																	<td> - </td>
+																	<td class="span4" style="text-align: right">
+																		<a class="btn btn-small"> <i class="icon-info-sign"></i> Form Attribute</a>
+																		<a class="btn btn-small"> <i class="icon-pencil"></i> Enter Data</a>
+																	</td>
+																</tr>
+																<tr>
+																	<td>EG</td> 
+																	<td><span class="label label-info">Data Entry Started</span></td> 
+														  			<td>2013-07-20</td>
+														  			<td class="span4" style="text-align: right">
+																		<a class="btn btn-small"> <i class="icon-info-sign"></i> Form Attribute</a>
+																		<a class="btn btn-small"> <i class="icon-pencil"></i> Enter Data</a>
+																	</td>
+																</tr>
+																<tr>
+																	<td>DM</td>
+																	<td><span class="label label-important">Stoped</span></td>
+																	<td>2013-07-20</td>
+																	<td class="span4" style="text-align: right">
+																		<a class="btn btn-small"> <i class="icon-info-sign"></i> Form Attribute</a>
+																		<a class="btn btn-small"> <i class="icon-pencil"></i> Enter Data</a>
+																	</td>
+																</tr>
+																<tr>
+																	<td>Form Name - Long Name</td>
+																	<td><span class="label label-warning">Skipped</span></td>
+																	<td>2013-07-20</td>
+																	<td class="span4" style="text-align: right">
+																		<a class="btn btn-small"> <i class="icon-info-sign"></i> Form Attribute</a>
+																		<a class="btn btn-small"> <i class="icon-pencil"></i> Enter Data</a>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
 													
 								              	</div> <!-- end of v1  -->
 								              	

@@ -268,13 +268,18 @@
 			font-weight:	500;
 			line-height:	16px;
 			margin:			5px;
+			height: 		16px;
 		}
+			.crf-li .lead .pull-right {
+				margin-left: 5px;
+			}
 		.crf-li .label {
 			margin-left:	5px;
 		}
 		.crf-li .time {
 			font-size:		12px;
 			margin-left:	5px;
+			margin-bottom:	0px;
 		}
 		
 
@@ -299,3 +304,10 @@
 			margin-left:	10px;
 		}
 
+	.list-view {
+		border-bottom: none;
+	}
+	
+	.form-listview tr:last-child td {
+		border-bottom: 1px solid #DDDDDD;
+	}
