@@ -1,13 +1,13 @@
    //fold and unfold div boxes
    $(".script-edit").click(function(){
-   		var $target = $(this).parent().parent().next('.box-content');
+   		var $target = $(this).next('.box-content');
    		
    		if($target.is(':visible')) 
    			{ 
-   				$('i',$(this)).removeClass('icon-chevron-up').addClass('icon-chevron-down');
+   				$('.arrow',$(this)).removeClass('icon-chevron-up').addClass('icon-chevron-down');
    				$("#validation-footer").css("margin-bottom","40px");
    			} else {
-   				$('i',$(this)).removeClass('icon-chevron-down').addClass('icon-chevron-up');
+   				$('.arrow',$(this)).removeClass('icon-chevron-down').addClass('icon-chevron-up');
    				$("#validation-footer").css("margin-bottom","380px");
    			} 					   
 		$target.slideToggle();

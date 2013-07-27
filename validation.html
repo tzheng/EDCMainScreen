@@ -58,7 +58,7 @@
 			                    <li class="dropdown">
 			                      <a href="#" id="add-regular" role="button" class="dropdown-toggle nav-tooltip" data-toggle="dropdown"
 			                     		data-toggle="tooltip" data-placement="bottom" title="Mssages">
-										<span class="ca-icon">@</span><sup><span class="label label-important hidden-phone">9</span></sup>
+										<span class="ca-icon">@</span><sup><span class="hidden-phone">9</span></sup>
 								   </a>
 			                    </li>
 			                    
@@ -134,12 +134,28 @@
 										<div class="row-fluid">
 											<div class="span3" id="variable_list_left">
 												<ul>
+													<li>Age</li>
+													<li>Gender</li>
+													<li>Weight</li>
+													<li>Height</li>
 													<li>Variable 1</li>
 													<li>Variable 2</li>
 													<li>Variable 3</li>
 													<li>Variable 4</li>
+													<li>Variable 5</li>
+													<li>Variable 6</li>
+													<li>Variable 7</li>
+													<li>Variable 8</li>
+													<li>Variable 9</li>
+													<li>Variable 10</li>
+													<li>Variable 11</li>
+													<li>Variable 12</li>
+													<li>Variable 13</li>
+													<li>Variable 14</li>
+													
 												</ul>
 											</div>
+											
 											<div class="span9">
 												Variable Name: <input type="text"/> <br />
 												Data Type: 
@@ -161,7 +177,7 @@
 												</select> <br />
 												Question: <input type="text"/> <br />
 												
-												<a href="#" class="btn btn-primary">Save Rule</a>
+												<a href="#" class="btn"><i class="icon-list-alt"></i> Save Rule</a>
 											</div>
 										</div>
 									</div>
@@ -189,85 +205,66 @@
 								</div>
 								<!-- box-content -->
 
-								<div class="box-content" id="common_use" style="overflow-x: hidden; overflow-y:scroll;">
-									<table>
+								<div class="box-content" id="common_use">
+									<table class="table table-condensed">
 										<thead>
 											<tr>
-												<th class="scriptcol1">ID</th>
-												<th class="scriptcol2">Name</th>
-												<th class="scriptcol3">
-													<select style="width:90px">
-														<option>Sorted By</option>
+												<th class="span2">ID</th>
+												<th class="span6">Name</th>
+												<th class="span4">
+													Sort by:	
+													<select class="form-control input-small" id="sort_by">
 														<option>Name</option>
+														<option>Frequency</option>
 													</select>
 												</th>
 											</tr>
 											</thead>
 											<tbody>
 												<tr>
-													<td class="scriptcol1">1</td>
-													<td class="scriptcol2">Script Name</td>
-													<td class="scriptcol3">
-														<button>Use</button>
-														<button>Clear</button>
+													<td class="span2">1</td>
+													<td class="span8">Script Name</td>
+													<td class="span2">
+														<button class="btn right">Clear</button>
+														<button class="btn right">Use</button>
 													</td>					
 												</tr>
+												
 												<tr>
-													<td class="scriptcol1">2</td>
-													<td class="scriptcol2">Script Name</td>
-													<td class="scriptcol3">
-														<button>Use</button>
-														<button>Clear</button>
+													<td class="span2">2</td>
+													<td class="span8">Script Name</td>
+													<td class="span2">
+														<button class="btn right">Clear</button>
+														<button class="btn right">Use</button>
 													</td>					
 												</tr>
+												
 												<tr>
-													<td class="scriptcol1">3</td>
-													<td class="scriptcol2">Script Name</td>
-													<td class="scriptcol3">
-														<button>Use</button>
-														<button>Clear</button>
+													<td class="span2">3</td>
+													<td class="span8">Script Name</td>
+													<td class="span2">
+														<button class="btn right">Clear</button>
+														<button class="btn right">Use</button>
 													</td>					
 												</tr>
+												
 												<tr>
-													<td class="scriptcol1">4</td>
-													<td class="scriptcol2">Script Name</td>
-													<td class="scriptcol3">
-														<button>Use</button>
-														<button>Clear</button>
-													</td>					
-												</tr>	
-												<tr>
-													<td class="scriptcol1">5</td>
-													<td class="scriptcol2">Script Name</td>
-													<td class="scriptcol3">
-														<button>Use</button>
-														<button>Clear</button>
-													</td>					
-												</tr>	
-												<tr>
-													<td class="scriptcol1">6</td>
-													<td class="scriptcol2">Script Name</td>
-													<td class="scriptcol3">
-														<button>Use</button>
-														<button>Clear</button>
+													<td class="span2">4</td>
+													<td class="span8">Script Name</td>
+													<td class="span2">
+														<button class="btn right">Clear</button>
+														<button class="btn right">Use</button>
 													</td>					
 												</tr>
+												
 												<tr>
-													<td class="scriptcol1">7</td>
-													<td class="scriptcol2">Script Name</td>
-													<td class="scriptcol3">
-														<button>Use</button>
-														<button>Clear</button>
+													<td class="span2">5</td>
+													<td class="span8">Script Name</td>
+													<td class="span2">
+														<button class="btn right">Clear</button>
+														<button class="btn right">Use</button>
 													</td>					
-												</tr>	
-												<tr>
-													<td class="scriptcol1">8</td>
-													<td class="scriptcol2">Script Name</td>
-													<td class="scriptcol3">
-														<button>Use</button>
-														<button>Clear</button>
-													</td>					
-												</tr>																																					
+												</tr>
 										</tbody>		
 									</table>	
 								</div> 
@@ -289,30 +286,30 @@
 								</div>
 								<!-- box-content -->
 								<div class="box-content" id="sample_test">
-								<table>
+									<table class="table table-striped table-condensed">
+										<tbody>
 											<tr>
-											<th>Variable Name</th>
-											<th>Value</th>
+												<th>Variable Name</th>
+												<th>Value</th>
 											</tr>
 											<tr>
-											<td>Var 1</td>
-											<td><input type="text"/>  <i class="icon-remove"></i> </td>
+												<td>Var 1</td>
+												<td><input type="text"/>  <i class="icon-remove"></i> </td>
 											</tr>
 											<tr>
-											<td>Var 2</td>
-											<td> <input type="text"/>  <i class="icon-remove"></i> </td>
+												<td>Var 2</td>
+												<td> <input type="text"/>  <i class="icon-remove"></i> </td>
 											</tr>
 											<tr>
-												<td></td>
-												<td><button class="btn"> Add Variables</button>  <button class="btn"> Test</button></td>
+												<td> </td>
+												<td><button class="btn"><i class="icon-plus-sign"></i> Add Variables</button>  <button class="btn"><i class="icon-pencil"></i> Test</button></td>
 											</tr>
 											<tr>
-											<td><br /> <strong>Test Result</strong> </td>
-											<td><br /> <strong>Y/N </strong></td>
+												<td><strong>Test Result</strong> </td>
+												<td><strong><span class="label label-success">Yes</span>   <span class="label label-danger">No</span> </strong></td>
 											</tr>
-											</table>
-											
-											
+										</tbody>
+									</table>
 								</div> 
 							</div>
 						</div>
@@ -321,7 +318,7 @@
 			</div> <!-- end of .container-fluid -->
 			
 			<div class="boxes" id="bottomNav">
-				<div class="box-title">
+				<div class="box-title script-edit">
 					<h2 class="box-title-text">
 						<i class="icon-edit"></i>
 						<span class="break"></span>
@@ -329,11 +326,11 @@
 					</h2>
 
 					<div class="box-title-btn">
-						<a href="#" class="script-edit nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Show / Hide"><i class="icon-chevron-down"></i></a>
+						<a href="#"  class="nav-tooltip" data-toggle="tooltip" data-placement="top" title="Show / Hide Script Editor"><i class="icon-chevron-down arrow"></i></a>
 					</div>
 				</div>
 									
-				<div class="box-content">
+				<div class="box-content" style="display: none;">
 					<div class="row-fluid">
 						<div class="span8" id="editor_space">
 							<div class="row-fluid" >
@@ -380,7 +377,7 @@
 								</div>
 							</div>
 							
-							<button class="btn pull-right btn-primary">Grammer Check</button>
+							<button class="btn pull-right">Grammer Check</button>
 						</div>
 						
 						<div class="span4">

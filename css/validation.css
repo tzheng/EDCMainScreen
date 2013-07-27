@@ -20,42 +20,90 @@
 /* style for list of CRFs */ 
 #crf_list {
 	min-height:	550px;
+	overflow-y:	scroll;
+	padding:	0px;
 }
-
-	#crf_list ul li {
-		list-style:	none;
+	#crf_list ul {
+		margin-left:	0px;	
 	}
-
+	
+		#crf_list ul li {
+			padding-left:	10px;
+			list-style:		none;
+			line-height:	30px;
+			border-bottom: 	1px solid #DDDDDD;
+		}
+		
+		#crf_list ul li:hover {
+			cursor:			pointer;
+			background:		#F0F8FF;
+			font-weight:	bold;
+		}
+		
 /* style for variable for list*/
 #variable_list {
 	height: 260px;
 }
 	#variable_list ul {
-		margin-top:	10px;
+		margin-top:		0px;
+		margin-left:	0px;
 	}
-	#variable_list ul li {
-		list-style: none;
-	}
+		#variable_list ul li {
+			list-style: none;
+			padding-left: 	10px;
+			border-bottom:  1px solid #DDDDDD;
+			line-height: 	25px;
+		}
+		/**
+		#variable_list ul li:nth-child(odd) {
+			background-color:	#EFEFEF;
+		}
+		**/
+		#variable_list ul li:hover {
+			cursor: 	pointer;
+			background:		#F0F8FF;
+			font-weight: 	bold;
+		}
 
 	#variable_list_left {
-		background-color: 	#EFEFEF;
 		overflow-y: 		scroll;
 		border-radius:		2px;
 		height: 			250px;
+		border:		1px solid #DDDDDD;
 	}
-
+	
+	#variable_list .container-fluid {
+		padding-left: 	0px;
+		padding-right:	0px;
+	}
 
 /* style for common use script*/
 #common_use {
-	height:	230px;
+	height:		230px;
+	overflow-y:	auto;
+	padding-top:	0px;
 }
 
-
-
+	#sort_by {
+		margin-bottom: 	0px;
+	}
+	
+	#common_use .btn {
+		margin-left: 5px;
+	}
 /* style for sample data test*/
 #sample_test {
-	height: 230px;
+	height: 		230px;
+	padding:		0px;
+	overflow-y: 	auto;
 }
+
+	#sample_test table {
+		margin-top:	-1px;
+	}
+		#sample_test table input {
+			margin-bottom:	0px;
+		}
 
 
 /*style for Script editor space */
@@ -75,6 +123,9 @@
 		overflow-y:	scroll;
 	}
 
+	.script-edit:hover {
+		cursor: pointer;
+	}
 
 
 /*style for footer*/

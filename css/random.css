@@ -9,15 +9,17 @@
 	}
 	
 	#strata_para {
-		margin-left:	100px;
-		clear: both;	
+		margin-left:	40px;
+		margin-bottom:	10px;
+		padding-left:	20px;
+		clear: 			both;
+		background-color: #EFEFEF;
 	}
 	
 	.one_parameter {
-		margin-left: 		40px;	
+		margin-left: 		20px;	
 		clear: 				both;
-		margin-bottom:		5px;
-		
+		margin:				5px;
 	}
 	
 	.one_parameter_right {
@@ -27,4 +29,11 @@
 	
 	.para_ul li {
 		list-style: none;
+		float: 		left;
+		margin-right:	10px;
+		line-height:	30px;
+		
+	}
+	.para_ul {
+		margin-bottom:	0px;
 	}
