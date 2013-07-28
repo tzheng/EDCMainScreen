@@ -107,8 +107,14 @@
 
 
 /*style for Script editor space */
+
+.script-edit:hover {
+	font-weight: 	bold;
+	background:		#dFdFdF;
+}
+
 #editor_space {
-	border-right:	1px solid #DDDDDD;
+	/*border-right:	1px solid #DDDDDD; */
 }
 
 	.editor-btn {
@@ -118,6 +124,10 @@
 	#code-area {
 		margin-top: 0px;
 	}
+	
+		#grammer_check {
+			margin-top:	5px;
+		}
 	#code {
 		border-right: 1px solid #DDDDDD;
 		overflow-y:	scroll;
@@ -126,6 +136,13 @@
 	.script-edit:hover {
 		cursor: pointer;
 	}
+	
+	#grammer-check-result {
+		height: 	290px;
+		border-radius:	5px;
+		border:		1px solid #DDDDDD;
+		overflow-y: auto;
+	}
 
 
 /*style for footer*/
@@ -133,15 +150,4 @@
 	margin-bottom: 40px;
 }
 
-.scriptcol1 {
-	width: 40px;
-	text-align: center;
-}
 
-.scriptcol2 {
-width: 280px;
-text-align: center;
-}
-.scriptcol3 {
-width: 90px;
-}

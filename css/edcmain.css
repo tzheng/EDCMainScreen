@@ -48,6 +48,7 @@
 	#reminder-list {
 		margin-top:	5px;
 		height: 	160px;
+		text-overflow: ellipsis;
 	}
 	#reminder-list input {
 		margin-top:	0px;

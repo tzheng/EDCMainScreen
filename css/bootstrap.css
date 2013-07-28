@@ -848,7 +848,8 @@ ol.inline > li {
 }
 
 dl {
-  margin-bottom: 20px;
+  margin-bottom: 	5px;
+  margin-top:		5px;
 }
 
 dt,
@@ -881,7 +882,7 @@ dd {
 
 .dl-horizontal dt {
   float: left;
-  width: 160px;
+  width: 55px;
   overflow: hidden;
   clear: left;
   text-align: right;
@@ -889,8 +890,12 @@ dd {
   white-space: nowrap;
 }
 
+.dl-horizontal:nth-child(odd) {
+	background: #EFEFEF;
+}
+
 .dl-horizontal dd {
-  margin-left: 180px;
+  margin-left: 70px;
 }
 
 hr {
