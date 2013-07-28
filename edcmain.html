@@ -18,6 +18,8 @@
 		<!-- CSS Framework - Bootstrap, stroll.css -->
 		<link rel="stylesheet" href="css/bootstrap.css" />
 		<link rel="stylesheet" href="css/jquery.gritter.css"/>
+		<link rel="stylesheet" href="css/chosen.css" />
+		<link rel="stylesheet" href="css/datepicker.css" />
 		<!-- <link rel="stylesheet" href="css/datatable.css" /> -->
 		
 	</head>
@@ -255,11 +257,89 @@
 											</div> <!-- .span3 -->
 										</div>
 										  
-										<div class="row-fluid span12" id="filter-box" style="display: none;">
-											<h5>Filter</h5>
-											<div>
-												
-											</div>
+										<div class="row-fluid span12" id="filter-box">
+												<div class="left">
+													<ul>
+														<!--filter for Gender and Age --->
+														<li>
+															<ul class="list-inline">
+																<li>
+																	<strong>Gender</strong>
+																	<select class="input-small" class="chzn-select">
+																		<option value=""></option>
+																		<option value="">Male</option>
+																		<option value="">Female</option>
+																	</select>
+																</li>
+																<li>
+																	<strong>Age</strong>
+																	<input type="text" class="input-age" placeholder="From" /> - 
+																	<input type="text" class="input-age" placeholder="To"/>
+																</li>
+															</ul>
+														</li>
+														<!-- Filter for Status -->
+														<li>
+															<ul class="list-inline">
+																<li>
+																	<strong>Status</strong>
+																	<select data-placeholder="Choose a Status" class="chzn-select" multiple style="width: 247px;">
+																		<option value=""></option>
+																		<option value="">Enrolled</option>
+																		<option value="">Drop</option>
+																		<option value="">Fail</option>
+																	</select>
+																</li>
+															</ul>
+																
+														</li>
+													</ul>
+												</div>
+												<div class="left">
+													<ul>
+														<li>
+															<ul class="list-inline">
+																<li>
+																	<strong>Query Existance</strong>
+																	<select data-placeholder="Query Exist?" class="chzn-select" multiple style="width: 140px;">
+																		<option value=""></option>
+																		<option value="">Yes</option>
+																		<option value="">No</option>
+																	</select>
+																</li>
+																<li>
+																	<strong>Last Modified Date</strong>
+																	<input type="text" class="input-small datepicker" placeholder="MM/DD/YYYY" /> - 
+																	<input type="text" class="input-small datepicker" placeholder="MM/DD/YYYY" />
+																</li>
+															</ul>
+															
+															
+														</li>
+														
+														<li>
+															<ul class="list-inline">
+																<li>
+																	<strong>In Charge Person</strong>
+																	<select data-placeholder="Choose a Status" class="chzn-select" multiple style="width: 500px;">
+																		<option value=""></option>
+																		<option value="">CRC001</option>
+																		<option value="">CRC002</option>
+																		<option value="">CRC003</option>
+																		<option value="">CRC004</option>
+																		<option value="">CRC005</option>
+																		<option value="">CRC006</option>
+																		<option value="">CRC007</option><br />
+																	</select>
+																</li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+												<div class="right" id="hide-filter">
+													<a href="#" class="btn">Apply</a>
+													<a href="#" class="btn" id="hide-filter-btn">Hide Filter</a>
+												</div>
 										</div> <!-- end of #filter-box -->
 									</div>
 								</div> <!-- .search-menu -->
@@ -516,9 +596,12 @@
     	<script src="js/bootstrap-tooltip.js"></script>
     	<script src="js/bootstrap-popover.js"></script>
     	<script src="js/jquery.gritter.min.js"></script>
+    	<script src="js/chosen.jquery.min.js"></script>
+    	
     	<script src="js/template.js"></script>
     	<script src="js/edcmain.js"></script>
     	<script src="js/jquery-ui.js"></script>
+    	<script src="js/bootstrap-datepicker.js"></script>
     	
 	</body>
 </html>

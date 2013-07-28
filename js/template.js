@@ -30,6 +30,12 @@ $(document).ready(function(){
   	
 	/*make <div> sortablt, so that user can move div to any place they want*/
 	$(".sortable").sortable();
+	
+	/*multiple select function */
+	$(".chzn-select").chosen();
+	
+	/*date picker*/
+	$('.datepicker').datepicker();
 });
 
    //fold and unfold div boxes
@@ -43,6 +49,10 @@ $(document).ready(function(){
    
    //show/hide filter div for EDC Main screen
 	$("#filter-trigger").click(function(){
+		$("#filter-box").toggle('slow');
+	});
+	
+	$('#hide-filter-btn').click(function(){
 		$("#filter-box").toggle('slow');
 	});
 	

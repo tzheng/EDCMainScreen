@@ -39,6 +39,10 @@
 			background:		#F0F8FF;
 			font-weight:	bold;
 		}
+		.form-active {
+			background:		#F0F8FF;
+			font-weight:	bold;
+		}
 		
 /* style for variable for list*/
 #variable_list {
