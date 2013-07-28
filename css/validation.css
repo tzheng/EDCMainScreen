@@ -68,6 +68,7 @@
 			background:		#F0F8FF;
 			font-weight: 	bold;
 		}
+		
 
 	#variable_list_left {
 		overflow-y: 		scroll;
@@ -81,6 +82,31 @@
 		padding-right:	0px;
 	}
 
+	#variable-rules dl {
+		background: 	none;
+		margin-bottom:	0px;
+	}
+		#variable-rules dl dt {
+			line-height:30px;
+			text-align:	left;
+			width: 		110px;
+			font-weight: normal;
+		}
+		#variable-rules dl dd {
+		}
+		
+		#dd_question {
+			width: 600px;
+		}
+		
+		#dd_question .input-large {
+			width: 500px;
+		}
+		
+	.rule-inline dl {
+		width: 300px;	
+	}
+	
 /* style for common use script*/
 #common_use {
 	height:		230px;
@@ -108,7 +134,9 @@
 		#sample_test table input {
 			margin-bottom:	0px;
 		}
-
+	#sample_test .chzn-select {
+		width:	120px;
+	}
 
 /*style for Script editor space */
 

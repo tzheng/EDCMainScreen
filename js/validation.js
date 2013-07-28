@@ -23,3 +23,31 @@
    $(".CodeMirror-scroll").hover(function(){  
        $(this).get(0).style.cursor = "text";  
    });  
+   
+    
+    //function for Sample test
+    var elementCount = 0; 
+	function AddLine(){     
+        var TemO=document.getElementById("sample_test_input");     
+        var newInput = document.createElement("tr");      
+          
+        elementCount = elementCount + 1;     
+          
+        //动态生成id。  
+        newInput.id="input"+(elementCount);     
+        
+        newInput.innerHTML = '<tr>' 
+							+	'<td>'
+							+		'<select data-placeholder="Variable..." class="chzn-select">'
+							+				 	'<option value=""></option>'
+							+		 		 	'<option value="age">Age</option>'
+							+		 		 	'<option value="gender">Gender</option>'
+							+		 		 	'<option value="pregnent">Pregnent</option>'
+							+		'</select>'
+							+	'</td>'
+							+	'<td> <input type="text"/>  <i class="icon-remove"></i> </td>'
+							+	'</tr>';
+             
+        TemO.appendChild(newInput);     
+        $(".chzn-select").chosen();
+    }     
