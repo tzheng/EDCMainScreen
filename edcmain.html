@@ -11,16 +11,16 @@
 		<meta name="description" content="This is a page template for reference" />
 		<meta name="author" content="Team Samsung SCTS" />
 		
-		<!-- customize css file -->
-		<link rel="stylesheet" href="css/template.css" />
-		<link rel="stylesheet" href="css/edcmain.css" />
-		
 		<!-- CSS Framework - Bootstrap, stroll.css -->
 		<link rel="stylesheet" href="css/bootstrap.css" />
 		<link rel="stylesheet" href="css/jquery.gritter.css"/>
 		<link rel="stylesheet" href="css/chosen.css" />
 		<link rel="stylesheet" href="css/datepicker.css" />
 		<!-- <link rel="stylesheet" href="css/datatable.css" /> -->
+		
+		<!-- customize css file -->
+		<link rel="stylesheet" href="css/template.css" />
+		<link rel="stylesheet" href="css/edcmain.css" />
 		
 	</head>
 
@@ -80,14 +80,17 @@
 		<div class="mainbody">
 			<div class="container-fluid sortable">
 				<div class="row-fluid">
+					<div class="span12 boxes">
+						<div class="box-title">
+							<a href="edcmain.html"><i class="icon-home"></i> Main Screen</a> 
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid sortable">
+				<div class="row-fluid">
 					<div class="span12">
-							<div class="row-fluid">
-								<div class="span12 boxes">
-									<div class="box-title">
-										<a href="edcmain.html"><i class="icon-home"></i> Main Screen</a> 
-									</div>
-								</div>
-							</div>
+							
 							<div class="row-fluid sortable">
 								<!-- Display General Information of Clinical Trail -->								
 								<div class="span6 boxes">
@@ -113,10 +116,10 @@
 												 	<strong>Site:</strong> UPMC Pittsburgh Hospital &nbsp;&nbsp;
 												 	<strong>ID:</strong>	2013-000-001 <br />
 												 	<strong>Location:</strong> Pittsburgh, PA, United Stated of America &nbsp;&nbsp;
-												 	
 												</div>
+												
 												<!-- Display Study Information -->
-												<div class="row-fluid">
+												<div class="row-fluid" style="margin-top: -10px;">
 													<div class="span12">
 														<div class="progress study-progress">
 															<div class="bar" style="width: 66.67%">Registered: 80</div> 
@@ -125,8 +128,6 @@
 														<div class="study-desc">
 															<strong>Target Subject:</strong> 120 &nbsp;&nbsp;&nbsp;
 															<strong>Subject Registered:</strong> 80
-															
-															<button class="btn pull-right"><i class="icon-plus-sign"></i> Register New Subject</button>
 														</div>
 														
 														<div class="progress study-progress" id="screen_status">
@@ -138,6 +139,7 @@
 															<strong>Screen Fail:</strong> 30
 														</div>
 														
+														<button class="btn btn-primary pull-right" style="margin-top: -10px;"><i class="icon-plus-sign icon-white"></i> Register New Subject</button>
 														
 													</div>
 												</div> <!-- End of Study Information -->
@@ -258,6 +260,7 @@
 										</div>
 										  
 										<div class="row-fluid span12" id="filter-box">
+											<div class="span12">
 												<div class="left">
 													<ul>
 														<!--filter for Gender and Age --->
@@ -336,10 +339,13 @@
 														</li>
 													</ul>
 												</div>
-												<div class="right" id="hide-filter">
-													<a href="#" class="btn">Apply</a>
-													<a href="#" class="btn" id="hide-filter-btn">Hide Filter</a>
+												
+												<div id="hide-filter" class="pull-right">
+													<a href="#" class="" id="hide-filter-btn"><strong><i class="icon-chevron-up"></i> Hide Filter</strong> </a>
 												</div>
+											</div>
+											
+											
 										</div> <!-- end of #filter-box -->
 									</div>
 								</div> <!-- .search-menu -->

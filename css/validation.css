@@ -123,13 +123,13 @@
 	}
 /* style for sample data test*/
 #sample_test {
-	height: 		230px;
+	min-height: 	230px;
 	padding:		0px;
-	overflow-y: 	auto;
 }
 
 	#sample_test table {
-		margin-top:	-1px;
+		margin-top:		-1px;
+		margin-bottom:	0px;
 	}
 		#sample_test table input {
 			margin-bottom:	0px;

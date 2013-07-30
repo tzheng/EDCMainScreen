@@ -33,7 +33,7 @@
           
         elementCount = elementCount + 1;     
           
-        //动态生成id。  
+         
         newInput.id="input"+(elementCount);     
         
         newInput.innerHTML = '<tr>' 

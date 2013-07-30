@@ -8,8 +8,7 @@ $(document).ready(function () {
 });
 
 
-var elementCount = 0;   
-    
+	var elementCount = 0;   
     function AddElement(){     
         var TemO=document.getElementById("strata_para");     
         var newInput = document.createElement("div");      
@@ -19,17 +18,22 @@ var elementCount = 0;
         //动态生成id。  
         newInput.id="input"+(elementCount);     
         
-        newInput.innerHTML = '<div class="one_parameter span4">' 
+        newInput.innerHTML = '<div class="one_parameter span12">' 
 							+				'<div class="left">'
-							+					'<select class="input-small">'
-							+						'<option>Age</option>'
-							+						'<option>Gender</option>'
+							+					'<select class="input-small" class="chzn-select">'
+							+						'<option value=""></option>'
+							+						'<option value="age">Age</option>'
+							+						'<option value="gender">Gender</option>'
 							+					'</select>' 
 							+				'</div>'
 							+				'<div class="one_parameter_right">'
+							+					'<ul class="para_ul left">'
+							+							'<li>Male</li>'
+							+							'<li>Female</li>'
+							+						'</ul>'
 							+               '</div>'
 							+'</div>';
-             
+							
         TemO.appendChild(newInput);     
              
         var newline= document.createElement("br");   
@@ -37,9 +41,47 @@ var elementCount = 0;
         newline.id = "br"+(elementCount);   
           
         TemO.appendChild(newline);     
+        /*multiple select function */
+		$(".chzn-select").chosen();
+    }     
+    
+    var elementCount1 = 0;   
+    function AddElement1(){     
+        var TemO=document.getElementById("strata_para1");     
+        var newInput = document.createElement("div");      
+          
+        elementCount1 = elementCount1 + 1;     
+          
+        //动态生成id。  
+        newInput.id="input1"+(elementCount1);     
+        
+        newInput.innerHTML = '<div class="one_parameter span12">' 
+							+				'<div class="left">'
+							+					'<select class="input-small" class="chzn-select">'
+							+						'<option value=""></option>'
+							+						'<option value="age">Age</option>'
+							+						'<option value="gender">Gender</option>'
+							+					'</select>' 
+							+				'</div>'
+							+				'<div class="one_parameter_right">'
+							+					'<ul class="para_ul left">'
+							+							'<li>Male</li>'
+							+							'<li>Female</li>'
+							+						'</ul>'
+							+               '</div>'
+							+'</div>';
+							
+        TemO.appendChild(newInput);     
+             
+        var newline= document.createElement("br");   
+          
+        newline.id = "br"+(elementCount);   
+          
+        TemO.appendChild(newline);     
+        /*multiple select function */
+		$(".chzn-select").chosen();
     }     
       
-    //动态删除表单元素。     
     function delElement(mytype){     
         var TemO=document.getElementById("add");     
           

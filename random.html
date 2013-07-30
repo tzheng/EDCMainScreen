@@ -11,14 +11,15 @@
 		<meta name="description" content="This is a page template for reference" />
 		<meta name="author" content="Team Samsung SCTS" />
 		
-		<!-- customize css file -->
-		<link rel="stylesheet" href="css/template.css" />
-		<link rel="stylesheet" href="css/random.css" />
 		<!-- CSS Framework - Bootstrap, stroll.css -->
 		<link rel="stylesheet" href="css/bootstrap.css" />
 		<link rel="stylesheet" href="css/jquery.gritter.css"/>
+		<link rel="stylesheet" href="css/chosen.css" />
 		<!-- <link rel="stylesheet" href="css/datatable.css" /> -->
 		
+		<!-- customize css file -->
+		<link rel="stylesheet" href="css/template.css" />
+		<link rel="stylesheet" href="css/random.css" />
 	</head>
 
 	<body>
@@ -166,21 +167,6 @@
 									<div class="row-fluid">
 										<div id="strata_para" class="span10">
 											
-											<div class="one_parameter span12"> 
-												<div class="left">
-													<select class="input-small">
-														<option>Age</option>
-														<option>Gender</option>
-													</select> 
-												</div>
-												
-												<div class="one_parameter_right">
-													<ul class="para_ul left">
-														<li>Male</li>
-														<li>Female</li>
-													</ul>
-												</div>
-											</div>
 										</div>
 									</div>
 									
@@ -189,15 +175,40 @@
 											<button type="submit" class="btn">Save Parameters</button>
 										</div>
 									</div>
-									
-									
-									
-							      
 	
 								</div>
 								
 								<div id="option4" class="group">
-									Test 4
+									<div class="control-group">
+										 <label class="control-label" for="inputGrp1">Number of Group</label>
+										<div class="controls">
+											<input type="text" id="inputGrp2" />
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="blockSize">Block Size</label>
+										<div class="controls">
+											<input type="text" id="blockSize2" />
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label">Strata</label>
+										<div class="controls">
+											<input name="" class="btn btn-primary" type="button" value="Add Strata" onClick="AddElement1()" /> 
+										</div>
+									</div>
+									
+									<div class="row-fluid">
+										<div id="strata_para1" class="span10">
+											
+										</div>
+									</div>
+									
+									<div class="control-group">
+										<div class="controls">
+											<button type="submit" class="btn">Save Parameters</button>
+										</div>
+									</div>
 								</div>
 								
 							</form>
@@ -223,8 +234,10 @@
     	<script src="js/bootstrap-tooltip.js"></script>
     	<script src="js/bootstrap-popover.js"></script>
     	<script src="js/jquery.gritter.min.js"></script>
-    	<script src="js/template.js"></script>
+    	<script src="js/chosen.jquery.min.js"></script>
     	<script src="js/random.js"></script>
+    	<script src="js/template.js"></script>
+    	
     	<script src="js/jquery-ui.js"></script>
     	
 	</body>

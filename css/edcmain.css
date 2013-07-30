@@ -36,7 +36,7 @@
 	
 }
 	#screen_status {
-		margin-top: 30px;
+		margin-top: 10px;
 	}
 
 .bar-default {
@@ -143,10 +143,9 @@
 			.input-age {
 				width: 35px;
 			}
-		
+			
 			#hide-filter {
-				margin-top:	40px;
-				margin-right:	10px;
+				margin-right:	185px;
 			}
 			
 /* style for subject table*/

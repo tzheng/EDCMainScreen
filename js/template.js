@@ -50,6 +50,8 @@ $(document).ready(function(){
    //show/hide filter div for EDC Main screen
 	$("#filter-trigger").click(function(){
 		$("#filter-box").toggle('slow');
+		
+		$(".chzn-select").chosen();
 	});
 	
 	$('#hide-filter-btn').click(function(){
