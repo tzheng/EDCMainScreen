@@ -11,20 +11,16 @@
    				$("#validation-footer").css("margin-bottom","380px");
    			} 					   
 		$target.slideToggle();
-		
+		var editor = CodeMirror.fromTextArea(document.getElementById("code"), {  
+	       lineNumbers: true,  
+	       extraKeys: {"Ctrl-Space": function(cm) {CodeMirror.simpleHint(cm, CodeMirror.javascriptHint);}}  
+	   });  
+	   $(".CodeMirror-scroll").hover(function(){  
+	       $(this).get(0).style.cursor = "text";  
+	   }); 
    });
    
    
-   //java script for code.
-	var editor = CodeMirror.fromTextArea(document.getElementById("code"), {  
-       lineNumbers: true,  
-       extraKeys: {"Ctrl-Space": function(cm) {CodeMirror.simpleHint(cm, CodeMirror.javascriptHint);}}  
-   });  
-   $(".CodeMirror-scroll").hover(function(){  
-       $(this).get(0).style.cursor = "text";  
-   });  
-   
-    
     //function for Sample test
     var elementCount = 0; 
 	function AddLine(){     
@@ -34,7 +30,7 @@
         elementCount = elementCount + 1;     
           
          
-        newInput.id="input"+(elementCount);     
+        newInput.id="variable"+(elementCount);     
         
         newInput.innerHTML = '<tr>' 
 							+	'<td>'
@@ -45,9 +41,15 @@
 							+		 		 	'<option value="pregnent">Pregnent</option>'
 							+		'</select>'
 							+	'</td>'
-							+	'<td> <input type="text"/>  <i class="icon-remove"></i> </td>'
+							+	'<td> <input type="text"/>  <a href="#" onclick="DelLine(\'variable'+elementCount+'\')"> <i class="icon-remove"></i> </a> </td>'
 							+	'</tr>';
              
         TemO.appendChild(newInput);     
         $(".chzn-select").chosen();
     }     
+    
+	function DelLine(lineId) {
+		var tempD = document.getElementById(lineId);
+		tempD.remove();
+	}
+

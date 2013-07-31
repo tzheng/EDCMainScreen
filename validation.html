@@ -22,8 +22,6 @@
 		<link rel="stylesheet" href="css/chosen.css"/>
 		<!-- <link rel="stylesheet" href="css/datatable.css" /> -->
 		
-		<script src="js/codemirror.js"></script>
-		<script src="js/scripteditor/javascript.js"></script>
 	</head>
 
 	<body>
@@ -326,7 +324,8 @@
 												<th>Variable Name</th>
 												<th>Value</th>
 											</tr>
-											<tr>
+											
+											<tr id="variable0">
 												<td>
 													<select data-placeholder="Variable..." class="chzn-select">
 												  		 	<option value=""></option>
@@ -335,8 +334,9 @@
 												  		 	<option value="pregnent">Pregnent</option>
 												  	</select>
 												</td>
-												<td><input type="text"/>  <i class="icon-remove"></i> </td>
+												<td><input type="text"/> <a href="#" onclick="DelLine('variable0')"><i class="icon-remove"></i></a> </td>
 											</tr>
+											
 										</tbody>
 									</table>
 									<table class="table table-condensed">
@@ -413,10 +413,11 @@
 								<div class="span12">
 								 <!--	<textarea rows="10" id="editor_input"></textarea>
 									<div style="width: 400px; height: 200px;" contenteditable></div>  -->
-									<textarea id="code"></textarea>
+									<textarea id="code">//type your script here</textarea>
 								</div>
 							</div>
 							
+							<button class="btn pull-right btn-primary" id="grammer_check">Save Script</button>
 							<button class="btn pull-right" id="grammer_check">Grammer Check</button>
 						</div>
 						
@@ -475,11 +476,15 @@
     	<script src="js/bootstrap-dropdown.js"></script>
     	<script src="js/bootstrap-tooltip.js"></script>
     	<script src="js/bootstrap-popover.js"></script>
+    	
+		<script src="js/codemirror.js"></script>
+		<script src="js/scripteditor/javascript.js"></script>
     	<script src="js/jquery.gritter.min.js"></script>
     	<script src="js/chosen.jquery.min.js"></script>
     	
     	<script src="js/template.js"></script>
     	<script src="js/validation.js"></script>
+    	
     	<script src="js/jquery-ui.js"></script>
     	
 	</body>
