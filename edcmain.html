@@ -83,6 +83,21 @@
 					<div class="span12 boxes">
 						<div class="box-title">
 							<a href="edcmain.html"><i class="icon-home"></i> Main Screen</a> 
+							
+							<div class="box-title-btn">
+								Quick Links 
+								<a href="#general-info" class="nav-tooltip shortcut" data-toggle="tooltip" data-placement="bottom" title="Show Clinical Trail Information">
+									<i class="icon-info-sign"></i> Clinical Trail Information
+								</a>
+								
+								<a href="#general-info" class="nav-tooltip shortcut" data-toggle="tooltip" data-placement="bottom" title="Show Reminders">
+									<i class="icon-tasks"></i> Reminders
+								</a>
+								
+								<a href="#filter-box" class="nav-tooltip shortcut" data-toggle="tooltip" data-placement="bottom" title="Show Subject List">
+									<i class="icon-user"></i> Subject List
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -393,9 +408,9 @@
 										
 										<!-- Middle part of subject matrix table, display visits -->
 										<div id="subject-table-middle">
-											<div style="width: 1000px;">
+											<div style="min-width: 1000px;">
 												<div class="bs-docs-example">
-										            <ul id="myTab" class="nav nav-tabs nav-tab-main">
+										            <ul id="myTab" class="nav nav-tabs nav-tab-main" style="margin-bottom: 0px;">
 										              <li class="active"><a href="#screen" data-toggle="tab">Screen</a></li>
 										              <li><a href="#v1" data-toggle="tab">Visit 1</a></li>
 										              <li><a href="#v2" data-toggle="tab">Visit 2</a></li>
@@ -403,6 +418,7 @@
 										            </ul>
 										            <div id="myTabContent" class="tab-content tab-content-main">
 										            	<div class="tab-pane fade in active" id="screen">
+										            		<p class="visit-date">Visit Date: 2013-07-10</p> 
 															<ul class="visits">
 																<li class="visit-row">
 																	<ul class="visit-column">
@@ -433,6 +449,7 @@
 										              	
 										              	<!-- content for V1 Tab-->
 										              	<div class="tab-pane fade" id="v1">
+										              		<p class="visit-date">Visit Date: 2013-07-15</p> 
 										              		<ul class="visits">
 																<li class="visit-row">
 																	<ul class="visit-column">
@@ -462,6 +479,7 @@
 										              	</div> <!-- end of v1  -->
 										              	
 										              	<div class="tab-pane fade" id="v2">
+										              		<p class="visit-date">Visit Date: 2013-07-20</p> 
 										              		<ul class="visits">
 																<li class="visit-row">
 																	<ul class="visit-column">
@@ -490,6 +508,7 @@
 															</ul>
 										              	</div>
 										              	<div class="tab-pane fade" id="v3">
+										              		<p class="visit-date">Visit Date: 2013-07-25</p> 
 										              		<ul class="visits">
 																<li class="visit-row">
 																	<ul class="visit-column">

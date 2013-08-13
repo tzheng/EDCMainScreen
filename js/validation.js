@@ -1,4 +1,5 @@
    //fold and unfold div boxes
+   var init = 0;
    $(".script-edit").click(function(){
    		var $target = $(this).next('.box-content');
    		
@@ -9,15 +10,19 @@
    			} else {
    				$('.arrow',$(this)).removeClass('icon-chevron-down').addClass('icon-chevron-up');
    				$("#validation-footer").css("margin-bottom","380px");
-   			} 					   
-		$target.slideToggle();
-		var editor = CodeMirror.fromTextArea(document.getElementById("code"), {  
-	       lineNumbers: true,  
-	       extraKeys: {"Ctrl-Space": function(cm) {CodeMirror.simpleHint(cm, CodeMirror.javascriptHint);}}  
-	   });  
-	   $(".CodeMirror-scroll").hover(function(){  
-	       $(this).get(0).style.cursor = "text";  
-	   }); 
+   			} 	
+   		$target.slideToggle();
+   						   
+		if (init == 0) {
+			var editor = CodeMirror.fromTextArea(document.getElementById("code"), {  
+		       lineNumbers: true,  
+		       extraKeys: {"Ctrl-Space": function(cm) {CodeMirror.simpleHint(cm, CodeMirror.javascriptHint);}}  
+		   });  
+		   $(".CodeMirror-scroll").hover(function(){  
+		       $(this).get(0).style.cursor = "text";  
+		   }); 
+		   init = init + 1;
+		}
    });
    
    

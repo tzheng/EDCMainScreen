@@ -18,6 +18,23 @@
 	margin-right:	30px;
 }
 
+.shortcut {
+	margin-right:	10px;	
+	margin-left:	10px;
+	font-size:		16px;
+	padding-top:	10px;
+	padding-bottom:	10px;
+	text-decoration:none;
+	color:			rgb(100,109,105);
+}
+	.shortcut:hover {
+		background:			#EFEFEF;
+		text-decoration:	none;
+		font-weight: 		bold;
+		color:				rgb(100,109,105);
+	}
+	
+
 /*Style for general information*/
 .blue-header {
 	color:			#5990de;
@@ -241,9 +258,8 @@
 			  			min-width:		150px;
 			  			/*border-right: 	1px solid #DDDDDD;*/
 			  		}
-
 					.tab-content-main {
-						margin-top: 35px;
+						margin-top: 5px;
 					}
 	/**   Sytle for the right part of subject matrix **/
 		#subject-table-right {
@@ -260,11 +276,14 @@
 		
 	
 
-
+		.visit-date {
+			margin-left:	10px;
+			font-weight:	500;
+			margin-bottom:	7px;
+		}
 
 /** sytle for subject detail information page.   edcdetail.html**/
 	#subject-detail-info {
-		width:			500px;
 		margin-bottom:	10px;
 	}
 		#subject-detail-info .progress {
@@ -340,3 +359,42 @@
 	.form-listview tr:last-child td {
 		border-bottom: 1px solid #DDDDDD;
 	}
+
+
+	#subject-list {
+		max-width: 200px;
+	} 
+		#subject-list .box-content {
+			overflow-y: scroll;
+		}
+		
+	/* style for list of Subjects on the left side */ 
+	#crf_list {
+		overflow-y:	scroll;
+		min-height:	620px;
+		max-height:	800px;
+		padding:	0px;
+	}
+		#crf_list ul {
+			margin-left:	0px;	
+		}
+		
+			#crf_list ul li {
+				padding-left:	10px;
+				list-style:		none;
+				line-height:	30px;
+				border-bottom: 	1px solid #DDDDDD;
+			}
+			#crf_list ul li .label {
+				margin-left: 15px;
+			}
+			#crf_list ul li:hover {
+				cursor:			pointer;
+				background:		#F0F8FF;
+				font-weight:	bold;
+			}
+			.form-active {
+				background:		#F0F8FF;
+				font-weight:	bold;
+			}
+		

@@ -4,7 +4,17 @@ $(document).ready(function () {
     $('#selectMe').change(function () {
         $('.group').hide();
         $('#'+$(this).val()).show();
-    })
+    });
+    
+    $('.grpnum').change(function(){
+    	var $target = $(this).parent();
+        $target.append( "<p>Input Group Size for each Group</p>" );
+        var num = $(this).val();
+        for (var i=0; i<num; i++)
+        {
+             $target.append( "Group " +i+  "<input type=\"text\" class=\"grpnuminput\" name=\"grpnum" +i+ "\">" ); 
+        }
+    }); 
 });
 
 
@@ -32,17 +42,18 @@ $(document).ready(function () {
 							+							'<li>Female</li>'
 							+						'</ul>'
 							+               '</div>'
+							+         '<div class="pull-right" style="margin-right: 10px;"><a href="#" onclick="delElement("input1' + (elementCount1) + '")"> <i class="icon-remove"></i> </a></div>'
 							+'</div>';
 							
         TemO.appendChild(newInput);     
              
-        var newline= document.createElement("br");   
-          
-        newline.id = "br"+(elementCount);   
-          
+		document.getElementById("strata_count").value = elementCount;         
+		          
         TemO.appendChild(newline);     
         /*multiple select function */
 		$(".chzn-select").chosen();
+		
+		
     }     
     
     var elementCount1 = 0;   
@@ -57,7 +68,7 @@ $(document).ready(function () {
         
         newInput.innerHTML = '<div class="one_parameter span12">' 
 							+				'<div class="left">'
-							+					'<select class="input-small" class="chzn-select">'
+							+					'<select class="input-small" name="input'+elementCount1+'" class="chzn-select">'
 							+						'<option value=""></option>'
 							+						'<option value="age">Age</option>'
 							+						'<option value="gender">Gender</option>'
@@ -73,7 +84,8 @@ $(document).ready(function () {
 							+'</div>';
 							
         TemO.appendChild(newInput);     
-             
+        
+        document.getElementById("strata_count1").value = elementCount1;  
           
         TemO.appendChild(newline);     
         /*multiple select function */
@@ -83,3 +95,4 @@ $(document).ready(function () {
     function delElement(mytype){     
         document.getElementById("input11").removeNode(true);
     }     
+    

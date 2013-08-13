@@ -37,3 +37,9 @@
 	.para_ul {
 		margin-bottom:	0px;
 	}
+	
+	.grpnuminput {
+		width: 30px;
+		margin-left:	5px;
+		margin-right: 5px;
+	}

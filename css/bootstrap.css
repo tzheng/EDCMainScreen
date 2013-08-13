@@ -4069,7 +4069,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .nav-tabs > li {
-  margin-bottom: -1px;
+  margin-bottom: 2px;
 }
 
 .nav-tabs > li > a {
