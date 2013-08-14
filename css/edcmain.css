@@ -139,7 +139,25 @@
 		margin-bottom:	10px;
 		padding-top:	10px;
 		background: 	#efefef;
+		display: 		none;
 	}
+	
+	
+	#my_select1_chzn {
+	  /* This is the only width setting you'll need to change. */
+	  width: 247px !important;
+	}
+	#my_select2_chzn {
+	  /* This is the only width setting you'll need to change. */
+	  width: 140px !important;
+	}
+	#my_select3_chzn {
+	  /* This is the only width setting you'll need to change. */
+	  width: 500px !important;
+	}
+
+
+
 		#filter-box hr {
 			margin-top: 	5px;
 			margin-bottom: 	5px;
