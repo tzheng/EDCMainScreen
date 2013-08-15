@@ -1,0 +1,71 @@
+.login-box {
+	background:	#FFFFFF;
+	margin:		100px auto;
+	width: 		400px;
+	color: 		#AAAAAA;
+	border-radius:	2px;
+	box-shadow:	0px 1px 1px #dfdfdf;
+	overflow: 	hidden;
+	padding-bottom:	20px;
+}
+
+.login-box .title {
+	margin:	20px 15px;	
+}
+
+.login-box img {
+	margin-left:	15px;
+	margin-top:		25px;
+}
+
+.login-box h2 {
+	color:			#3a87ad;
+	margin-left:	30px;
+	font-family:	monaco;
+	font-weight: 	normal;
+	font-size:		16px;
+	line-height:	16px;
+}
+
+.login-box .input-prepend {
+	background: #fff;
+	width: 		100%;
+	text-align: center;
+	padding:	15px 0px;
+	border-left: 5px solid #fff;
+}
+
+.login-box .input-prepend-focus {
+	background-color:	#f0f7fd;
+	border-color: 		#d0e3f0;
+}
+
+.login-box .add-on {
+	border:			1px solid #eee !important;
+	background: 	#fff;
+	margin-left: 	-10px;
+	padding: 		10px;
+}
+
+.login-box input[type="text"], .login-box input[type="password"] {
+	border:		1px solid #eee !important;
+	color: 		#aaa;
+	box-shadow: none;
+	height: 	42px !important;
+}
+
+.login-box #remember {
+	font-weight: 	normal;
+	margin-top:		15px;
+	margin-left:	20px;
+}
+
+.login-box .btn-login {
+	float:			right;
+	margin-right:	20px;
+	margin-top:		15px;
+}
+
+.login-box .btn-login .btn {
+	width:	60px;
+}

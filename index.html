@@ -7,106 +7,76 @@
 		Remove this if you use the .htaccess -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-		<title>Template</title>
+		<title>Samsung - SCTS</title>
 		<meta name="description" content="This is a page template for reference" />
 		<meta name="author" content="Team Samsung SCTS" />
 		
+		<!-- CSS Framework - Bootstrap, stroll.css -->
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/jquery.gritter.css"/>
+		<link rel="stylesheet" href="css/chosen.css" />
+		<link rel="stylesheet" href="css/datepicker.css" />
+		<!-- <link rel="stylesheet" href="css/datatable.css" /> -->
+		
 		<!-- customize css file -->
 		<link rel="stylesheet" href="css/template.css" />
-		
-		<!-- CSS Framework - Bootstrap -->
-		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/demo.css"/>		
 		
 	</head>
 
 	<body>
 		
-		<!-- Header of the HTML Page, including Navigation Bar -->
-		<header class="nav-space fixed">
-		    <div class="nav-wrapper"></div> <!--Wrapper wrap the navbar, specify the background and opacity -->
-			
-			<div class="columns row-fluid">
-					<div class="topbar left" id="topbar-left">
-						<img class="logo-icon" src="img/nav_bar/blue-samsung-logo.png" />
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="row-fluid">
+					<div class="login-box">
+						<div class="title">
+							<img class="logo-icon" src="img/nav_bar/blue-samsung-logo.png" />
+						</div>						
+						<h2>Smart Clinical Trail System</h2>
+						<form class="form-horizontal">
+							<fieldset>
+								<div class="input-prepend" id="input-username">
+								  <span class="add-on"><i class="icon-user"></i></span>
+								  <input class="input-large span10" id="username" type="text" placeholder="Username">
+								</div>
+								
+								<div class="input-prepend" id="input-pwd">
+								  <span class="add-on"><i class="icon-lock"></i></span>
+								  <input class="input-large span10" id="password" type="password" placeholder="Password">
+								</div>
+								
+								<label class="checkbox" id="remember">
+							      <input type="checkbox"> Remember Me
+							    </label>
+								
+								<div class="btn-login">
+									<a href="index1.html" class="btn btn-primary">Login</a>
+								</div>
+								
+							</fieldset>
+						</form>
 					</div>
-					<div class="topbar left">
-						<span class="nav-title">Instruction</span>
-					</div>
-					
-					<div class="topbar right" id="topbar-right">
-				  			<!--display username-->
-		              		<ul class="nav">
-			                    <li id="fat-menu" class="dropdown">
-			                      <a href="#" id="drop1" role="button" class="dropdown-toggle" data-toggle="dropdown">
-				                      <span class="ca-icon">U</span> Barack Obama <b class="caret"></b>
-								  </a>
-			                      <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
-			                        <li role="presentation"><a role="menuitem" class="nav-item" tabindex="-1" href="#">Action</a></li>
-			                        <li role="presentation"><a role="menuitem" class="nav-item" tabindex="-1" href="#">Another action</a></li>
-			                      </ul>
-			                    </li>
-		                  	</ul>
-		                  	<!-- display configuration icon -->
-	                  		<ul class="nav" id="nav-conf">
-			                    <li class="dropdown">
-			                      <a href="#" id="drop2" role="button" class="dropdown-toggle nav-tooltip" data-toggle="dropdown" 
-			                      	data-toggle="tooltip" data-placement="bottom" title="Configurations">
-			                      	<span class="ca-icon">S</span>
-			                      </a>
-			                      <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
-			                        <li role="presentation"><a role="menuitem" class="nav-item" tabindex="-1" href="#">Profile</a></li>
-			                      </ul>
-			                    </li>
-		                  	</ul>
-		                  	<!-- dislpay message icon -->
-		                  	<ul class="nav" id="nav-msg">
-			                    <li class="dropdown">
-			                      <a href="#" id="add-regular" role="button" class="dropdown-toggle nav-tooltip" data-toggle="dropdown"
-			                     		data-toggle="tooltip" data-placement="bottom" title="Mssages">
-										<span class="ca-icon">@</span><sup><span class="label label-important hidden-phone">9</span></sup>
-								   </a>
-			                    </li>
-			                    
-		                  	</ul>
-		                  	<!-- display logout icon -->
-		                  	<ul class="nav">
-		                  		 <li class="dropdown">
-			                     	<a href="#" role="button" class="dropdown-toggle nav-tooltip logout-icon" data-toggle="dropdown"
-			                     		data-toggle="tooltip" data-placement="bottom" title="Logout">
-										<img src="img/logout.png" />
-								    </a>
-			                     </li>
-		                  	</ul>
-                  	</div>
+							
+				</div>
 			</div>
-		</header>
-		
-		
-		<!-- Start to Edit here, replace the div with other content -->
-		<div class="mainbody" style="margin-left: 20px; font-size: 16px; margin-top: 80px;">
-			Hi, This is the index page: <br />
-			
-			To visit EDC Main Screen, <a href="edcmain.html">Click Here</a> <br />
-			To visit EDC Detail Page, <a href="edcdetail-list.html">Click Here</a><br />
-			
-			To visit Validation Editor, <a href="http://validation-env.elasticbeanstalk.com/">Click Here</a><br />
-			To visit Randomization Tool, <a href="http://random-env.elasticbeanstalk.com/">Click Here</a><br />
-			
-			
-			
-		</div>
-		
-    	<!-- footer of the page -->
-    	<footer>
-    		
-    	</footer>
+		</div><!--/.fluid-container-->
+	 	
     	
     	<!-- javascripts -->
+    	<script src="http://code.jquery.com/jquery-1.9.0.js"></script>
     	<script src="js/jquery.min.js"></script>
     	<script src="js/bootstrap.js"></script>
     	<script src="js/bootstrap-dropdown.js"></script>
     	<script src="js/bootstrap-tooltip.js"></script>
     	<script src="js/bootstrap-popover.js"></script>
+    	<script src="js/jquery.gritter.min.js"></script>
+    	<script src="js/chosen.jquery.min.js"></script>
+    	
     	<script src="js/template.js"></script>
+    	<script src="js/edcmain.js"></script>
+    	<script src="js/jquery-ui.js"></script>
+    	<script src="js/bootstrap-datepicker.js"></script>
+    	<script src="js/demo.js"></script>
 	</body>
 </html>

@@ -18,6 +18,10 @@ $(document).ready(function(){
       return $('#popover_content_wrapper').html();
     }
   });
+  
+  $('.logout-icon').click(function(){
+  	 window.location = "index.html";
+  });
 });
 
 $(document).ready(function(){
