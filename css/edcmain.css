@@ -416,3 +416,6 @@
 				font-weight:	bold;
 			}
 		
+.edcdetail-tab > li {
+	margin-bottom:	-1px !important;
+}
