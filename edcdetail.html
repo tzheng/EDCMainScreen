@@ -187,7 +187,12 @@
 																	</tr>
 																	<tr>
 																		<td class="span2"><strong>Study</strong></td>
-																		<td class="span10" colspan="5">CMU Clinical Trail</td>
+																		<td class="span10" colspan="3">Anti-diabetic Drug: NoDiabetic</td>
+																		<td><strong>Status</strong></td>
+																		<td>
+																			<span class="label label-success status-enrolled">Enrolled</span>
+																			<span class="label status-drop" style="display: none;">Drop</span>
+																		</td>
 																	</tr>
 																	<tr>
 																		<td class="span12" colspan="6">
@@ -204,8 +209,8 @@
 															<div class="pull-right">
 																<button class="btn btn-primary" id="editbtn"><i class="icon-edit icon-white"></i> Edit Information</button>
 																<button class="btn btn-primary" id="savebtn" style="display: none;"><i class="icon-edit icon-white"></i> Save</button>
-																<button class="btn btn-danger"><i class="icon-remove-circle icon-white"></i> Drop Study</button>
-																<button class="btn btn-danger"><i class="icon-off icon-white"></i> Screen Failure</button>
+																<button href="#dropstudyconfirm" id="dropbtn" class="btn btn-danger" data-toggle="modal"><i class="icon-remove-circle icon-white"></i> Drop Study</button>
+																<button class="btn btn-danger" id="failbtn"><i class="icon-off icon-white"></i> Screen Failure</button>
 															</div>
 														</div>
 													</div>
@@ -292,7 +297,7 @@
 																	<span style="margin-left: 20px;">CRF Book Version: v1.0 </span>
 																	<span class="pull-right" style="margin-top: 7px;">
 																		<a href="edcdetail-list.html"><i class="icon-list"></i>List View</a>
-																		<a href="edcdetail.html"><i class="icon-th"></i>Gird View</a>
+																		<a href="edcdetail.html"><i class="icon-th"></i>Grid View</a>
 																	</span> 
 																</div>
 																		
@@ -485,6 +490,57 @@
 
 		</div>
 	 	
+ 
+		<!-- Modal, Drop Study Confirmation Page -->
+		<div id="dropstudyconfirm" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-header">
+		    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		    <h3 id="myModalLabel">Drop Study</h3>
+		  </div>
+		  <div class="modal-body">
+		    <h4>Are you sure to drop this subject?</h4>
+		    	<table id="subject-detail-info" class="table">
+					<tbody>
+						<tr>
+							<td class="span2"><strong>ID</strong></td>
+																		<td class="span4">0000001</td>
+																		<td class="span1"><strong>Gender</strong></td>
+																		<td class="span1"> 
+																			<span class="uneditable">Male</span>
+																			<select class="editable" style="display: none; width:80px;">
+																				<option>Male</option>
+																				<option>Female</option>
+																			</select>
+																		</td>
+																		<td class="span1"><strong>Age</strong></td>
+																		<td class="span1">
+																			<span class="uneditable">23</span>
+																			<input class="editable" value="23" type="text" style="width: 20px; display: none;" />
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="span2"><strong>Study</strong></td>
+																		<td class="span10" colspan="3">Anti-diabetic Drug: NoDiabetic</td>
+																		<td><strong>Status</strong></td>
+																		<td><span class="label label-success">Enrolled</span></td>
+																	</tr>
+																	<tr>
+																		<td class="span12" colspan="6">
+																			<strong>Current Progress：  2 / 6</strong>
+																			<div class="progress study-progress" style="margin-top: 10px;">
+																				<div class="bar" style="width: 33.34%">Visited: 2 cycles</div> 
+																				<div class="bar-default" style=" width: 66.66%;">Remaining: 4 cycles</div> 
+																			</div>
+																		</td>
+																	</tr>
+																</tbody>
+			</table>
+		  </div>
+		  <div class="modal-footer">
+		    <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+		    <a class="btn btn-primary confirm-drop" data-dismiss="modal">Confirm</a>
+		  </div>
+		</div>
 	 	
     	<!-- footer of the page -->
     	<footer>

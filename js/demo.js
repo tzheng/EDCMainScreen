@@ -23,4 +23,14 @@ $(document).ready(function(){
 		$('#before-random').delay(2000).fadeOut(1000);
 		$('#after-random').delay(3000).fadeIn(1000);
 	});
+	
+	$('#demo-login').click(function(){
+		$('#demo-logout').fadeOut(500);
+		$('#demo-navi').delay(500).fadeIn(1000);
+	})
+	
+	$('#demo-logout-btn').click(function(){
+		$('#demo-navi').fadeOut(500);
+		$('#demo-logout').delay(500).fadeIn(1000);
+	})
 });

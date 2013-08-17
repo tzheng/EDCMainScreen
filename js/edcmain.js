@@ -25,20 +25,43 @@ $(document).ready(function()
 	  $(this).tab('show');
 	})
 	
-$('#editbtn').click(function(){
-    $('.uneditable').hide();
-    $('#editbtn').hide();
-    $('.editable').show();
-    $('#savebtn').show();
-});
+	$('#editbtn').click(function(){
+	    $('.uneditable').hide();
+	    $('#editbtn').hide();
+	    $('.editable').show();
+	    $('#savebtn').show();
+	});
+	
+	$('#savebtn').click(function(){
+	     $('.uneditable').show();
+	    $('#editbtn').show();
+	    $('.editable').hide();
+	    $('#savebtn').hide();
+	});
 
-$('#savebtn').click(function(){
-     $('.uneditable').show();
-    $('#editbtn').show();
-    $('.editable').hide();
-    $('#savebtn').hide();
-});
-
+	$('#addreminder').click(function(){
+			$('#reminder-hide').hide();
+			$('#reminder-show').fadeIn(1000);
+	});
+	
+	$('.confirm-drop').click(function() {
+		$('.status-enrolled').hide();
+		$('.status-drop').fadeIn(1000);
+		message_dropstudy();
+		$('#editbtn').attr("disabled", "disabled");
+		$('#failbtn').attr("disabled", "disabled");
+		$('#dropbtn').attr("disabled", "disabled");
+	});
+	
+		function message_dropstudy(){
+			var unique_id = $.gritter.add({
+			title: 'Drop Study Successfully!',
+			text: 'Subject <strong>0000001</strong> has already dropped <br /> Study: Anti-diabetic Drug: NoDiabetic',
+			sticky: false,
+			time: '',
+			class_name: 'my-sticky-class'
+			});
+		}
 });
 
 

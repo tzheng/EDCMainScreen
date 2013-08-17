@@ -21,7 +21,8 @@
 		<!-- customize css file -->
 		<link rel="stylesheet" href="css/template.css" />
 		<link rel="stylesheet" href="css/demo.css"/>		
-		
+		<link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css' />
+			<link href="http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.min.css" rel="stylesheet" />
 	</head>
 
 	<body>
@@ -29,11 +30,12 @@
 		<div class="container-fluid">
 			<div class="row-fluid">
 				<div class="row-fluid">
-					<div class="login-box">
+					<div class="login-box" id="demo-logout">
 						<div class="title">
 							<img class="logo-icon" src="img/nav_bar/blue-samsung-logo.png" />
 						</div>						
 						<h2>Smart Clinical Trail System</h2>
+						
 						<form class="form-horizontal">
 							<fieldset>
 								<div class="input-prepend" id="input-username">
@@ -51,11 +53,25 @@
 							    </label>
 								
 								<div class="btn-login">
-									<a href="index1.html" class="btn btn-primary">Login</a>
+									<a href="#" id="demo-login" class="btn btn-primary">Login</a>
 								</div>
 								
 							</fieldset>
 						</form>
+					</div>
+					
+					<div class="login-box" id="demo-navi" style="display: none;">
+						<div class="title">
+							<img class="logo-icon" src="img/nav_bar/blue-samsung-logo.png" />
+						</div>						
+						<h2>Smart Clinical Trail System</h2>
+						
+						<ul class="form">
+							<li><a class="profile" href="edcmain.html"><i class="icon-home"></i>EDC Main Screen</a></li>
+							<li><a class="messages" href="http://validation-env.elasticbeanstalk.com/"><i class="icon-edit"></i>Validation Editor</a></li>
+							<li><a class="settings" href="http://random-env.elasticbeanstalk.com/"><i class="icon-stethoscope"></i>Randomization Tool</a></li>
+							<li><a class="logout" id="demo-logout-btn" href="#"><i class="icon-signout"></i>Logout</a></li>
+						</ul>
 					</div>
 							
 				</div>
