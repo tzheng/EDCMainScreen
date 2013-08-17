@@ -24,6 +24,21 @@ $(document).ready(function()
 	  e.preventDefault();
 	  $(this).tab('show');
 	})
+	
+$('#editbtn').click(function(){
+    $('.uneditable').hide();
+    $('#editbtn').hide();
+    $('.editable').show();
+    $('#savebtn').show();
+});
+
+$('#savebtn').click(function(){
+     $('.uneditable').show();
+    $('#editbtn').show();
+    $('.editable').hide();
+    $('#savebtn').hide();
+});
+
 });
 
 

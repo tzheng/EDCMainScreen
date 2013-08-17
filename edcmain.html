@@ -115,7 +115,7 @@
 										<h2 class="box-title-text">
 											<i class="icon-info-sign"></i>
 											<span class="break"></span>
-											Carnegie Mellon - Samsung Clinical Study
+											Study for Anti-diabetic Drug: NoDiabetic
 											
 											<!--  <span class="break"></span>
 											2013-000-001 -->
@@ -139,25 +139,63 @@
 												<div class="row-fluid" style="margin-top: -10px;">
 													<div class="span12">
 														<div class="progress study-progress">
-															<div class="bar" style="width: 66.67%">Registered: 80</div> 
-															<div class="bar-default" style=" width: 33.33%;">To Be Register: 40</div> 
+															<div class="bar" style="width: 50%">Registered: 35</div> 
+															<div class="bar-default" style=" width: 50%;">To Be Register: 35</div> 
 														</div>
 														<div class="study-desc">
-															<strong>Target Subject:</strong> 120 &nbsp;&nbsp;&nbsp;
-															<strong>Subject Registered:</strong> 80
+															<strong>Target Subject:</strong> 70 &nbsp;&nbsp;&nbsp;
+															<strong>Subject Registered:</strong> 35
 														</div>
 														
 														<div class="progress study-progress" id="screen_status">
-														  <div class="bar bar-success" style="width: 75%">Pass Screen: 60</div>
-														  <div class="bar bar-danger" style="width: 25%">Screen Fail:	20</div>
+														  <div class="bar bar-success" style="width: 85%">Pass Screen: 30</div>
+														  <div class="bar bar-danger" style="width: 15%">Screen Fail:	5</div>
 														</div>
 														<div class="study-desc">
-															<strong>Screen:</strong>	 100 &nbsp;&nbsp;&nbsp;
-															<strong>Screen Fail:</strong> 30
+															<strong>Screen:</strong>	 30 &nbsp;&nbsp;&nbsp;
+															<strong>Screen Fail:</strong> 5
 														</div>
-														
-														<button class="btn btn-primary pull-right" style="margin-top: -10px;"><i class="icon-plus-sign icon-white"></i> Register New Subject</button>
-														
+														<a href="registersubject.html"  class="btn btn-primary pull-right" id="registerbtn" style="margin-top: -10px;">
+															<i class="icon-plus-sign icon-white"></i> Register New Subject
+														</a>
+														<!-- 
+														<a href="#registersub" role="button" class="btn btn-primary pull-right" id="registerbtn" data-toggle="modal" style="margin-top: -10px;">
+															<i class="icon-plus-sign icon-white"></i> Register New Subject
+														</a>
+														-->
+														<!-- This is a hidden div, use for New Subject Register-->
+														<!-- <div id="registersub" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+												            <div class="modal-header">
+												              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+												              <h3 id="myModalLabel">Modal Heading</h3>
+												            </div>
+												            <div class="modal-body">
+												              <h4>Text in a modal</h4>
+												              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem.</p>
+												
+												              <h4>Popover in a modal</h4>
+												              <p>This <a href="#" role="button" class="btn popover-test" title="A Title" data-content="And here's some amazing content. It's very engaging. right?">button</a> should trigger a popover on click.</p>
+												
+												              <h4>Tooltips in a modal</h4>
+												              <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" class="tooltip-test" title="Tooltip">that link</a> should have tooltips on hover.</p>
+												
+												              <hr>
+												
+												              <h4>Overflowing text to show optional scrollbar</h4>
+												              <p>We set a fixed <code>max-height</code> on the <code>.modal-body</code>. Watch it overflow with all this extra lorem ipsum text we've included.</p>
+												              <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+												              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+												              <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+												              <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+												              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+												              <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+												            </div>
+												            <div class="modal-footer">
+												              <button class="btn" data-dismiss="modal">Close</button>
+												              <button class="btn btn-primary">Save changes</button>
+												            </div>
+												        </div>
+													-->
 													</div>
 												</div> <!-- End of Study Information -->
 												
@@ -176,8 +214,8 @@
 										</h2>
 
 										<div class="box-title-btn">
-											<a href="#" class="btn-minimize nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Add Reminder"><i class="icon-plus"></i></a>
-											<a href="#" class="btn-minimize nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Remove Selected"><i class="icon-trash"></i></a>
+											<a href="#" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Add Reminder"><i class="icon-plus"></i></a>
+											<a href="#" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Remove Selected"><i class="icon-trash"></i></a>
 											<a href="#" class="btn-minimize nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Show / Hide"><i class="icon-chevron-up"></i></a>
 										</div>
 									</div>
@@ -188,32 +226,32 @@
 											<ul>
 												<li>
 													<input type="checkbox">
-													<a href="#">This is a Long Reminder, long</a>
+													<a href="#">Call Inverstigator at <strong>4:00 PM</strong>, talk about clinical trail</a>
 													<span class="right"><a href="#" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Remove"><i class="icon-remove"></i></a></span>
 												</li>
 												
 												<li>
 													<input type="checkbox">
-													<a href="#">If is longer than first line, it will display ....</a>
+													<a href="#">Meeting with Michelle </a>
 													<span class="right"><a href="#" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Remove"><i class="icon-remove"></i></a></span>
 												</li>
 												
 												
 												<li>
 													<input type="checkbox">
-													<a href="#">Hover to see full reminder </a>
+													<a href="#">Data Query assigned to Subject 0000001, AE Form </a>
 													<span class="right"><a href="#" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Remove"><i class="icon-remove"></i></a></span>
 												</li>
 												
 												<li>
 													<input type="checkbox">
-													<a href="#">Hover to see full reminder </a>
+													<a href="#">Register and screen 2 new subject </a>
 													<span class="right"><a href="#" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Remove"><i class="icon-remove"></i></a></span>
 												</li>
 												
 												<li>
 													<input type="checkbox">
-													<a href="#">Hover to see full reminder </a>
+													<a href="#">Complete Subject 0000001's CM Form  </a>
 													<span class="right"><a href="#" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Remove"><i class="icon-remove"></i></a></span>
 												</li>
 											</ul>
@@ -402,9 +440,66 @@
 														<li class="subject-id">0000003</li>
 														<li class="subject-gender">Male</li>
 														<li class="subject-age">24</li>
+														<li class="subject-status"><span class="label label-success">Enrolled</span></li>
+													</ul>
+												</li>
+												<li class="visit-row">
+													<ul class="subject-info-row">
+														<li class="subject-id">0000004</li>
+														<li class="subject-gender">Male</li>
+														<li class="subject-age">24</li>
+														<li class="subject-status"><span class="label label-success">Enrolled</span></li>
+													</ul>
+												</li>
+												<li class="visit-row">
+													<ul class="subject-info-row">
+														<li class="subject-id">0000005</li>
+														<li class="subject-gender">Male</li>
+														<li class="subject-age">24</li>
+														<li class="subject-status"><span class="label label-success">Enrolled</span></li>
+													</ul>
+												</li>
+												<li class="visit-row">
+													<ul class="subject-info-row">
+														<li class="subject-id">0000006</li>
+														<li class="subject-gender">Male</li>
+														<li class="subject-age">24</li>
 														<li class="subject-status"><span class="label label-important">Fail</span></li>
 													</ul>
 												</li>
+												<li class="visit-row">
+													<ul class="subject-info-row">
+														<li class="subject-id">0000007</li>
+														<li class="subject-gender">Male</li>
+														<li class="subject-age">24</li>
+														<li class="subject-status"><span class="label label-success">Enrolled</span></li>
+													</ul>
+												</li>
+												<li class="visit-row">
+													<ul class="subject-info-row">
+														<li class="subject-id">0000008</li>
+														<li class="subject-gender">Male</li>
+														<li class="subject-age">24</li>
+														<li class="subject-status"><span class="label label-success">Enrolled</span></li>
+													</ul>
+												</li>
+												<li class="visit-row">
+													<ul class="subject-info-row">
+														<li class="subject-id">0000009</li>
+														<li class="subject-gender">Male</li>
+														<li class="subject-age">24</li>
+														<li class="subject-status"><span class="label">Drop</span></li>
+													</ul>
+												</li>
+												<li class="visit-row">
+													<ul class="subject-info-row">
+														<li class="subject-id">0000010</li>
+														<li class="subject-gender">Male</li>
+														<li class="subject-age">24</li>
+														<li class="subject-status"><span class="label label-important">Fail</span></li>
+													</ul>
+												</li>
+												
 											</ul>
 										</div>
 										
@@ -415,8 +510,6 @@
 										            <ul id="myTab" class="nav nav-tabs nav-tab-main" style="margin-bottom: 0px;">
 										              <li class="active"><a href="#screen" data-toggle="tab">Screen</a></li>
 										              <li><a href="#v1" data-toggle="tab">Visit 1</a></li>
-										              <li><a href="#v2" data-toggle="tab">Visit 2</a></li>
-										              <li><a href="#v3" data-toggle="tab">Visit 3</a></li>
 										            </ul>
 										            <div id="myTabContent" class="tab-content tab-content-main">
 										            	<div class="tab-pane fade in active" id="screen">
@@ -424,27 +517,104 @@
 															<ul class="visits">
 																<li class="visit-row">
 																	<ul class="visit-column">
-																		<li><i class="icon-list-alt"></i>Form1 <span class="label slabel">Not Start</span></li>
-																		<li><i class="icon-list-alt"></i>Form2 <span class="label label-info">Ready</span> </li>
-																		<li><i class="icon-list-alt"></i>Form3 <span class="label label-info">Started</span> </li>
-																		<li><i class="icon-list-alt"></i>Form4 <span class="label label-important">Stoped</span> </li>
+																		<li><i class="icon-list-alt"></i>AE <span class="label label-success">Completed</span></li>
+																		<li><i class="icon-list-alt"></i>DM  <span class="label label-success">Completed</span> </li>
+																		<li><i class="icon-list-alt"></i>MH <span class="label label-info">Started</span> </li>
+																		<li><i class="icon-list-alt"></i>CO <span class="label label-warning">Skipped</span> </li>
+																		<li><i class="icon-list-alt"></i>CM <span class="label label-info">Ready</span> </li>
+																		<li><i class="icon-list-alt"></i>DS <span class="label slabel">Not Start</span> </li>
 																	</ul>
 																</li>
 																<li class="visit-row">
 																	<ul class="visit-column">
-																		<li><i class="icon-list-alt"></i>Form1 <span class="label label-warning">Skipped</span></li>
-																		<li><i class="icon-list-alt"></i>Form2 <span class="label label-success">Completed</span></li>
-																		<li><i class="icon-list-alt"></i>Form3 <span class="label label-success">Signed</span></li>
-																		<li><i class="icon-list-alt"></i>Form4 <span class="label label-inverse">Locked</span> </li>
+																		<li><i class="icon-list-alt"></i>AE <span class="label label-success">Completed</span></li>
+																		<li><i class="icon-list-alt"></i>DM <span class="label label-important">Stoped</span></li>
+																		<li><i class="icon-list-alt"></i>MH <span class="label label-important">Stoped</span> </li>
+																		<li><i class="icon-list-alt"></i>CO <span class="label label-important">Stoped</span></li>
+																		<li><i class="icon-list-alt"></i>CM <span class="label label-important">Stoped</span> </li>
+																		<li><i class="icon-list-alt"></i>DS <span class="label label-important">Stoped</span> </li>
 																	</ul>
 																</li>
 																<li class="visit-row">
 																	<ul class="visit-column">
-																		<li><i class="icon-list-alt"></i>Form1 <span class="label">Freezed</span> </li>
-																		<li><i class="icon-list-alt"></i>Form2  <span class="label">Freezed</span> </li>
-																		<li><i class="icon-list-alt"></i>Form3  <span class="label">Freezed</span> </li>
-																		<li><i class="icon-list-alt"></i>Form4  <span class="label">Freezed</span> </li>
+																		<li><i class="icon-list-alt"></i>AE <span class="label label-success">Completed</span></li>
+																		<li><i class="icon-list-alt"></i>DM <span class="label label-info">Ready</span> </li>
+																		<li><i class="icon-list-alt"></i>MH <span class="label label-info">Started</span></li>
+																		<li><i class="icon-list-alt"></i>CO <span class="label label-warning">Skipped</span> </li>
+																		<li><i class="icon-list-alt"></i>CM <span class="label slabel">Not Start</span> </li>
+																		<li><i class="icon-list-alt"></i>DS <span class="label slabel">Not Start</span> </li>
 																	</ul>
+																</li>
+																<li class="visit-row">
+																	<ul class="visit-column">
+																		<li><i class="icon-list-alt"></i>AE <span class="label label-success">Completed</span></li>
+																		<li><i class="icon-list-alt"></i>DM <span class="label label-success">Completed</span> </li>
+																		<li><i class="icon-list-alt"></i>MH <span class="label label-success">Completed</span> </li>
+																		<li><i class="icon-list-alt"></i>CO <span class="label label-success">Completed</span> </li>
+																		<li><i class="icon-list-alt"></i>CM <span class="label label-success">Completed</span> </li>
+																		<li><i class="icon-list-alt"></i>DS <span class="label label-success">Completed</span> </li>
+																	</ul>
+																</li>
+																<li class="visit-row">
+																	<ul class="visit-column">
+																		<li><i class="icon-list-alt"></i>AE <span class="label label-success">Completed</span></li>
+																		<li><i class="icon-list-alt"></i>DM <span class="label label-success">Completed</span </li>
+																		<li><i class="icon-list-alt"></i>MH<span class="label label-success">Completed</span </li>
+																		<li><i class="icon-list-alt"></i>CO <span class="label label-info">Started</span> </li>
+																		<li><i class="icon-list-alt"></i>CM <span class="label label-info">Ready</span>  </li>
+																		<li><i class="icon-list-alt"></i>DS <span class="label slabel">Not Start</span> </li>
+																	</ul>
+																</li>
+																<li class="visit-row">
+																	<ul class="visit-column">
+																		<li><i class="icon-list-alt"></i>AE <span class="label slabel">Not Start</span> </li>
+																		<li><i class="icon-list-alt"></i>DM <span class="label label-inverse">Locked</span></li>
+																		<li><i class="icon-list-alt"></i>MH <span class="label slabel">Not Start</span> </li>
+																		<li><i class="icon-list-alt"></i>CO <span class="label slabel">Not Start</span> </li>
+																		<li><i class="icon-list-alt"></i>CM <span class="label slabel">Not Start</span> </li>
+																		<li><i class="icon-list-alt"></i>DS <span class="label slabel">Not Start</span> </li>
+																	</ul>
+																</li>
+																<li class="visit-row">
+																	<ul class="visit-column">
+																		<li><i class="icon-list-alt"></i>AE <span class="label label-info">Ready</span></li>
+																		<li><i class="icon-list-alt"></i>DM <span class="label label-info">Ready</span> </li>
+																		<li><i class="icon-list-alt"></i>MH <span class="label label-info">Started</span> </li>
+																		<li><i class="icon-list-alt"></i>CO <span class="label slabel">Not Start</span> </li>
+																		<li><i class="icon-list-alt"></i>CM <span class="label slabel">Not Start</span> </li>
+																		<li><i class="icon-list-alt"></i>DS <span class="label slabel">Not Start</span> </li>
+																	</ul>
+																</li>
+																<li class="visit-row">
+																	<ul class="visit-column">
+																		<li><i class="icon-list-alt"></i>AE <span class="label label-success">Completed</span></li>
+																		<li><i class="icon-list-alt"></i>DM <span class="label label-info">Started</span> </li>
+																		<li><i class="icon-list-alt"></i>MH <span class="label label-info">Ready</span> </li>
+																		<li><i class="icon-list-alt"></i>CO <span class="label slabel">Not Start</span> </li>
+																		<li><i class="icon-list-alt"></i>CM <span class="label slabel">Not Start</span> </li>
+																		<li><i class="icon-list-alt"></i>DS <span class="label slabel">Not Start</span> </li>
+																	</ul>
+																</li>
+																<li class="visit-row">
+																	<ul class="visit-column">
+																		<li><i class="icon-list-alt"></i>AE <span class="label label-success">Completed</span></li>
+																		<li><i class="icon-list-alt"></i>DM <span class="label label-important">Stoped</span></li>
+																		<li><i class="icon-list-alt"></i>MH <span class="label label-important">Stoped</span> </li>
+																		<li><i class="icon-list-alt"></i>CO <span class="label label-important">Stoped</span></li>
+																		<li><i class="icon-list-alt"></i>CM <span class="label label-important">Stoped</span> </li>
+																		<li><i class="icon-list-alt"></i>DS <span class="label label-important">Stoped</span> </li>
+																	</ul>
+																</li>
+																<li class="visit-row">
+																	<ul class="visit-column">
+																		<li><i class="icon-list-alt"></i>AE <span class="label slabel">Not Start</span> </li>
+																		<li><i class="icon-list-alt"></i>DM <span class="label label-inverse">Locked</span></li>
+																		<li><i class="icon-list-alt"></i>MH <span class="label slabel">Not Start</span> </li>
+																		<li><i class="icon-list-alt"></i>CO <span class="label slabel">Not Start</span> </li>
+																		<li><i class="icon-list-alt"></i>CM <span class="label slabel">Not Start</span> </li>
+																		<li><i class="icon-list-alt"></i>DS <span class="label slabel">Not Start</span> </li>
+																	</ul>
+																	
 																</li>
 															</ul>
 										              	</div>
@@ -455,27 +625,104 @@
 										              		<ul class="visits">
 																<li class="visit-row">
 																	<ul class="visit-column">
-																		<li><i class="icon-list-alt"></i>Form1</li>
-																		<li><i class="icon-list-alt"></i>Form2</li>
-																		<li><i class="icon-list-alt"></i>Form3</li>
-																		<li><i class="icon-list-alt"></i>Form4</li>
+																		<li><i class="icon-list-alt"></i>AE <span class="label label-success">Completed</span></li>
+																		<li><i class="icon-list-alt"></i>DM  <span class="label label-success">Completed</span> </li>
+																		<li><i class="icon-list-alt"></i>MH <span class="label label-info">Started</span> </li>
+																		<li><i class="icon-list-alt"></i>CO <span class="label label-info">Started</span> </li>
+																		<li><i class="icon-list-alt"></i>CM <span class="label label-info">Ready</span> </li>
+																		<li><i class="icon-list-alt"></i>DS <span class="label slabel">Not Start</span> </li>
 																	</ul>
 																</li>
 																<li class="visit-row">
 																	<ul class="visit-column">
-																		<li><i class="icon-list-alt"></i>Form1</li>
-																		<li><i class="icon-list-alt"></i>Form2</li>
-																		<li><i class="icon-list-alt"></i>Form3</li>
-																		<li><i class="icon-list-alt"></i>Form4</li>
+																		<li><i class="icon-list-alt"></i>AE <span class="label label-success">Completed</span></li>
+																		<li><i class="icon-list-alt"></i>DM <span class="label label-important">Stoped</span></li>
+																		<li><i class="icon-list-alt"></i>MH <span class="label label-important">Stoped</span> </li>
+																		<li><i class="icon-list-alt"></i>CO <span class="label label-important">Stoped</span></li>
+																		<li><i class="icon-list-alt"></i>CM <span class="label label-important">Stoped</span> </li>
+																		<li><i class="icon-list-alt"></i>DS <span class="label label-important">Stoped</span> </li>
 																	</ul>
 																</li>
 																<li class="visit-row">
 																	<ul class="visit-column">
-																		<li><i class="icon-list-alt"></i>Form1</li>
-																		<li><i class="icon-list-alt"></i>Form2</li>
-																		<li><i class="icon-list-alt"></i>Form3</li>
-																		<li><i class="icon-list-alt"></i>Form4</li>
+																		<li><i class="icon-list-alt"></i>AE <span class="label label-success">Completed</span></li>
+																		<li><i class="icon-list-alt"></i>DM <span class="label label-info">Ready</span> </li>
+																		<li><i class="icon-list-alt"></i>MH <span class="label label-info">Started</span></li>
+																		<li><i class="icon-list-alt"></i>CO <span class="label slabel">Not Start</span> </li>
+																		<li><i class="icon-list-alt"></i>CM <span class="label slabel">Not Start</span> </li>
+																		<li><i class="icon-list-alt"></i>DS <span class="label slabel">Not Start</span> </li>
 																	</ul>
+																</li>
+																<li class="visit-row">
+																	<ul class="visit-column">
+																		<li><i class="icon-list-alt"></i>AE <span class="label label-success">Completed</span></li>
+																		<li><i class="icon-list-alt"></i>DM <span class="label label-success">Completed</span> </li>
+																		<li><i class="icon-list-alt"></i>MH <span class="label label-success">Completed</span> </li>
+																		<li><i class="icon-list-alt"></i>CO <span class="label label-success">Completed</span> </li>
+																		<li><i class="icon-list-alt"></i>CM <span class="label label-success">Completed</span> </li>
+																		<li><i class="icon-list-alt"></i>DS <span class="label label-success">Completed</span> </li>
+																	</ul>
+																</li>
+																<li class="visit-row">
+																	<ul class="visit-column">
+																		<li><i class="icon-list-alt"></i>AE <span class="label label-success">Completed</span></li>
+																		<li><i class="icon-list-alt"></i>DM <span class="label label-success">Completed</span </li>
+																		<li><i class="icon-list-alt"></i>MH<span class="label label-success">Completed</span </li>
+																		<li><i class="icon-list-alt"></i>CO <span class="label label-info">Started</span> </li>
+																		<li><i class="icon-list-alt"></i>CM <span class="label label-info">Ready</span>  </li>
+																		<li><i class="icon-list-alt"></i>DS <span class="label slabel">Not Start</span> </li>
+																	</ul>
+																</li>
+																<li class="visit-row">
+																	<ul class="visit-column">
+																		<li><i class="icon-list-alt"></i>AE <span class="label slabel">Not Start</span> </li>
+																		<li><i class="icon-list-alt"></i>DM <span class="label label-inverse">Locked</span></li>
+																		<li><i class="icon-list-alt"></i>MH <span class="label slabel">Not Start</span> </li>
+																		<li><i class="icon-list-alt"></i>CO <span class="label slabel">Not Start</span> </li>
+																		<li><i class="icon-list-alt"></i>CM <span class="label slabel">Not Start</span> </li>
+																		<li><i class="icon-list-alt"></i>DS <span class="label slabel">Not Start</span> </li>
+																	</ul>
+																</li>
+																<li class="visit-row">
+																	<ul class="visit-column">
+																		<li><i class="icon-list-alt"></i>AE <span class="label label-info">Ready</span></li>
+																		<li><i class="icon-list-alt"></i>DM <span class="label label-info">Ready</span> </li>
+																		<li><i class="icon-list-alt"></i>MH <span class="label label-info">Started</span> </li>
+																		<li><i class="icon-list-alt"></i>CO <span class="label slabel">Not Start</span> </li>
+																		<li><i class="icon-list-alt"></i>CM <span class="label slabel">Not Start</span> </li>
+																		<li><i class="icon-list-alt"></i>DS <span class="label slabel">Not Start</span> </li>
+																	</ul>
+																</li>
+																<li class="visit-row">
+																	<ul class="visit-column">
+																		<li><i class="icon-list-alt"></i>AE <span class="label label-success">Completed</span></li>
+																		<li><i class="icon-list-alt"></i>DM <span class="label label-info">Started</span> </li>
+																		<li><i class="icon-list-alt"></i>MH <span class="label label-info">Ready</span> </li>
+																		<li><i class="icon-list-alt"></i>CO <span class="label slabel">Not Start</span> </li>
+																		<li><i class="icon-list-alt"></i>CM <span class="label slabel">Not Start</span> </li>
+																		<li><i class="icon-list-alt"></i>DS <span class="label slabel">Not Start</span> </li>
+																	</ul>
+																</li>
+																<li class="visit-row">
+																	<ul class="visit-column">
+																		<li><i class="icon-list-alt"></i>AE <span class="label label-success">Completed</span></li>
+																		<li><i class="icon-list-alt"></i>DM <span class="label label-important">Stoped</span></li>
+																		<li><i class="icon-list-alt"></i>MH <span class="label label-important">Stoped</span> </li>
+																		<li><i class="icon-list-alt"></i>CO <span class="label label-important">Stoped</span></li>
+																		<li><i class="icon-list-alt"></i>CM <span class="label label-important">Stoped</span> </li>
+																		<li><i class="icon-list-alt"></i>DS <span class="label label-important">Stoped</span> </li>
+																	</ul>
+																</li>
+																<li class="visit-row">
+																	<ul class="visit-column">
+																		<li><i class="icon-list-alt"></i>AE <span class="label slabel">Not Start</span> </li>
+																		<li><i class="icon-list-alt"></i>DM <span class="label label-inverse">Locked</span></li>
+																		<li><i class="icon-list-alt"></i>MH <span class="label slabel">Not Start</span> </li>
+																		<li><i class="icon-list-alt"></i>CO <span class="label slabel">Not Start</span> </li>
+																		<li><i class="icon-list-alt"></i>CM <span class="label slabel">Not Start</span> </li>
+																		<li><i class="icon-list-alt"></i>DS <span class="label slabel">Not Start</span> </li>
+																	</ul>
+																	
 																</li>
 															</ul>
 										              	</div> <!-- end of v1  -->
@@ -561,6 +808,41 @@
 													<a class="btn btn-small" href="edcdetail.html"><i class="icon-zoom-in"></i>Detail</a>
 													<a class="btn btn-small" href="#"><i class="icon-edit"></i>Edit</a>
 												</li>
+												
+												<li class="visit-row">
+													<a class="btn btn-small" href="edcdetail.html"><i class="icon-zoom-in"></i>Detail</a>
+													<a class="btn btn-small" href="#"><i class="icon-edit"></i>Edit</a>
+												</li>
+												
+												<li class="visit-row">
+													<a class="btn btn-small" href="edcdetail.html"><i class="icon-zoom-in"></i>Detail</a>
+													<a class="btn btn-small" href="#"><i class="icon-edit"></i>Edit</a>
+												</li>
+												
+												<li class="visit-row">
+													<a class="btn btn-small" href="edcdetail.html"><i class="icon-zoom-in"></i>Detail</a>
+													<a class="btn btn-small" href="#"><i class="icon-edit"></i>Edit</a>
+												</li>
+												
+												<li class="visit-row">
+													<a class="btn btn-small" href="edcdetail.html"><i class="icon-zoom-in"></i>Detail</a>
+													<a class="btn btn-small" href="#"><i class="icon-edit"></i>Edit</a>
+												</li>
+												
+												<li class="visit-row">
+													<a class="btn btn-small" href="edcdetail.html"><i class="icon-zoom-in"></i>Detail</a>
+													<a class="btn btn-small" href="#"><i class="icon-edit"></i>Edit</a>
+												</li>
+												
+												<li class="visit-row">
+													<a class="btn btn-small" href="edcdetail.html"><i class="icon-zoom-in"></i>Detail</a>
+													<a class="btn btn-small" href="#"><i class="icon-edit"></i>Edit</a>
+												</li>
+												
+												<li class="visit-row">
+													<a class="btn btn-small" href="edcdetail.html"><i class="icon-zoom-in"></i>Detail</a>
+													<a class="btn btn-small" href="#"><i class="icon-edit"></i>Edit</a>
+												</li>
 											</ul>
 										</div>
 											
@@ -592,9 +874,6 @@
 														<a href="#">4</a>
 													</li>
 													<li>
-														<a href="#">5</a>
-													</li>
-													<li>
 														<a href="#">Next</a>
 													</li>
 												</ul>
@@ -618,10 +897,10 @@
     	<!-- javascripts -->
     	<script src="http://code.jquery.com/jquery-1.9.0.js"></script>
     	<script src="js/jquery.min.js"></script>
-    	<script src="js/bootstrap.js"></script>
     	<script src="js/bootstrap-dropdown.js"></script>
     	<script src="js/bootstrap-tooltip.js"></script>
     	<script src="js/bootstrap-popover.js"></script>
+    	<script src="js/bootstrap-modal.js"></script>
     	<script src="js/jquery.gritter.min.js"></script>
     	<script src="js/chosen.jquery.min.js"></script>
     	

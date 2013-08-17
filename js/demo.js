@@ -17,4 +17,10 @@ $(document).ready(function(){
 		$(this).parent(".input-prepend").removeClass("input-prepend-focus");
 	});
 	
+	$('#register-subject').click(function(){
+		$('#after-random').hide();
+		$('#random-process').fadeIn('slow');
+		$('#before-random').delay(2000).fadeOut(1000);
+		$('#after-random').delay(3000).fadeIn(1000);
+	});
 });

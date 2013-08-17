@@ -11,15 +11,14 @@
 		<meta name="description" content="This is a page template for reference" />
 		<meta name="author" content="Team Samsung SCTS" />
 		
-		<!-- customize css file -->
-		<link rel="stylesheet" href="css/template.css" />
-		<link rel="stylesheet" href="css/edcmain.css" />
-		
 		<!-- CSS Framework - Bootstrap, stroll.css -->
 		<link rel="stylesheet" href="css/bootstrap.css" />
 		<link rel="stylesheet" href="css/jquery.gritter.css"/>
 		<!-- <link rel="stylesheet" href="css/datatable.css" /> -->
 		
+		<!-- customize css file -->
+		<link rel="stylesheet" href="css/template.css" />
+		<link rel="stylesheet" href="css/edcmain.css" />
 	</head>
 
 	<body>
@@ -35,7 +34,7 @@
 						</a>
 					</div>
 					<div class="topbar left">
-						<span class="nav-title">EDC - Subject Detail Information</span>
+						<span class="nav-title">Subject Detail Information</span>
 					</div>
 					
 					<div class="topbar right" id="topbar-right">
@@ -106,15 +105,39 @@
 						<div class="box-content" id="crf_list">
 							<ul>
 								<li class="form-active">0000001 <span class="label label-success">Enrolled</span></li>
-								<li>0000002 <span class="label label-success">Enrolled</span></li>
-								<li>0000003 <span class="label">Drop</span></li>
-								<li>0000004 <span class="label label-important">Fail</span></li>
+								<li>0000002 <span class="label">Drop</span></li>
+								<li>0000003 <span class="label label-success">Enrolled</span></li>
+								<li>0000004 <span class="label label-success">Enrolled</span></li>
 								<li>0000005 <span class="label label-success">Enrolled</span></li>
-								<li>0000006 <span class="label label-success">Enrolled</span></li>
+								<li>0000006 <span class="label label-important">Fail</span></li>
 								<li>0000007 <span class="label label-success">Enrolled</span></li>
-								<li>0000008 <span class="label">Drop</span></li>
-								<li>0000009 <span class="label label-important">Fail</span></li>
+								<li>0000008 <span class="label label-success">Enrolled</span></li>
+								<li>0000009 <span class="label">Drop</span></li>
 								<li>0000010 <span class="label label-important">Fail</span></li>
+								<li>0000011 <span class="label label-success">Enrolled</span></li>
+								<li>0000012 <span class="label label-important">Fail</span></li>
+								<li>0000013 <span class="label label-success">Enrolled</span></li>
+								<li>0000014 <span class="label label-success">Enrolled</span></li>
+								<li>0000015 <span class="label label-success">Enrolled</span></li>
+								<li>0000016 <span class="label label-important">Fail</span></li>
+								<li>0000017 <span class="label label-important">Fail</span></li>
+								<li>0000018 <span class="label label-success">Enrolled</span></li>
+								<li>0000019 <span class="label label-success">Enrolled</span></li>
+								<li>0000020 <span class="label label-success">Enrolled</span></li>
+								<li>0000022 <span class="label label-success">Enrolled</span></li>
+								<li>0000023 <span class="label label-success">Enrolled</span></li>
+								<li>0000024 <span class="label label-success">Enrolled</span></li>
+								<li>0000025 <span class="label label-success">Enrolled</span></li>
+								<li>0000026 <span class="label label-success">Enrolled</span></li>
+								<li>0000027 <span class="label">Drop</span></li>
+								<li>0000028 <span class="label label-success">Enrolled</span></li>
+								<li>0000029 <span class="label label-success">Enrolled</span></li>
+								<li>0000030 <span class="label label-success">Enrolled</span></li>
+								<li>0000031 <span class="label label-success">Enrolled</span></li>
+								<li>0000032 <span class="label">Drop</span></li>
+								<li>0000033 <span class="label label-success">Enrolled</span></li>
+								<li>0000034 <span class="label label-success">Enrolled</span></li>
+								<li>0000035 <span class="label label-success">Enrolled</span></li>
 								
 							</ul>
 						</div> 
@@ -146,12 +169,21 @@
 															<table id="subject-detail-info" class="table">
 																<tbody>
 																	<tr>
-																		<td class="span2"><strong>Subject ID</strong></td>
+																		<td class="span2"><strong>ID</strong></td>
 																		<td class="span4">0000001</td>
 																		<td class="span1"><strong>Gender</strong></td>
-																		<td class="span1">Male</td>
+																		<td class="span1"> 
+																			<span class="uneditable">Male</span>
+																			<select class="editable" style="display: none; width:80px;">
+																				<option>Male</option>
+																				<option>Female</option>
+																			</select>
+																		</td>
 																		<td class="span1"><strong>Age</strong></td>
-																		<td class="span1">24</td>
+																		<td class="span1">
+																			<span class="uneditable">23</span>
+																			<input class="editable" value="23" type="text" style="width: 20px; display: none;" />
+																		</td>
 																	</tr>
 																	<tr>
 																		<td class="span2"><strong>Study</strong></td>
@@ -159,10 +191,10 @@
 																	</tr>
 																	<tr>
 																		<td class="span12" colspan="6">
-																			<strong>Current Progress：  6 / 10</strong>
+																			<strong>Current Progress：  2 / 6</strong>
 																			<div class="progress study-progress" style="margin-top: 10px;">
-																				<div class="bar" style="width: 60%">Visited: 6 cycles</div> 
-																				<div class="bar-default" style=" width: 40%;">Remaining: 4 cycles</div> 
+																				<div class="bar" style="width: 33.34%">Visited: 2 cycles</div> 
+																				<div class="bar-default" style=" width: 66.66%;">Remaining: 4 cycles</div> 
 																			</div>
 																		</td>
 																	</tr>
@@ -170,7 +202,8 @@
 															</table>
 															
 															<div class="pull-right">
-																<button class="btn "><i class="icon-edit"></i> Edit Information</button>
+																<button class="btn btn-primary" id="editbtn"><i class="icon-edit icon-white"></i> Edit Information</button>
+																<button class="btn btn-primary" id="savebtn" style="display: none;"><i class="icon-edit icon-white"></i> Save</button>
 																<button class="btn btn-danger"><i class="icon-remove-circle icon-white"></i> Drop Study</button>
 																<button class="btn btn-danger"><i class="icon-off icon-white"></i> Screen Failure</button>
 															</div>
@@ -250,8 +283,6 @@
 											            <ul id="myTab" class="nav nav-tabs edcdetail-tab">
 											              <li class="active"><a href="#screen" data-toggle="tab">Screen</a></li>
 											              <li><a href="#v1" data-toggle="tab">Visit 1</a></li>
-											              <li><a href="#v2" data-toggle="tab">Visit 2</a></li>
-											              <li><a href="#v3" data-toggle="tab">Visit 3</a></li>
 											            </ul>
 											            <div id="myTabContent" class="tab-content">
 											            	<div class="tab-pane fade in active crf-contents" id="screen">
@@ -267,15 +298,23 @@
 																		
 																<ul class="crf-forms sortable">
 																	<li class="crf-li not-start">
-																		<p class="lead">
-																			<span class="pull-left">AE</span>  
+																		<p class="lead"><span class="pull-left">AE</span>  
 																			<span class="pull-right">
 																				<a href="" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Form Attribute"><i class="icon-info-sign"></i></a>
 																			</span>
 																		</p> 
-																		<span class="label">Not Start</span> 
-																		<p class="time"> - </p>
+																		<span class="label label-success">Completed</span> 
+																		<p class="time"> 2013-07-10 </p>
 																		
+																	</li>
+																	<li class="crf-li">
+																		<p class="lead"><span class="pull-left">DM</span> 
+																			<span class="pull-right">
+																				<a href="" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Form Attribute"><i class="icon-info-sign"></i></a>
+																			</span>
+																		</p> 
+																		<span class="label label-success">Completed</span>
+																		<p class="time"> 2013-07-10 </p>
 																	</li>
 																	<li class="crf-li">
 																		<p class="lead"><span class="pull-left">MH</span> 
@@ -283,74 +322,38 @@
 																				<a href="" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Form Attribute"><i class="icon-info-sign"></i></a>
 																			</span>
 																		</p> 
-																		<span class="label label-info">Ready</span> 
-																		<p class="time"> - </p>
-																	</li>
-																	<li class="crf-li">
-																		<p class="lead"><span class="pull-left">EG</span> 
-																			<span class="pull-right">
-																				<a href="" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Form Attribute"><i class="icon-info-sign"></i></a>
-																			</span>
-																		</p> 
-																		<span class="label label-info">Data Entry Started</span> 
-															  			<p class="time">2013-07-20</p>
+																		<span class="label label-info">Started</span> 
+															  			<p class="time">2013-07-10</p>
 																	</li>
 																			
 																	<li class="crf-li">
-																		<p class="lead"><span class="pull-left">DM</span> 
+																		<p class="lead"><span class="pull-left">CO</span> 
 																			<span class="pull-right">
 																				<a href="" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Form Attribute"><i class="icon-info-sign"></i></a>
 																			</span>
 																		</p> 
-																		<span class="label label-important">Stoped</span> 
-																		<p class="time">2013-07-20</p>
+																		<span class="label label-warning">Skipped</span> 
+																		<p class="time"> - </p>
 																	</li>
 																			
 																	<li class="crf-li">
 																		<p class="lead">
-																			<span class="pull-left">Form Name - Long Name</span> 
+																			<span class="pull-left">CM</span> 
 																			<span class="pull-right">
 																				<a href="" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Form Attribute"><i class="icon-info-sign"></i></a>
 																			</span>
 																		</p> 
-																		<span class="label label-warning">Skipped</span>
-																		<p class="time">2013-07-20</p> 
+																		<span class="label label-info">Ready</span>
+																		<p class="time"> - </p> 
 																	</li>
 																	<li class="crf-li">
-																		<p class="lead"><span class="pull-left">Form2</span> 
+																		<p class="lead"><span class="pull-left">DS</span> 
 																			<span class="pull-right">
 																				<a href="" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Form Attribute"><i class="icon-info-sign"></i></a>
 																			</span>
 																		</p> 
-																		<span class="label label-success">Completed</span>
-																		<p class="time">2013-07-19</p> 
-																	</li>
-																	<li class="crf-li">
-																		<p class="lead"><span class="pull-left">Form Three</span> 
-																			<span class="pull-right">
-																				<a href="" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Form Attribute"><i class="icon-info-sign"></i></a>
-																			</span>
-																		</p> 
-																		<span class="label label-success">Signed</span>
-																		<p class="time">2013-07-20</p> 
-																	</li>
-																	<li class="crf-li">
-																		<p class="lead"><span class="pull-left">Form 4</span> 
-																			<span class="pull-right">
-																				<a href="" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Form Attribute"><i class="icon-info-sign"></i></a>
-																			</span>
-																		</p> 
-																		<span class="label label-inverse">Locked</span> 
-																		<p class="time">2013-07-21</p>
-																	</li>
-																	<li class="crf-li">
-																		<p class="lead"><span class="pull-left">Form 5</span> 
-																			<span class="pull-right">
-																				<a href="" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Form Attribute"><i class="icon-info-sign"></i></a>
-																			</span>
-																		</p> 
-																		<span class="label">Freezed</span> 
-																		<p class="time">2013-07-22</p>
+																		<span class="label">Not Start</span>
+																		<p class="time"> - </p> 
 																	</li>
 																</ul>
 											              	</div>
@@ -366,16 +369,25 @@
 																	</span> 
 																</div>
 																		
-																													<ul class="crf-forms sortable">
+																<ul class="crf-forms sortable">
 																	<li class="crf-li not-start">
 																		<p class="lead"><span class="pull-left">AE</span>  
 																			<span class="pull-right">
 																				<a href="" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Form Attribute"><i class="icon-info-sign"></i></a>
 																			</span>
 																		</p> 
-																		<span class="label">Not Start</span> 
-																		<p class="time"> - </p>
+																		<span class="label label-success">Completed</span> 
+																		<p class="time"> 2013-07-10 </p>
 																		
+																	</li>
+																	<li class="crf-li">
+																		<p class="lead"><span class="pull-left">DM</span> 
+																			<span class="pull-right">
+																				<a href="" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Form Attribute"><i class="icon-info-sign"></i></a>
+																			</span>
+																		</p> 
+																		<span class="label label-success">Completed</span>
+																		<p class="time"> 2013-07-10 </p>
 																	</li>
 																	<li class="crf-li">
 																		<p class="lead"><span class="pull-left">MH</span> 
@@ -383,74 +395,38 @@
 																				<a href="" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Form Attribute"><i class="icon-info-sign"></i></a>
 																			</span>
 																		</p> 
-																		<span class="label label-info">Ready</span> 
-																		<p class="time"> - </p>
-																	</li>
-																	<li class="crf-li">
-																		<p class="lead"><span class="pull-left">EG</span> 
-																			<span class="pull-right">
-																				<a href="" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Form Attribute"><i class="icon-info-sign"></i></a>
-																			</span>
-																		</p> 
-																		<span class="label label-info">Data Entry Started</span> 
-															  			<p class="time">2013-07-20</p>
+																		<span class="label label-info">Started</span> 
+															  			<p class="time">2013-07-10</p>
 																	</li>
 																			
 																	<li class="crf-li">
-																		<p class="lead"><span class="pull-left">DM</span> 
+																		<p class="lead"><span class="pull-left">CO</span> 
 																			<span class="pull-right">
 																				<a href="" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Form Attribute"><i class="icon-info-sign"></i></a>
 																			</span>
 																		</p> 
-																		<span class="label label-important">Stoped</span> 
-																		<p class="time">2013-07-20</p>
+																		<span class="label label-warning">Skipped</span> 
+																		<p class="time"> - </p>
 																	</li>
 																			
 																	<li class="crf-li">
 																		<p class="lead">
-																			<span class="pull-left">Form Name - Long Name</span> 
+																			<span class="pull-left">CM</span> 
 																			<span class="pull-right">
 																				<a href="" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Form Attribute"><i class="icon-info-sign"></i></a>
 																			</span>
 																		</p> 
-																		<span class="label label-warning">Skipped</span>
-																		<p class="time">2013-07-20</p> 
+																		<span class="label label-info">Ready</span>
+																		<p class="time"> - </p> 
 																	</li>
 																	<li class="crf-li">
-																		<p class="lead"><span class="pull-left">Form2</span> 
+																		<p class="lead"><span class="pull-left">DS</span> 
 																			<span class="pull-right">
 																				<a href="" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Form Attribute"><i class="icon-info-sign"></i></a>
 																			</span>
 																		</p> 
-																		<span class="label label-success">Completed</span>
-																		<p class="time">2013-07-19</p> 
-																	</li>
-																	<li class="crf-li">
-																		<p class="lead"><span class="pull-left">Form Three</span> 
-																			<span class="pull-right">
-																				<a href="" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Form Attribute"><i class="icon-info-sign"></i></a>
-																			</span>
-																		</p> 
-																		<span class="label label-success">Signed</span>
-																		<p class="time">2013-07-20</p> 
-																	</li>
-																	<li class="crf-li">
-																		<p class="lead"><span class="pull-left">Form 4</span> 
-																			<span class="pull-right">
-																				<a href="" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Form Attribute"><i class="icon-info-sign"></i></a>
-																			</span>
-																		</p> 
-																		<span class="label label-inverse">Locked</span> 
-																		<p class="time">2013-07-21</p>
-																	</li>
-																	<li class="crf-li">
-																		<p class="lead"><span class="pull-left">Form 5</span> 
-																			<span class="pull-right">
-																				<a href="" class="nav-tooltip" data-toggle="tooltip" data-placement="bottom" title="Form Attribute"><i class="icon-info-sign"></i></a>
-																			</span>
-																		</p> 
-																		<span class="label">Freezed</span> 
-																		<p class="time">2013-07-22</p>
+																		<span class="label">Not Start</span>
+																		<p class="time"> - </p> 
 																	</li>
 																</ul>
 																
@@ -473,17 +449,17 @@
 																</tr>
 																<tr>
 																	<td><strong>Name</strong></td>
-																	<td>CRF Form Name</td>
+																	<td>AE - Adverse Event</td>
 																</tr>
 																			
 																<tr>
 																	<td><strong>Status</strong></td>
-																	<td><span class="label label-success">Signed</span></td>
+																	<td><span class="label label-success">Completed</span></td>
 																</tr>
 																			
 																<tr>
 																	<td><strong>Last Modified</strong> </td>
-																	<td>2013-07-21 4:00 PM</td>
+																	<td>2013-07-10 4:00 PM</td>
 																</tr>
 																			
 																<tr>
@@ -517,6 +493,7 @@
     	
     	<!-- javascripts -->
     	<script src="http://code.jquery.com/jquery-1.9.0.js"></script>
+    	<script src="js/edcmain.js"></script>
     	<script src="js/jquery.min.js"></script>
     	<script src="js/bootstrap.js"></script>
     	<script src="js/bootstrap-dropdown.js"></script>
@@ -525,7 +502,7 @@
     	<script src="js/bootstrap-tab.js"></script>
     	<script src="js/jquery.gritter.min.js"></script>
     	<script src="js/template.js"></script>
-    	<script src="js/edcmain.js"></script>
+    	
     	<script src="js/jquery-ui.js"></script>
     	
 	</body>

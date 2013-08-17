@@ -35,7 +35,7 @@
 						</a>
 					</div>
 					<div class="topbar left">
-						<span class="nav-title">EDC - Subject Detail Information</span>
+						<span class="nav-title">Subject Detail Information</span>
 					</div>
 					
 					<div class="topbar right" id="topbar-right">
@@ -106,15 +106,39 @@
 						<div class="box-content" id="crf_list">
 							<ul>
 								<li class="form-active">0000001 <span class="label label-success">Enrolled</span></li>
-								<li>0000002 <span class="label label-success">Enrolled</span></li>
-								<li>0000003 <span class="label">Drop</span></li>
-								<li>0000004 <span class="label label-important">Fail</span></li>
+								<li>0000002 <span class="label">Drop</span></li>
+								<li>0000003 <span class="label label-success">Enrolled</span></li>
+								<li>0000004 <span class="label label-success">Enrolled</span></li>
 								<li>0000005 <span class="label label-success">Enrolled</span></li>
-								<li>0000006 <span class="label label-success">Enrolled</span></li>
+								<li>0000006 <span class="label label-important">Fail</span></li>
 								<li>0000007 <span class="label label-success">Enrolled</span></li>
-								<li>0000008 <span class="label">Drop</span></li>
-								<li>0000009 <span class="label label-important">Fail</span></li>
+								<li>0000008 <span class="label label-success">Enrolled</span></li>
+								<li>0000009 <span class="label">Drop</span></li>
 								<li>0000010 <span class="label label-important">Fail</span></li>
+								<li>0000011 <span class="label label-success">Enrolled</span></li>
+								<li>0000012 <span class="label label-important">Fail</span></li>
+								<li>0000013 <span class="label label-success">Enrolled</span></li>
+								<li>0000014 <span class="label label-success">Enrolled</span></li>
+								<li>0000015 <span class="label label-success">Enrolled</span></li>
+								<li>0000016 <span class="label label-important">Fail</span></li>
+								<li>0000017 <span class="label label-important">Fail</span></li>
+								<li>0000018 <span class="label label-success">Enrolled</span></li>
+								<li>0000019 <span class="label label-success">Enrolled</span></li>
+								<li>0000020 <span class="label label-success">Enrolled</span></li>
+								<li>0000022 <span class="label label-success">Enrolled</span></li>
+								<li>0000023 <span class="label label-success">Enrolled</span></li>
+								<li>0000024 <span class="label label-success">Enrolled</span></li>
+								<li>0000025 <span class="label label-success">Enrolled</span></li>
+								<li>0000026 <span class="label label-success">Enrolled</span></li>
+								<li>0000027 <span class="label">Drop</span></li>
+								<li>0000028 <span class="label label-success">Enrolled</span></li>
+								<li>0000029 <span class="label label-success">Enrolled</span></li>
+								<li>0000030 <span class="label label-success">Enrolled</span></li>
+								<li>0000031 <span class="label label-success">Enrolled</span></li>
+								<li>0000032 <span class="label">Drop</span></li>
+								<li>0000033 <span class="label label-success">Enrolled</span></li>
+								<li>0000034 <span class="label label-success">Enrolled</span></li>
+								<li>0000035 <span class="label label-success">Enrolled</span></li>
 								
 							</ul>
 						</div> 
@@ -146,12 +170,21 @@
 															<table id="subject-detail-info" class="table">
 																<tbody>
 																	<tr>
-																		<td class="span2"><strong>Subject ID</strong></td>
+																		<td class="span2"><strong>ID</strong></td>
 																		<td class="span4">0000001</td>
 																		<td class="span1"><strong>Gender</strong></td>
-																		<td class="span1">Male</td>
+																		<td class="span1"> 
+																			<span class="uneditable">Male</span>
+																			<select class="editable" style="display: none; width:80px;">
+																				<option>Male</option>
+																				<option>Female</option>
+																			</select>
+																		</td>
 																		<td class="span1"><strong>Age</strong></td>
-																		<td class="span1">24</td>
+																		<td class="span1">
+																			<span class="uneditable">23</span>
+																			<input class="editable" value="23" type="text" style="width: 20px; display: none;" />
+																		</td>
 																	</tr>
 																	<tr>
 																		<td class="span2"><strong>Study</strong></td>
@@ -159,10 +192,10 @@
 																	</tr>
 																	<tr>
 																		<td class="span12" colspan="6">
-																			<strong>Current Progress：  6 / 10</strong>
+																			<strong>Current Progress：  2 / 6</strong>
 																			<div class="progress study-progress" style="margin-top: 10px;">
-																				<div class="bar" style="width: 60%">Visited: 6 cycles</div> 
-																				<div class="bar-default" style=" width: 40%;">Remaining: 4 cycles</div> 
+																				<div class="bar" style="width: 33.34%">Visited: 2 cycles</div> 
+																				<div class="bar-default" style=" width: 66.66%;">Remaining: 4 cycles</div> 
 																			</div>
 																		</td>
 																	</tr>
@@ -170,7 +203,8 @@
 															</table>
 															
 															<div class="pull-right">
-																<button class="btn btn-primary"><i class="icon-edit icon-white"></i> Edit Information</button>
+																<button class="btn btn-primary" id="editbtn"><i class="icon-edit icon-white"></i> Edit Information</button>
+																<button class="btn btn-primary" id="savebtn" style="display: none;"><i class="icon-edit icon-white"></i> Save</button>
 																<button class="btn btn-danger"><i class="icon-remove-circle icon-white"></i> Drop Study</button>
 																<button class="btn btn-danger"><i class="icon-off icon-white"></i> Screen Failure</button>
 															</div>
@@ -250,12 +284,10 @@
 											            <ul id="myTab" class="nav nav-tabs edcdetail-tab">
 											              <li class="active"><a href="#screen" data-toggle="tab">Screen</a></li>
 											              <li><a href="#v1" data-toggle="tab">Visit 1</a></li>
-											              <li><a href="#v2" data-toggle="tab">Visit 2</a></li>
-											              <li><a href="#v3" data-toggle="tab">Visit 3</a></li>
 											            </ul>
 											            <div id="myTabContent" class="tab-content">
 											            	<div class="tab-pane fade in active crf-contents" id="screen">
-																<div class="detail-forms">
+																<div class="detail-forms1">
 																	<span class="lead">Screen</span> 
 																	<span style="margin-left: 20px;">Visit Date: 2013-07-10 </span>
 																	<span style="margin-left: 20px;">CRF Book Version: v1.0 </span>
@@ -267,17 +299,44 @@
 																<div>
 																	<table class="table table-condensed form-listview">
 																		<tbody>
-																			<tr>
+																			<tr id="firstline">
 																				<td class="span3">AE</td>
-																				<td class="span3"><span class="label">Not Start</span></td>
-																				<td class="span2"> - </td>
+																				<td class="span3"><span class="label label-success">Completed</span></td>
+																				<td class="span2"> 2013-07-10 </td>
 																				<td class="span4" style="text-align: right">
 																					<a class="btn btn-small"> <i class="icon-info-sign"></i> Form Attribute</a>
 																					<a class="btn btn-small"> <i class="icon-pencil"></i> Enter Data</a>
 																				</td>
 																			</tr>
 																			<tr>
-																				<td>MH</td>
+																				<td>DM</td>
+																				<td><span class="label label-success">Completed</span> </td>
+																				<td> 2013-07-10 </td>
+																				<td class="span4" style="text-align: right">
+																					<a class="btn btn-small"> <i class="icon-info-sign"></i> Form Attribute</a>
+																					<a class="btn btn-small"> <i class="icon-pencil"></i> Enter Data</a>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td>MH</td> 
+																				<td><span class="label label-info">Started</span></td> 
+																	  			<td>2013-07-10</td>
+																	  			<td class="span4" style="text-align: right">
+																					<a class="btn btn-small"> <i class="icon-info-sign"></i> Form Attribute</a>
+																					<a class="btn btn-small"> <i class="icon-pencil"></i> Enter Data</a>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td>CO</td>
+																				<td><span class="label label-warning">Skipped</span></td>
+																				<td> - </td>
+																				<td class="span4" style="text-align: right">
+																					<a class="btn btn-small"> <i class="icon-info-sign"></i> Form Attribute</a>
+																					<a class="btn btn-small"> <i class="icon-pencil"></i> Enter Data</a>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td>CM</td>
 																				<td><span class="label label-info">Ready</span> </td>
 																				<td> - </td>
 																				<td class="span4" style="text-align: right">
@@ -286,27 +345,9 @@
 																				</td>
 																			</tr>
 																			<tr>
-																				<td>EG</td> 
-																				<td><span class="label label-info">Data Entry Started</span></td> 
-																	  			<td>2013-07-20</td>
-																	  			<td class="span4" style="text-align: right">
-																					<a class="btn btn-small"> <i class="icon-info-sign"></i> Form Attribute</a>
-																					<a class="btn btn-small"> <i class="icon-pencil"></i> Enter Data</a>
-																				</td>
-																			</tr>
-																			<tr>
-																				<td>DM</td>
-																				<td><span class="label label-important">Stoped</span></td>
-																				<td>2013-07-20</td>
-																				<td class="span4" style="text-align: right">
-																					<a class="btn btn-small"> <i class="icon-info-sign"></i> Form Attribute</a>
-																					<a class="btn btn-small"> <i class="icon-pencil"></i> Enter Data</a>
-																				</td>
-																			</tr>
-																			<tr>
-																				<td>Form Name - Long Name</td>
-																				<td><span class="label label-warning">Skipped</span></td>
-																				<td>2013-07-20</td>
+																				<td>DS</td>
+																				<td><span class="label slabel">Not Start</span></td>
+																				<td> - </td>
 																				<td class="span4" style="text-align: right">
 																					<a class="btn btn-small"> <i class="icon-info-sign"></i> Form Attribute</a>
 																					<a class="btn btn-small"> <i class="icon-pencil"></i> Enter Data</a>
@@ -319,7 +360,7 @@
 											              	
 											              	<!-- content for V1 Tab-->
 											              	<div class="tab-pane fade" id="v1">
-											              		<div class="detail-forms">
+											              		<div class="detail-forms1">
 																	<span class="lead">Visit 1</span> 
 																	<span style="margin-left: 20px;">Visit Date: 2013-07-20 </span>
 																	<span class="pull-right" style="margin-top: 7px;">
@@ -330,17 +371,44 @@
 																<div>
 																	<table class="table table-condensed form-listview">
 																		<tbody>
-																			<tr>
+																			<tr id="firstline">
 																				<td class="span3">AE</td>
-																				<td class="span3"><span class="label">Not Start</span></td>
-																				<td class="span2"> - </td>
+																				<td class="span3"><span class="label label-success">Completed</span></td>
+																				<td class="span2"> 2013-07-10 </td>
 																				<td class="span4" style="text-align: right">
 																					<a class="btn btn-small"> <i class="icon-info-sign"></i> Form Attribute</a>
 																					<a class="btn btn-small"> <i class="icon-pencil"></i> Enter Data</a>
 																				</td>
 																			</tr>
 																			<tr>
-																				<td>MH</td>
+																				<td>DM</td>
+																				<td><span class="label label-success">Completed</span> </td>
+																				<td> 2013-07-10 </td>
+																				<td class="span4" style="text-align: right">
+																					<a class="btn btn-small"> <i class="icon-info-sign"></i> Form Attribute</a>
+																					<a class="btn btn-small"> <i class="icon-pencil"></i> Enter Data</a>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td>MH</td> 
+																				<td><span class="label label-info">Started</span></td> 
+																	  			<td>2013-07-10</td>
+																	  			<td class="span4" style="text-align: right">
+																					<a class="btn btn-small"> <i class="icon-info-sign"></i> Form Attribute</a>
+																					<a class="btn btn-small"> <i class="icon-pencil"></i> Enter Data</a>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td>CO</td>
+																				<td><span class="label label-warning">Skipped</span></td>
+																				<td> - </td>
+																				<td class="span4" style="text-align: right">
+																					<a class="btn btn-small"> <i class="icon-info-sign"></i> Form Attribute</a>
+																					<a class="btn btn-small"> <i class="icon-pencil"></i> Enter Data</a>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td>CM</td>
 																				<td><span class="label label-info">Ready</span> </td>
 																				<td> - </td>
 																				<td class="span4" style="text-align: right">
@@ -349,27 +417,9 @@
 																				</td>
 																			</tr>
 																			<tr>
-																				<td>EG</td> 
-																				<td><span class="label label-info">Data Entry Started</span></td> 
-																	  			<td>2013-07-20</td>
-																	  			<td class="span4" style="text-align: right">
-																					<a class="btn btn-small"> <i class="icon-info-sign"></i> Form Attribute</a>
-																					<a class="btn btn-small"> <i class="icon-pencil"></i> Enter Data</a>
-																				</td>
-																			</tr>
-																			<tr>
-																				<td>DM</td>
-																				<td><span class="label label-important">Stoped</span></td>
-																				<td>2013-07-20</td>
-																				<td class="span4" style="text-align: right">
-																					<a class="btn btn-small"> <i class="icon-info-sign"></i> Form Attribute</a>
-																					<a class="btn btn-small"> <i class="icon-pencil"></i> Enter Data</a>
-																				</td>
-																			</tr>
-																			<tr>
-																				<td>Form Name - Long Name</td>
-																				<td><span class="label label-warning">Skipped</span></td>
-																				<td>2013-07-20</td>
+																				<td>DS</td>
+																				<td><span class="label slabel">Not Start</span></td>
+																				<td> - </td>
 																				<td class="span4" style="text-align: right">
 																					<a class="btn btn-small"> <i class="icon-info-sign"></i> Form Attribute</a>
 																					<a class="btn btn-small"> <i class="icon-pencil"></i> Enter Data</a>
@@ -377,13 +427,9 @@
 																			</tr>
 																		</tbody>
 																	</table>
-																</div>	
+																</div>
 											              	</div> <!-- end of v1  -->
 											              	
-											              	<div class="tab-pane fade" id="v2">
-											              	</div>
-											              	<div class="tab-pane fade" id="v3">
-											              	</div>
 											            </div>
 											        </div>
 									        	</div>
@@ -397,17 +443,17 @@
 																</tr>
 																<tr>
 																	<td><strong>Name</strong></td>
-																	<td>CRF Form Name</td>
+																	<td>AE - Adverse Event</td>
 																</tr>
 																			
 																<tr>
 																	<td><strong>Status</strong></td>
-																	<td><span class="label label-success">Signed</span></td>
+																	<td><span class="label label-success">Completed</span></td>
 																</tr>
 																			
 																<tr>
 																	<td><strong>Last Modified</strong> </td>
-																	<td>2013-07-21 4:00 PM</td>
+																	<td>2013-07-10 4:00 PM</td>
 																</tr>
 																			
 																<tr>
@@ -436,11 +482,12 @@
 	 	
     	<!-- footer of the page -->
     	<footer>
-    		
+
     	</footer>
     	
     	<!-- javascripts -->
-    	<script src="http://code.jquery.com/jquery-1.9.0.js"></script>
+    	<script src="js/jquery-1.9.1.js"></script>
+    	<script src="js/edcmain.js"></script>
     	<script src="js/jquery.min.js"></script>
     	<script src="js/bootstrap.js"></script>
     	<script src="js/bootstrap-dropdown.js"></script>
@@ -449,7 +496,6 @@
     	<script src="js/bootstrap-tab.js"></script>
     	<script src="js/jquery.gritter.min.js"></script>
     	<script src="js/template.js"></script>
-    	<script src="js/edcmain.js"></script>
     	<script src="js/jquery-ui.js"></script>
     	
 	</body>
