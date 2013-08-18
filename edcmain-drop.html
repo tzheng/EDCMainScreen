@@ -258,13 +258,10 @@
 									<div class="row-fluid">
 										<div class="span9">
 											<div class="input-append">
-											  <input class="span8" id="searchinput" type="text" placeholder="Subject ID">
-											  <button class="btn" type="button" id="searchbtn"><i class="icon-search"></i> Search</button>
+											  <input class="span8" id="appendedInputButtons" type="text" placeholder="Subject ID">
+											  <button class="btn" type="button"><i class="icon-search"></i> Search</button>
 											</div>
-											
 											<a class="btn btn-primary" type="button" id="filter-trigger"><i class="icon-filter icon-white"></i> Filter</a>
-											<a class="btn btn-primary" type="button" id="clearbtn"><i class="icon-refresh icon-white"></i> Clear</a>
-											
 										</div> <!-- .span9 -->
 										
 										<div class="span3" id="display-choice">
@@ -290,10 +287,10 @@
 															<ul class="list-inline">
 																<li>
 																	<strong>Gender</strong>
-																	<select class="input-small" class="chzn-select" id="filter-gender">
+																	<select class="input-small" class="chzn-select">
 																		<option value=""></option>
-																		<option value="Male">Male</option>
-																		<option value="Female">Female</option>
+																		<option value="">Male</option>
+																		<option value="">Female</option>
 																	</select>
 																</li>
 																<li>
@@ -310,9 +307,9 @@
 																	<strong>Status</strong>
 																	<select data-placeholder="Choose a Status" class="chzn-select" multiple id="my_select1">
 																		<option value=""></option>
-																		<option value="Enrolled">Enrolled</option>
-																		<option value="Drop">Drop</option>
-																		<option value="Fail">Fail</option>
+																		<option value="">Enrolled</option>
+																		<option value="">Drop</option>
+																		<option value="">Fail</option>
 																	</select>
 																</li>
 															</ul>
@@ -391,7 +388,7 @@
 														<li class="subject-id">0000001</li>
 														<li class="subject-gender">Male</li>
 														<li class="subject-age">23</li>
-														<li class="subject-status"><span class="label label-success">Enrolled</span></li>
+														<li class="subject-status"><span class="label">Drop</span></li>
 													</ul>
 												</li>
 												<li class="visit-row">
@@ -421,7 +418,7 @@
 												<li class="visit-row">
 													<ul class="subject-info-row">
 														<li class="subject-id">0000005</li>
-														<li class="subject-gender">Female</li>
+														<li class="subject-gender">Male</li>
 														<li class="subject-age">24</li>
 														<li class="subject-status"><span class="label label-success">Enrolled</span></li>
 													</ul>
@@ -461,7 +458,7 @@
 												<li class="visit-row">
 													<ul class="subject-info-row">
 														<li class="subject-id">0000010</li>
-														<li class="subject-gender">Female</li>
+														<li class="subject-gender">Male</li>
 														<li class="subject-age">24</li>
 														<li class="subject-status"><span class="label label-important">Fail</span></li>
 													</ul>
@@ -706,16 +703,6 @@
 											<ul class="actions">
 												<li><strong>Action</strong></li>
 												<li class="visit-row">
-													<a class="btn btn-small" href="edcdetail-list.html"><i class="icon-zoom-in"></i>Detail</a>
-													<a class="btn btn-small" href="#"><i class="icon-edit"></i>Edit</a>
-												</li>
-												
-												<li class="visit-row">
-													<a class="btn btn-small" href="edcdetail-list.html"><i class="icon-zoom-in"></i>Detail</a>
-													<a class="btn btn-small" href="#"><i class="icon-edit"></i>Edit</a>
-												</li>
-												
-												<li class="visit-row">
 													<a class="btn btn-small" href="edcdetail.html"><i class="icon-zoom-in"></i>Detail</a>
 													<a class="btn btn-small" href="#"><i class="icon-edit"></i>Edit</a>
 												</li>
@@ -754,358 +741,6 @@
 													<a class="btn btn-small" href="edcdetail.html"><i class="icon-zoom-in"></i>Detail</a>
 													<a class="btn btn-small" href="#"><i class="icon-edit"></i>Edit</a>
 												</li>
-											</ul>
-										</div>
-											
-									</div>
-									</div>
-								</div>  <!-- #subject-table-->
-								
-								<div id="subject-table-fail" style="display: none;">
-									<div class="row-fluid">
-									<div class="span12" id="subject-table-container">
-										<!-- Left part of subject matrix table, display general informaion -->
-										<div id="subject-table-left">
-											<ul class="subject-info">
-												<li>
-													<ul class="subject-info-row">
-														<li class="subject-id"><strong>ID</strong></li>
-														<li class="subject-gender"><strong>Gender</strong></li>
-														<li class="subject-age"><strong>Age</strong></li>
-														<li class="subject-status"><strong>Status</strong></li>
-													</ul>
-												</li>
-												<li class="visit-row">
-													<ul class="subject-info-row">
-														<li class="subject-id">0000006</li>
-														<li class="subject-gender">Male</li>
-														<li class="subject-age">24</li>
-														<li class="subject-status"><span class="label label-important">Fail</span></li>
-													</ul>
-												</li>
-												<li class="visit-row subject-female">
-													<ul class="subject-info-row">
-														<li class="subject-id">0000010</li>
-														<li class="subject-gender">Female</li>
-														<li class="subject-age">24</li>
-														<li class="subject-status"><span class="label label-important">Fail</span></li>
-													</ul>
-												</li>
-												
-											</ul>
-										</div>
-										
-										<!-- Middle part of subject matrix table, display visits -->
-										<div id="subject-table-middle">
-											<div style="min-width: 1000px;">
-												<div class="bs-docs-example">
-													<ul id="myTab" class="nav nav-tabs nav-tab-main" style="margin-bottom: 0px;">
-											              <li class="active"><a href="#screen" data-toggle="tab">Screen</a></li>
-											        </ul>
-											        
-										            
-										           <div id="myTabContent" class="tab-content">
-										            	<div class="tab-pane fade in active" id="screen">
-										            		<p class="visit-date">Visit Date: 2013-07-10</p> 
-															<ul class="visits">
-																<li class="visit-row">
-																	<ul class="visit-column">
-																		<li><i class="icon-list-alt"></i>AE <span class="label slabel">Not Start</span> </li>
-																		<li><i class="icon-list-alt"></i>DM <span class="label label-inverse">Locked</span></li>
-																		<li><i class="icon-list-alt"></i>MH <span class="label slabel">Not Start</span> </li>
-																		<li><i class="icon-list-alt"></i>CO <span class="label slabel">Not Start</span> </li>
-																		<li><i class="icon-list-alt"></i>CM <span class="label slabel">Not Start</span> </li>
-																		<li><i class="icon-list-alt"></i>DS <span class="label slabel">Not Start</span> </li>
-																	</ul>
-																</li>
-																<li class="visit-row subject-female">
-																	<ul class="visit-column">
-																		<li><i class="icon-list-alt"></i>AE <span class="label slabel">Not Start</span> </li>
-																		<li><i class="icon-list-alt"></i>DM <span class="label label-inverse">Locked</span></li>
-																		<li><i class="icon-list-alt"></i>MH <span class="label slabel">Not Start</span> </li>
-																		<li><i class="icon-list-alt"></i>CO <span class="label slabel">Not Start</span> </li>
-																		<li><i class="icon-list-alt"></i>CM <span class="label slabel">Not Start</span> </li>
-																		<li><i class="icon-list-alt"></i>DS <span class="label slabel">Not Start</span> </li>
-																	</ul>
-																	
-																</li>
-															</ul>
-										              	</div>
-										            </div>
-										        </div>
-										</div>
-										</div>
-										
-										<!-- Right part of subject matrix table, display Actions-->	
-										<div id="subject-table-right">
-											<ul class="actions">
-												<li><strong>Action</strong></li>
-												<li class="visit-row">
-													<a class="btn btn-small" href="edcdetail.html"><i class="icon-zoom-in"></i>Detail</a>
-													<a class="btn btn-small" href="#"><i class="icon-edit"></i>Edit</a>
-												</li>
-												<li class="visit-row  subject-female">
-													<a class="btn btn-small" href="edcdetail.html"><i class="icon-zoom-in"></i>Detail</a>
-													<a class="btn btn-small" href="#"><i class="icon-edit"></i>Edit</a>
-												</li>
-											</ul>
-										</div>
-											
-									</div>
-									</div>
-								</div>  <!-- #subject-table-fail-->
-								
-								<div id="subject-table-30s" style="display: none;">
-									<div class="row-fluid">
-									<div class="span12" id="subject-table-container">
-										<!-- Left part of subject matrix table, display general informaion -->
-										<div id="subject-table-left">
-											<ul class="subject-info">
-												<li>
-													<ul class="subject-info-row">
-														<li class="subject-id"><strong>ID</strong></li>
-														<li class="subject-gender"><strong>Gender</strong></li>
-														<li class="subject-age"><strong>Age</strong></li>
-														<li class="subject-status"><strong>Status</strong></li>
-													</ul>
-												</li>
-												<li class="visit-row">
-													<ul class="subject-info-row">
-														<li class="subject-id">0000030</li>
-														<li class="subject-gender">Female</li>
-														<li class="subject-age">24</li>
-														<li class="subject-status"><span class="label">Drop</span></li>
-													</ul>
-												</li>
-												<li class="visit-row">
-													<ul class="subject-info-row">
-														<li class="subject-id">0000031</li>
-														<li class="subject-gender">Male</li>
-														<li class="subject-age">24</li>
-														<li class="subject-status"><span class="label label-success">Enrolled</span></li>
-													</ul>
-												</li>
-												<li class="visit-row">
-													<ul class="subject-info-row">
-														<li class="subject-id">0000032</li>
-														<li class="subject-gender">Male</li>
-														<li class="subject-age">24</li>
-														<li class="subject-status"><span class="label label-success">Enrolled</span></li>
-													</ul>
-												</li>
-												<li class="visit-row">
-													<ul class="subject-info-row">
-														<li class="subject-id">0000033</li>
-														<li class="subject-gender">Male</li>
-														<li class="subject-age">24</li>
-														<li class="subject-status"><span class="label label-success">Enrolled</span></li>
-													</ul>
-												</li>
-												<li class="visit-row">
-													<ul class="subject-info-row">
-														<li class="subject-id">0000034</li>
-														<li class="subject-gender">Male</li>
-														<li class="subject-age">24</li>
-														<li class="subject-status"><span class="label label-important">Fail</span></li>
-													</ul>
-												</li>
-												<li class="visit-row">
-													<ul class="subject-info-row">
-														<li class="subject-id">0000035</li>
-														<li class="subject-gender">Male</li>
-														<li class="subject-age">24</li>
-														<li class="subject-status"><span class="label label-success">Enrolled</span></li>
-													</ul>
-												</li>
-												<li class="visit-row">
-													<ul class="subject-info-row">
-														<li class="subject-id">0000036</li>
-														<li class="subject-gender">Male</li>
-														<li class="subject-age">24</li>
-														<li class="subject-status"><span class="label label-success">Enrolled</span></li>
-													</ul>
-												</li>
-												
-											</ul>
-										</div>
-										
-										<!-- Middle part of subject matrix table, display visits -->
-										<div id="subject-table-middle">
-											<div style="min-width: 1000px;">
-												<div class="bs-docs-example">
-													<ul id="myTab" class="nav nav-tabs nav-tab-main" style="margin-bottom: 0px;">
-											              <li class="active"><a href="#screen" data-toggle="tab">Screen</a></li>
-											              <li><a href="#v1" data-toggle="tab">Visit 1</a></li>
-											        </ul>
-											        
-										            
-										           <div id="myTabContent" class="tab-content">
-										            	<div class="tab-pane fade in active" id="screen">
-										            		<p class="visit-date">Visit Date: 2013-07-10</p> 
-															<ul class="visits">
-																<li class="visit-row">
-																	<ul class="visit-column">
-																		<li><i class="icon-list-alt"></i>AE <span class="label label-success">Completed</span></li>
-																		<li><i class="icon-list-alt"></i>DM <span class="label label-important">Stoped</span></li>
-																		<li><i class="icon-list-alt"></i>MH <span class="label label-important">Stoped</span> </li>
-																		<li><i class="icon-list-alt"></i>CO <span class="label label-important">Stoped</span></li>
-																		<li><i class="icon-list-alt"></i>CM <span class="label label-important">Stoped</span> </li>
-																		<li><i class="icon-list-alt"></i>DS <span class="label label-important">Stoped</span> </li>
-																	</ul>
-																</li>
-																<li class="visit-row">
-																	<ul class="visit-column">
-																		<li><i class="icon-list-alt"></i>AE <span class="label label-success">Completed</span></li>
-																		<li><i class="icon-list-alt"></i>DM <span class="label label-info">Ready</span> </li>
-																		<li><i class="icon-list-alt"></i>MH <span class="label label-info">Started</span></li>
-																		<li><i class="icon-list-alt"></i>CO <span class="label label-warning">Skipped</span> </li>
-																		<li><i class="icon-list-alt"></i>CM <span class="label slabel">Not Start</span> </li>
-																		<li><i class="icon-list-alt"></i>DS <span class="label slabel">Not Start</span> </li>
-																	</ul>
-																</li>
-																<li class="visit-row">
-																	<ul class="visit-column">
-																		<li><i class="icon-list-alt"></i>AE <span class="label label-success">Completed</span></li>
-																		<li><i class="icon-list-alt"></i>DM <span class="label label-success">Completed</span> </li>
-																		<li><i class="icon-list-alt"></i>MH <span class="label label-success">Completed</span> </li>
-																		<li><i class="icon-list-alt"></i>CO <span class="label label-success">Completed</span> </li>
-																		<li><i class="icon-list-alt"></i>CM <span class="label label-success">Completed</span> </li>
-																		<li><i class="icon-list-alt"></i>DS <span class="label label-success">Completed</span> </li>
-																	</ul>
-																</li>
-																<li class="visit-row">
-																	<ul class="visit-column">
-																		<li><i class="icon-list-alt"></i>AE <span class="label label-success">Completed</span></li>
-																		<li><i class="icon-list-alt"></i>DM <span class="label label-success">Completed</span </li>
-																		<li><i class="icon-list-alt"></i>MH<span class="label label-success">Completed</span </li>
-																		<li><i class="icon-list-alt"></i>CO <span class="label label-info">Started</span> </li>
-																		<li><i class="icon-list-alt"></i>CM <span class="label label-info">Ready</span>  </li>
-																		<li><i class="icon-list-alt"></i>DS <span class="label slabel">Not Start</span> </li>
-																	</ul>
-																</li>
-																<li class="visit-row">
-																	<ul class="visit-column">
-																		<li><i class="icon-list-alt"></i>AE <span class="label slabel">Not Start</span> </li>
-																		<li><i class="icon-list-alt"></i>DM <span class="label label-inverse">Locked</span></li>
-																		<li><i class="icon-list-alt"></i>MH <span class="label slabel">Not Start</span> </li>
-																		<li><i class="icon-list-alt"></i>CO <span class="label slabel">Not Start</span> </li>
-																		<li><i class="icon-list-alt"></i>CM <span class="label slabel">Not Start</span> </li>
-																		<li><i class="icon-list-alt"></i>DS <span class="label slabel">Not Start</span> </li>
-																	</ul>
-																</li>
-																<li class="visit-row">
-																	<ul class="visit-column">
-																		<li><i class="icon-list-alt"></i>AE <span class="label label-info">Ready</span></li>
-																		<li><i class="icon-list-alt"></i>DM <span class="label label-info">Ready</span> </li>
-																		<li><i class="icon-list-alt"></i>MH <span class="label label-info">Started</span> </li>
-																		<li><i class="icon-list-alt"></i>CO <span class="label slabel">Not Start</span> </li>
-																		<li><i class="icon-list-alt"></i>CM <span class="label slabel">Not Start</span> </li>
-																		<li><i class="icon-list-alt"></i>DS <span class="label slabel">Not Start</span> </li>
-																	</ul>
-																</li>
-																<li class="visit-row">
-																	<ul class="visit-column">
-																		<li><i class="icon-list-alt"></i>AE <span class="label label-success">Completed</span></li>
-																		<li><i class="icon-list-alt"></i>DM <span class="label label-info">Started</span> </li>
-																		<li><i class="icon-list-alt"></i>MH <span class="label label-info">Ready</span> </li>
-																		<li><i class="icon-list-alt"></i>CO <span class="label slabel">Not Start</span> </li>
-																		<li><i class="icon-list-alt"></i>CM <span class="label slabel">Not Start</span> </li>
-																		<li><i class="icon-list-alt"></i>DS <span class="label slabel">Not Start</span> </li>
-																	</ul>
-																</li>
-															</ul>
-										              	</div>
-										              	
-										              	<!-- content for V1 Tab-->
-										              	<div class="tab-pane fade" id="v1">
-										              		<p class="visit-date">Visit Date: 2013-07-15</p> 
-										              		<ul class="visits">
-																<li class="visit-row">
-																	<ul class="visit-column">
-																		<li><i class="icon-list-alt"></i>AE <span class="label label-success">Completed</span></li>
-																		<li><i class="icon-list-alt"></i>DM <span class="label label-important">Stoped</span></li>
-																		<li><i class="icon-list-alt"></i>MH <span class="label label-important">Stoped</span> </li>
-																		<li><i class="icon-list-alt"></i>CO <span class="label label-important">Stoped</span></li>
-																		<li><i class="icon-list-alt"></i>CM <span class="label label-important">Stoped</span> </li>
-																		<li><i class="icon-list-alt"></i>DS <span class="label label-important">Stoped</span> </li>
-																	</ul>
-																</li>
-																<li class="visit-row">
-																	<ul class="visit-column">
-																		<li><i class="icon-list-alt"></i>AE <span class="label label-success">Completed</span></li>
-																		<li><i class="icon-list-alt"></i>DM <span class="label label-info">Ready</span> </li>
-																		<li><i class="icon-list-alt"></i>MH <span class="label label-info">Started</span></li>
-																		<li><i class="icon-list-alt"></i>CO <span class="label slabel">Not Start</span> </li>
-																		<li><i class="icon-list-alt"></i>CM <span class="label slabel">Not Start</span> </li>
-																		<li><i class="icon-list-alt"></i>DS <span class="label slabel">Not Start</span> </li>
-																	</ul>
-																</li>
-																<li class="visit-row">
-																	<ul class="visit-column">
-																		<li><i class="icon-list-alt"></i>AE <span class="label label-success">Completed</span></li>
-																		<li><i class="icon-list-alt"></i>DM <span class="label label-success">Completed</span> </li>
-																		<li><i class="icon-list-alt"></i>MH <span class="label label-success">Completed</span> </li>
-																		<li><i class="icon-list-alt"></i>CO <span class="label label-success">Completed</span> </li>
-																		<li><i class="icon-list-alt"></i>CM <span class="label label-success">Completed</span> </li>
-																		<li><i class="icon-list-alt"></i>DS <span class="label label-success">Completed</span> </li>
-																	</ul>
-																</li>
-																<li class="visit-row">
-																	<ul class="visit-column">
-																		<li><i class="icon-list-alt"></i>AE <span class="label label-success">Completed</span></li>
-																		<li><i class="icon-list-alt"></i>DM <span class="label label-success">Completed</span </li>
-																		<li><i class="icon-list-alt"></i>MH<span class="label label-success">Completed</span </li>
-																		<li><i class="icon-list-alt"></i>CO <span class="label label-info">Started</span> </li>
-																		<li><i class="icon-list-alt"></i>CM <span class="label label-info">Ready</span>  </li>
-																		<li><i class="icon-list-alt"></i>DS <span class="label slabel">Not Start</span> </li>
-																	</ul>
-																</li>
-																<li class="visit-row">
-																	<ul class="visit-column">
-																		<li><i class="icon-list-alt"></i>AE <span class="label slabel">Not Start</span> </li>
-																		<li><i class="icon-list-alt"></i>DM <span class="label label-inverse">Locked</span></li>
-																		<li><i class="icon-list-alt"></i>MH <span class="label slabel">Not Start</span> </li>
-																		<li><i class="icon-list-alt"></i>CO <span class="label slabel">Not Start</span> </li>
-																		<li><i class="icon-list-alt"></i>CM <span class="label slabel">Not Start</span> </li>
-																		<li><i class="icon-list-alt"></i>DS <span class="label slabel">Not Start</span> </li>
-																	</ul>
-																</li>
-																<li class="visit-row">
-																	<ul class="visit-column">
-																		<li><i class="icon-list-alt"></i>AE <span class="label label-info">Ready</span></li>
-																		<li><i class="icon-list-alt"></i>DM <span class="label label-info">Ready</span> </li>
-																		<li><i class="icon-list-alt"></i>MH <span class="label label-info">Started</span> </li>
-																		<li><i class="icon-list-alt"></i>CO <span class="label slabel">Not Start</span> </li>
-																		<li><i class="icon-list-alt"></i>CM <span class="label slabel">Not Start</span> </li>
-																		<li><i class="icon-list-alt"></i>DS <span class="label slabel">Not Start</span> </li>
-																	</ul>
-																</li>
-																<li class="visit-row">
-																	<ul class="visit-column">
-																		<li><i class="icon-list-alt"></i>AE <span class="label label-success">Completed</span></li>
-																		<li><i class="icon-list-alt"></i>DM <span class="label label-info">Started</span> </li>
-																		<li><i class="icon-list-alt"></i>MH <span class="label label-info">Ready</span> </li>
-																		<li><i class="icon-list-alt"></i>CO <span class="label slabel">Not Start</span> </li>
-																		<li><i class="icon-list-alt"></i>CM <span class="label slabel">Not Start</span> </li>
-																		<li><i class="icon-list-alt"></i>DS <span class="label slabel">Not Start</span> </li>
-																	</ul>
-																</li>
-															</ul>
-										              	</div> <!-- end of v1  -->
-										            </div>
-										            
-										        </div>
-										</div>
-										</div>
-										
-										<!-- Right part of subject matrix table, display Actions-->	
-										<div id="subject-table-right">
-											<ul class="actions">
-												<li><strong>Action</strong></li>
-												<li class="visit-row">
-													<a class="btn btn-small" href="edcdetail.html"><i class="icon-zoom-in"></i>Detail</a>
-													<a class="btn btn-small" href="#"><i class="icon-edit"></i>Edit</a>
-												</li>
 												
 												<li class="visit-row">
 													<a class="btn btn-small" href="edcdetail.html"><i class="icon-zoom-in"></i>Detail</a>
@@ -1116,101 +751,6 @@
 													<a class="btn btn-small" href="edcdetail.html"><i class="icon-zoom-in"></i>Detail</a>
 													<a class="btn btn-small" href="#"><i class="icon-edit"></i>Edit</a>
 												</li>
-												
-												<li class="visit-row">
-													<a class="btn btn-small" href="edcdetail.html"><i class="icon-zoom-in"></i>Detail</a>
-													<a class="btn btn-small" href="#"><i class="icon-edit"></i>Edit</a>
-												</li>
-												
-												<li class="visit-row">
-													<a class="btn btn-small" href="edcdetail.html"><i class="icon-zoom-in"></i>Detail</a>
-													<a class="btn btn-small" href="#"><i class="icon-edit"></i>Edit</a>
-												</li>
-												
-												<li class="visit-row">
-													<a class="btn btn-small" href="edcdetail.html"><i class="icon-zoom-in"></i>Detail</a>
-													<a class="btn btn-small" href="#"><i class="icon-edit"></i>Edit</a>
-												</li>
-												
-												<li class="visit-row">
-													<a class="btn btn-small" href="edcdetail.html"><i class="icon-zoom-in"></i>Detail</a>
-													<a class="btn btn-small" href="#"><i class="icon-edit"></i>Edit</a>
-												</li>
-											</ul>
-										</div>
-											
-									</div>
-									</div>
-								</div>  <!-- #subject-table 30s-->
-								
-								<div id="subject-table-36" style="display: none;">
-									<div class="row-fluid">
-									<div class="span12" id="subject-table-container">
-										<!-- Left part of subject matrix table, display general informaion -->
-										<div id="subject-table-left">
-											<ul class="subject-info">
-												<li>
-													<ul class="subject-info-row">
-														<li class="subject-id"><strong>ID</strong></li>
-														<li class="subject-gender"><strong>Gender</strong></li>
-														<li class="subject-age"><strong>Age</strong></li>
-														<li class="subject-status"><strong>Status</strong></li>
-													</ul>
-												</li>
-												<li class="visit-row">
-													<ul class="subject-info-row">
-														<li class="subject-id">0000036</li>
-														<li class="subject-gender">Male</li>
-														<li class="subject-age">27</li>
-														<li class="subject-status"><span class="label label-success">Enrolled</span></li>
-													</ul>
-												</li>
-												
-											</ul>
-										</div>
-										
-										<!-- Middle part of subject matrix table, display visits -->
-										<div id="subject-table-middle">
-											<div style="min-width: 1000px;">
-												<div class="bs-docs-example">
-													<ul id="myTab" class="nav nav-tabs nav-tab-main" style="margin-bottom: 0px;">
-											              <li class="active"><a href="#screen" data-toggle="tab">Screen</a></li>
-											        </ul>
-											        
-										            
-										           <div id="myTabContent" class="tab-content">
-										            	<div class="tab-pane fade in active" id="screen">
-										            		<p class="visit-date">Visit Date: - <a href="#" style="margin-left: 20px;"><i class="icon-time"></i> Schedule Screen</a></p> 
-															<ul class="visits">
-																<li class="visit-row">
-																	<ul class="visit-column">
-																		<li><i class="icon-list-alt"></i>AE <span class="label slabel">Not Start</span></li>
-																		<li><i class="icon-list-alt"></i>DM <span class="label slabel">Not Start</span> </li>
-																		<li><i class="icon-list-alt"></i>MH <span class="label slabel">Not Start</span> </li>
-																		<li><i class="icon-list-alt"></i>CO <span class="label slabel">Not Start</span> </li>
-																		<li><i class="icon-list-alt"></i>CM <span class="label slabel">Not Start</span> </li>
-																		<li><i class="icon-list-alt"></i>DS <span class="label slabel">Not Start</span> </li>
-																	</ul>
-																</li>
-															</ul>
-										              	</div>
-										              	
-										            </div>
-										            
-										        </div>
-										</div>
-										</div>
-										
-										<!-- Right part of subject matrix table, display Actions-->	
-										<div id="subject-table-right">
-											<ul class="actions">
-												<li><strong>Action</strong></li>
-												<li class="visit-row">
-													<a class="btn btn-small" href="edcdetail.html"><i class="icon-zoom-in"></i>Detail</a>
-													<a class="btn btn-small" href="#"><i class="icon-edit"></i>Edit</a>
-												</li>
-												
-												
 											</ul>
 										</div>
 											
@@ -1282,8 +822,8 @@
 	
 			function message_welcome1(){
 				var unique_id = $.gritter.add({
-					title: 'New Subject Enrolled',
-					text: 'Subject ID: 0000036 enrolled into study.',
+					title: 'Subject Drop Study',
+					text: 'Subject ID: 0000001 dropped the study.',
 					sticky: false,
 					time: '',
 					class_name: 'my-sticky-class'
@@ -1297,63 +837,7 @@
 			
 			$(document).ready(function(){
 				setTimeout("message_welcome1()",500);
-				
-				$('#searchbtn').click(function(){
-					$('#subject-table').hide();
-					$('#subject-table-36').fadeIn(500);
-					
-				});
-				
-				$("#searchinput").bind('input propertychange',function() {
-				    var tmp = $(this).val();
-				    if (tmp == '000003') {
-				        $('#subject-table').hide();
-				        $('#subject-table-36').hide();
-				        $('#subject-table-30s').fadeIn(250);
-				    }
-				    else if (tmp == '0000036') {
-				        $('#subject-table').hide();
-				        $('#subject-table-30s').hide();
-				        $('#subject-table-36').fadeIn(250);
-				    } else {
-				    	$('#subject-table').fadeIn(250);
-				        $('#subject-table-30s').hide();
-				        $('#subject-table-36').hide();
-				    }
-				});
-				
-				$('#my_select1').change(function(){
-				    var tmp = $(this).find("option:selected").val();
-				    if (tmp == 'Fail') {
-				        $("#subject-table").hide();
-				        $("#subject-table-fail").fadeIn(250); 
-				    } else {
-				        $("#subject-table-fail").hide();
-				        $("#subject-table").fadeIn(250); 
-				    }
-				});
-				
-				$('#filter-gender').change(function(){
-				    var tmp = $(this).find("option:selected").val();
-				    if (tmp == 'Male') {
-				        $(".subject-female").fadeOut(250); 
-				    } else {
-				        $(".subject-female").fadeIn(250); 
-				    }
-				});
-				
-				$('#clearbtn').click(function(){
-					$('#searchinput').val("");
-					$('#subject-table-30s').hide();
-				    $('#subject-table-36').hide();
-				    $('#subject-table-fail').hide();
-				    $("#filter-gender").val([]);
-				    $(".search-choice").remove();
-					$('#subject-table').fadeIn(250);
-				});
 			});			
-			
-			
 		</script>
 	<!-- Demo Script end -->
 	

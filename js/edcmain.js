@@ -62,6 +62,8 @@ $(document).ready(function()
 			class_name: 'my-sticky-class'
 			});
 		}
+		
+	$('#data_query_example').popover();
 });
 
 
