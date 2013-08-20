@@ -298,3 +298,16 @@ header {
 .btn-primary.active {
   background-color: #2FABE9 \9;
 }
+
+
+.bs-callout-info {
+	background-color: #f0f7fd;
+	border-color: #d0e3f0;
+}
+
+.bs-callout {
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 10px 30px 10px 10px;
+	border-left: 5px solid #eee;
+}

@@ -110,6 +110,9 @@
 	top: 10px;
 }
 
+#lastli .cbp_tmlabel:after {
+	border: none;
+}
 
 /* The icons */
 .cbp_tmtimeline > li .cbp_tmicon {
